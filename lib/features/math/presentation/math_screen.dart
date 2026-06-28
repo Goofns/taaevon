@@ -10,7 +10,6 @@ import '../../background/geometric_background_painter.dart';
 import '../../language/data/lexicon_local_datasource.dart';
 import '../../language/data/lexicon_repository.dart';
 import '../../sync_engine/dynamic_difficulty_calibrator.dart';
-import '../../sync_engine/interlocking_progression.dart';
 import '../bloc/math_bloc.dart';
 
 const Map<InjectionMode, String> _modeLabels = {

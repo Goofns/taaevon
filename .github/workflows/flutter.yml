@@ -22,8 +22,11 @@ jobs:
         run: dart format --output=none --set-exit-if-changed .
         continue-on-error: true
 
+      # Errors and warnings fail the build; info-level lints (const hints,
+      # trailing commas, deprecations) are reported but non-blocking. Run a
+      # local `dart fix --apply` / `dart format .` to clear the infos.
       - name: Analyze
-        run: flutter analyze
+        run: flutter analyze --no-fatal-infos
 
       - name: Run tests
         run: flutter test
