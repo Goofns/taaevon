@@ -38,7 +38,10 @@ dev_dependencies:
 flutter:
   uses-material-design: true
   assets:
-    - assets/data/facts_seed.json
+    # Bundle the whole data dir so every seed file ships in the APK. Declaring
+    # only facts_seed.json previously left lexicon_seed.json out of the bundle,
+    # which crashed the language track at runtime ("Unable to load asset").
+    - assets/data/
   # Fonts are referenced by name in TaaevonTypography but not bundled in the
   # scaffold (they fall back to the system font). Drop the .ttf files under
   # assets/fonts/ and uncomment to enable Inter / JetBrains Mono / Noto Sans.
