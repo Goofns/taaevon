@@ -1,0 +1,22 @@
+# Flutter / Dart
+.dart_tool/
+.packages
+build/
+.flutter-plugins
+.flutter-plugins-dependencies
+pubspec.lock
+*.iml
+.idea/
+.vscode/
+
+# Generated seed database (regenerate with tools/seed_facts.py)
+assets/db/*.db
+assets/db/*.db-wal
+assets/db/*.db-shm
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Stray accidental empty file
+New Text Document.txt

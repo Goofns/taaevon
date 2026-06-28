@@ -1,0 +1,81 @@
+name: CI
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  analyze-and-test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: subosito/flutter-action@v2
+        with:
+          channel: stable
+          cache: true
+
+      - name: Install dependencies
+        run: flutter pub get
+
+      - name: Verify formatting (informational)
+        run: dart format --output=none --set-exit-if-changed .
+        continue-on-error: true
+
+      - name: Analyze
+        run: flutter analyze
+
+      - name: Run tests
+        run: flutter test
+
+  seed-data:
+    # Validates the bundled fact + lexicon datasets through the Python pipelines.
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Seed and validate fact database
+        run: python tools/seed_facts.py build/taaevon.db assets/data/facts_seed.json
+      - name: Seed and validate lexicon
+        run: python tools/seed_lexicon.py build/taaevon.db assets/data/lexicon_seed.json
+      - name: Dataset integrity checks
+        run: python tools/validate_data.py assets/data/facts_seed.json assets/data/lexicon_seed.json
+
+  build-apk:
+    # Generates the Android project (the repo ships lib/ but not android/),
+    # builds an installable APK, and uploads it as a downloadable artifact.
+    # NOTE: this job only succeeds once the Dart compiles cleanly — if there are
+    # type errors, it fails here exactly as `flutter analyze` would.
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: "17"
+
+      - uses: subosito/flutter-action@v2
+        with:
+          channel: stable
+          cache: true
+
+      - name: Generate Android project files
+        run: flutter create --platforms=android .
+
+      - name: Install dependencies
+        run: flutter pub get
+
+      # Release build with no keystore is auto-signed with a debug key: it
+      # installs on a device for testing but is not Play Store ready.
+      - name: Build APK
+        run: flutter build apk --release
+
+      - name: Upload APK artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: taaevon-apk
+          path: build/app/outputs/flutter-apk/app-release.apk
+          if-no-files-found: error

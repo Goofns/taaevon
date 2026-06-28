@@ -1,0 +1,50 @@
+name: taaevon
+description: "Taaevon — cross-platform dual-curriculum (Math + Language) educational app with Abstract Geometric Minimalism."
+publish_to: "none"
+version: 0.1.0+1
+
+environment:
+  sdk: ">=3.4.0 <4.0.0"
+  flutter: ">=3.22.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # --- Active in scaffold ---
+  flutter_bloc: ^8.1.6      # Unidirectional BLoC state management
+  equatable: ^2.0.5         # Value equality for entities/states
+  shared_preferences: ^2.2.3  # Lightweight key-value store for saved progress
+
+  # --- Reserved for later phases (uncomment as features land) ---
+  # sqflite: ^2.3.3         # Phase 1: bundled SQLite fact + lexicon DB
+  # hive: ^2.2.3            # Phase 1: hot-path cache (<5ms reads)
+  # hive_flutter: ^1.1.0
+  # go_router: ^14.0.0      # Phase 2: navigation
+  # uuid: ^4.4.0
+  # just_audio: ^0.9.40     # Phase 3: pronunciation audio
+  # flutter_math_fork: ^0.7.2  # Phase 3: LaTeX equation rendering
+  # intl: ^0.19.0
+  # dio: ^5.4.3             # Content sync
+  # flutter_secure_storage: ^9.2.2
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^4.0.0
+  # bloc_test: ^9.1.7
+  # mocktail: ^1.0.4
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/data/facts_seed.json
+  # Fonts are referenced by name in TaaevonTypography but not bundled in the
+  # scaffold (they fall back to the system font). Drop the .ttf files under
+  # assets/fonts/ and uncomment to enable Inter / JetBrains Mono / Noto Sans.
+  # fonts:
+  #   - family: Inter
+  #     fonts:
+  #       - asset: assets/fonts/Inter-Regular.ttf
+  #       - asset: assets/fonts/Inter-Bold.ttf
+  #         weight: 700

@@ -1,0 +1,4601 @@
+[
+  {
+    "category": "Mathematics & Logic",
+    "subcategory": "Number Theory",
+    "content": "There are infinitely many prime numbers — a result proven by Euclid around 300 BCE in his work 'Elements'.",
+    "verification_source": "https://www.britannica.com/science/prime",
+    "verification_type": "encyclopedia",
+    "complexity_rating": 3,
+    "tags": ["primes", "euclid", "proof"],
+    "math_domains": ["number_theory"]
+  },
+  {
+    "category": "Mathematics & Logic",
+    "subcategory": "History of Mathematics",
+    "content": "The Indian mathematician Brahmagupta defined arithmetic rules for zero as a number in 628 CE, not merely as a placeholder.",
+    "verification_source": "https://www.britannica.com/biography/Brahmagupta",
+    "verification_type": "encyclopedia",
+    "complexity_rating": 3,
+    "tags": ["zero", "brahmagupta", "india"],
+    "math_domains": ["number_theory", "arithmetic"]
+  },
+  {
+    "category": "Mathematics & Logic",
+    "subcategory": "Patterns",
+    "content": "The Fibonacci sequence — where each number is the sum of the two before it — appears in nature, such as the spiral arrangement of sunflower seeds and pinecones.",
+    "verification_source": "https://oeis.org/A000045",
+    "verification_type": "institution",
+    "complexity_rating": 2,
+    "tags": ["fibonacci", "sequence", "nature"],
+    "math_domains": ["number_theory", "geometry"]
+  },
+  {
+    "category": "Philosophy & Logic",
+    "subcategory": "Formal Logic",
+    "content": "Kurt Goedel's incompleteness theorems (1931) showed that any consistent formal system strong enough for arithmetic contains true statements it cannot prove.",
+    "verification_source": "https://plato.stanford.edu/entries/goedel-incompleteness/",
+    "verification_type": "encyclopedia",
+    "complexity_rating": 5,
+    "tags": ["goedel", "logic", "incompleteness"],
+    "math_domains": ["logic"],
+    "language_concepts": ["formal_systems"]
+  },
+  {
+    "category": "Physical Sciences",
+    "subcategory": "Physics",
+    "content": "Light travels at exactly 299,792,458 metres per second in a vacuum. This fixed value is used to define the length of the metre.",
+    "verification_source": "https://www.bipm.org/en/measurement-units",
+    "verification_type": "institution",
+    "complexity_rating": 3,
+    "tags": ["speed_of_light", "si_units"],
+    "math_domains": ["measurement"]
+  },
+  {
+    "category": "Physical Sciences",
+    "subcategory": "Thermodynamics",
+    "content": "Absolute zero, the lowest temperature physically possible, is 0 kelvin — equal to about minus 273.15 degrees Celsius.",
+    "verification_source": "https://www.bipm.org/en/measurement-units",
+    "verification_type": "institution",
+    "complexity_rating": 3,
+    "tags": ["temperature", "absolute_zero", "kelvin"]
+  },
+  {
+    "category": "Physical Sciences",
+    "subcategory": "Acoustics",
+    "content": "Sound cannot travel through the vacuum of space because it needs a physical medium, such as air or water, to propagate.",
+    "verification_source": "https://science.nasa.gov/",
+    "verification_type": "government",
+    "complexity_rating": 2,
+    "tags": ["sound", "vacuum", "space"]
+  },
+  {
+    "category": "Physical Sciences",
+    "subcategory": "Chemistry",
+    "content": "Diamond and graphite are both made entirely of carbon; they differ only in how their atoms are bonded together.",
+    "verification_source": "https://www.britannica.com/science/carbon-chemical-element",
+    "verification_type": "encyclopedia",
+    "complexity_rating": 3,
+    "tags": ["carbon", "allotropes", "diamond", "graphite"]
+  },
+  {
+    "category": "Physical Sciences",
+    "subcategory": "Chemistry",
+    "content": "Helium was first identified in the spectrum of the Sun in 1868 — making it the only element discovered in space before it was found on Earth.",
+    "verification_source": "https://www.britannica.com/science/helium-chemical-element",
+    "verification_type": "encyclopedia",
+    "complexity_rating": 4,
+    "tags": ["helium", "spectroscopy", "sun"]
+  },
+  {
+    "category": "Physical Sciences",
+    "subcategory": "Astronomy",
+    "content": "A day on Venus is longer than its year: Venus rotates once every 243 Earth days but completes an orbit of the Sun every 225 Earth days.",
+    "verification_source": "https://science.nasa.gov/venus/",
+    "verification_type": "government",
+    "complexity_rating": 3,
+    "tags": ["venus", "rotation", "orbit"]
+  },
+  {
+    "category": "Physical Sciences",
+    "subcategory": "Astronomy",
+    "content": "Sunlight takes about 8 minutes and 20 seconds to travel the roughly 150 million kilometres from the Sun to Earth.",
+    "verification_source": "https://science.nasa.gov/sun/",
+    "verification_type": "government",
+    "complexity_rating": 2,
+    "tags": ["sun", "light", "distance"]
+  },
+  {
+    "category": "Physical Sciences",
+    "subcategory": "Astronomy",
+    "content": "Saturn's average density is lower than water's, so in principle the planet would float if a body of water large enough to hold it existed.",
+    "verification_source": "https://science.nasa.gov/saturn/",
+    "verification_type": "government",
+    "complexity_rating": 3,
+    "tags": ["saturn", "density", "planets"]
+  },
+  {
+    "category": "Physical Sciences",
+    "subcategory": "Astrophysics",
+    "content": "Neutron stars are so dense that a piece of one the size of a sugar cube would weigh roughly a billion tonnes on Earth.",
+    "verification_source": "https://science.nasa.gov/universe/neutron-stars/",
+    "verification_type": "government",
+    "complexity_rating": 4,
+    "tags": ["neutron_star", "density"]
+  },
+  {
+    "category": "Life Sciences",
+    "subcategory": "Marine Biology",
+    "content": "Octopuses have three hearts and blue blood, because their blood uses copper-based hemocyanin instead of iron-based hemoglobin to carry oxygen.",
+    "verification_source": "https://ocean.si.edu/",
+    "verification_type": "institution",
+    "complexity_rating": 3,
+    "tags": ["octopus", "hearts", "hemocyanin"]
+  },
+  {
+    "category": "Life Sciences",
+    "subcategory": "Zoology",
+    "content": "The blue whale is the largest animal known to have ever lived, reaching lengths of up to about 30 metres.",
+    "verification_source": "https://www.nationalgeographic.com/animals/mammals/facts/blue-whale",
+    "verification_type": "institution",
+    "complexity_rating": 1,
+    "tags": ["blue_whale", "largest_animal"]
+  },
+  {
+    "category": "Life Sciences",
+    "subcategory": "Neuroscience",
+    "content": "The adult human brain contains roughly 86 billion neurons, according to careful cell-counting studies.",
+    "verification_source": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2776484/",
+    "verification_type": "peer_reviewed",
+    "complexity_rating": 4,
+    "tags": ["brain", "neurons"]
+  },
+  {
+    "category": "Life Sciences",
+    "subcategory": "Cell Biology",
+    "content": "The human body is made up of an estimated 37 trillion cells.",
+    "verification_source": "https://www.ncbi.nlm.nih.gov/pubmed/23829164",
+    "verification_type": "peer_reviewed",
+    "complexity_rating": 3,
+    "tags": ["cells", "human_body"]
+  },
+  {
+    "category": "Earth & Geosciences",
+    "subcategory": "Oceanography",
+    "content": "The deepest known point in the ocean is the Challenger Deep in the Mariana Trench, at about 10,935 metres below sea level.",
+    "verification_source": "https://oceanexplorer.noaa.gov/",
+    "verification_type": "government",
+    "complexity_rating": 2,
+    "tags": ["mariana_trench", "challenger_deep"]
+  },
+  {
+    "category": "Earth & Geosciences",
+    "subcategory": "Oceanography",
+    "content": "More than 80 percent of Earth's ocean remains unmapped, unobserved, and unexplored.",
+    "verification_source": "https://oceanexplorer.noaa.gov/facts/explored.html",
+    "verification_type": "government",
+    "complexity_rating": 2,
+    "tags": ["ocean", "exploration"]
+  },
+  {
+    "category": "Earth & Geosciences",
+    "subcategory": "Geography",
+    "content": "Mount Everest's summit is the highest point above sea level on Earth, measured in 2020 at 8,848.86 metres.",
+    "verification_source": "https://www.britannica.com/place/Mount-Everest",
+    "verification_type": "encyclopedia",
+    "complexity_rating": 1,
+    "tags": ["everest", "mountain"]
+  },
+  {
+    "category": "Earth & Geosciences",
+    "subcategory": "Hydrology",
+    "content": "Water is unusual among common substances because it expands when it freezes, which is why ice floats on liquid water.",
+    "verification_source": "https://www.usgs.gov/special-topics/water-science-school",
+    "verification_type": "government",
+    "complexity_rating": 2,
+    "tags": ["water", "ice", "density"]
+  },
+  {
+    "category": "Geopolitics & Civics",
+    "subcategory": "Geography",
+    "content": "Russia is the largest country in the world by land area and spans 11 time zones.",
+    "verification_source": "https://www.cia.gov/the-world-factbook/countries/russia/",
+    "verification_type": "government",
+    "complexity_rating": 2,
+    "tags": ["russia", "largest_country", "time_zones"]
+  },
+  {
+    "category": "Geopolitics & Civics",
+    "subcategory": "Geography",
+    "content": "Vatican City is the smallest sovereign state in the world, covering only about 0.44 square kilometres.",
+    "verification_source": "https://www.cia.gov/the-world-factbook/countries/holy-see-vatican-city/",
+    "verification_type": "government",
+    "complexity_rating": 2,
+    "tags": ["vatican", "smallest_country"]
+  },
+  {
+    "category": "Linguistics & Language",
+    "subcategory": "Demographics",
+    "content": "Mandarin Chinese has more native speakers than any other language, with roughly 900 million people speaking it as a first language.",
+    "verification_source": "https://www.ethnologue.com/",
+    "verification_type": "encyclopedia",
+    "complexity_rating": 2,
+    "tags": ["mandarin", "native_speakers"],
+    "language_concepts": ["demographics"]
+  },
+  {
+    "category": "Linguistics & Language",
+    "subcategory": "Etymology",
+    "content": "The word 'alphabet' comes from 'alpha' and 'beta', the first two letters of the Greek alphabet.",
+    "verification_source": "https://www.etymonline.com/word/alphabet",
+    "verification_type": "encyclopedia",
+    "complexity_rating": 1,
+    "tags": ["alphabet", "greek", "etymology"],
+    "language_concepts": ["etymology", "writing_systems"]
+  },
+  {
+    "category": "History & Archaeology",
+    "subcategory": "Ancient Civilizations",
+    "content": "The Great Pyramid of Giza was the tallest human-made structure in the world for over 3,800 years.",
+    "verification_source": "https://www.britannica.com/topic/Great-Pyramid-of-Giza",
+    "verification_type": "encyclopedia",
+    "complexity_rating": 2,
+    "tags": ["pyramid", "giza", "ancient_egypt"]
+  },
+  {
+    "category": "History & Archaeology",
+    "subcategory": "Numeral Systems",
+    "content": "The Roman numeral system has no symbol for zero.",
+    "verification_source": "https://www.britannica.com/topic/Roman-numeral",
+    "verification_type": "encyclopedia",
+    "complexity_rating": 2,
+    "tags": ["roman_numerals", "zero"],
+    "math_domains": ["number_theory"]
+  },
+  {
+    "category": "Technology & Engineering",
+    "subcategory": "Computer Science",
+    "content": "Ada Lovelace is widely regarded as the first computer programmer for the algorithm she wrote in the 1840s for Charles Babbage's proposed Analytical Engine.",
+    "verification_source": "https://www.britannica.com/biography/Ada-Lovelace",
+    "verification_type": "encyclopedia",
+    "complexity_rating": 3,
+    "tags": ["ada_lovelace", "programming", "history"]
+  },
+  {
+    "category": "Health & Medicine",
+    "subcategory": "Anatomy",
+    "content": "Adults have 206 bones, while a newborn baby starts with about 300 bones that gradually fuse together during growth.",
+    "verification_source": "https://www.britannica.com/science/human-skeleton",
+    "verification_type": "encyclopedia",
+    "complexity_rating": 2,
+    "tags": ["bones", "skeleton", "anatomy"]
+  },
+  {
+    "category": "Health & Medicine",
+    "subcategory": "Food Science",
+    "content": "Pure honey can remain edible for thousands of years; archaeologists have found preserved honey in ancient Egyptian tombs.",
+    "verification_source": "https://www.smithsonianmag.com/science-nature/the-science-behind-honeys-eternal-shelf-life-1218690/",
+    "verification_type": "institution",
+    "complexity_rating": 2,
+    "tags": ["honey", "preservation"]
+  },
+  {
+    "category": "Arts & Architecture",
+    "subcategory": "Geometry in Design",
+    "content": "The golden ratio, approximately 1.618, is a proportion that has long been associated with balanced, aesthetically pleasing design in art and architecture.",
+    "verification_source": "https://www.britannica.com/science/golden-ratio",
+    "verification_type": "encyclopedia",
+    "complexity_rating": 3,
+    "tags": ["golden_ratio", "design", "geometry"],
+    "math_domains": ["geometry", "number_theory"]
+  },
+  {
+    "category": "Miscellaneous Global Facts",
+    "subcategory": "Geography",
+    "content": "The Sahara is the world's largest hot desert, with an area comparable to that of the entire United States or China.",
+    "verification_source": "https://www.britannica.com/place/Sahara-desert-Africa",
+    "verification_type": "encyclopedia",
+    "complexity_rating": 2,
+    "tags": ["sahara", "desert"]
+  },
+  {
+    "category": "Miscellaneous Global Facts",
+    "subcategory": "Earth Science",
+    "content": "The temperature at Earth's inner core is estimated to be around 5,200 degrees Celsius — comparable to the surface of the Sun.",
+    "verification_source": "https://www.usgs.gov/",
+    "verification_type": "government",
+    "complexity_rating": 3,
+    "tags": ["earth_core", "temperature"]
+  },
+  {
+    "category": "Mathematics & Logic",
+    "subcategory": "Number Theory",
+    "content": "Pi is an irrational number: its decimal expansion never ends and never settles into a repeating pattern.",
+    "verification_source": "https://www.britannica.com/science/pi-mathematics",
+    "verification_type": "encyclopedia",
+    "complexity_rating": 3,
+    "tags": ["pi", "irrational"],
+    "math_domains": ["number_theory"]
+  },
+  {
+    "category": "Mathematics & Logic",
+    "subcategory": "Large Numbers",
+    "content": "A googol is the number 1 followed by 100 zeros. The search engine Google took its name from a misspelling of it.",
+    "verification_source": "https://www.britannica.com/science/googol",
+    "verification_type": "encyclopedia",
+    "complexity_rating": 2,
+    "tags": ["googol", "large_numbers"]
+  },
+  {
+    "category": "Mathematics & Logic",
+    "subcategory": "Topology",
+    "content": "The Four Colour Theorem proves any flat map can be coloured with just four colours so that no two adjacent regions share a colour.",
+    "verification_source": "https://www.britannica.com/science/four-color-map-problem",
+    "verification_type": "encyclopedia",
+    "complexity_rating": 4,
+    "tags": ["four_color_theorem", "topology"],
+    "math_domains": ["topology", "graph_theory"]
+  },
+  {
+    "category": "Physical Sciences",
+    "subcategory": "Meteorology",
+    "content": "A lightning bolt can heat the surrounding air to about 30,000 kelvin — roughly five times hotter than the surface of the Sun.",
+    "verification_source": "https://www.weather.gov/",
+    "verification_type": "government",
+    "complexity_rating": 3,
+    "tags": ["lightning", "temperature"]
+  },
+  {
+    "category": "Physical Sciences",
+    "subcategory": "Acoustics",
+    "content": "Sound travels about four times faster in water than in air, because water is denser and less compressible.",
+    "verification_source": "https://www.noaa.gov/",
+    "verification_type": "government",
+    "complexity_rating": 2,
+    "tags": ["sound", "water"]
+  },
+  {
+    "category": "Physical Sciences",
+    "subcategory": "Atmosphere",
+    "content": "Earth's atmosphere is roughly 78% nitrogen and 21% oxygen by volume; the remaining 1% is argon, carbon dioxide and trace gases.",
+    "verification_source": "https://www.noaa.gov/",
+    "verification_type": "government",
+    "complexity_rating": 2,
+    "tags": ["atmosphere", "nitrogen", "oxygen"]
+  },
+  {
+    "category": "Physical Sciences",
+    "subcategory": "Chemistry",
+    "content": "Tungsten has the highest melting point of any metal, about 3,422 degrees Celsius.",
+    "verification_source": "https://www.britannica.com/science/tungsten",
+    "verification_type": "encyclopedia",
+    "complexity_rating": 3,
+    "tags": ["tungsten", "melting_point"]
+  },
+  {
+    "category": "Physical Sciences",
+    "subcategory": "Materials",
+    "content": "Glass is an amorphous solid, not a slow-flowing liquid; uneven old window panes come from how they were made, not from flowing over time.",
+    "verification_source": "https://www.britannica.com/science/glass",
+    "verification_type": "encyclopedia",
+    "complexity_rating": 3,
+    "tags": ["glass", "amorphous_solid"]
+  },
+  {
+    "category": "Life Sciences",
+    "subcategory": "Evolution",
+    "content": "Sharks are older than trees: sharks have existed for more than 400 million years, predating the earliest trees.",
+    "verification_source": "https://www.britannica.com/animal/shark",
+    "verification_type": "encyclopedia",
+    "complexity_rating": 3,
+    "tags": ["sharks", "evolution"]
+  },
+  {
+    "category": "Life Sciences",
+    "subcategory": "Botany",
+    "content": "Botanically, bananas are berries, while strawberries are not — a berry develops from a single flower with one ovary.",
+    "verification_source": "https://www.britannica.com/science/berry-plant-reproductive-body",
+    "verification_type": "encyclopedia",
+    "complexity_rating": 2,
+    "tags": ["bananas", "berries", "botany"]
+  },
+  {
+    "category": "Life Sciences",
+    "subcategory": "Animal Behaviour",
+    "content": "Honeybees tell hivemates the direction and distance to food through a movement known as the waggle dance.",
+    "verification_source": "https://www.britannica.com/science/waggle-dance",
+    "verification_type": "encyclopedia",
+    "complexity_rating": 3,
+    "tags": ["bees", "waggle_dance"]
+  },
+  {
+    "category": "Life Sciences",
+    "subcategory": "Extremophiles",
+    "content": "Tardigrades, tiny animals also called water bears, can survive extreme cold, intense radiation, and even the vacuum of space.",
+    "verification_source": "https://www.ncbi.nlm.nih.gov/",
+    "verification_type": "peer_reviewed",
+    "complexity_rating": 4,
+    "tags": ["tardigrades", "extremophiles"]
+  },
+  {
+    "category": "Earth & Geosciences",
+    "subcategory": "Climatology",
+    "content": "Antarctica is the largest desert on Earth — a desert is defined by very low precipitation, not by heat.",
+    "verification_source": "https://www.britannica.com/place/Antarctica",
+    "verification_type": "encyclopedia",
+    "complexity_rating": 2,
+    "tags": ["antarctica", "desert"]
+  },
+  {
+    "category": "Earth & Geosciences",
+    "subcategory": "Hydrology",
+    "content": "About 97% of Earth's water is salt water in the oceans; only a small fraction is fresh water available for drinking.",
+    "verification_source": "https://www.usgs.gov/special-topics/water-science-school",
+    "verification_type": "government",
+    "complexity_rating": 2,
+    "tags": ["water", "oceans"]
+  },
+  {
+    "category": "Earth & Geosciences",
+    "subcategory": "Plate Tectonics",
+    "content": "The Atlantic Ocean widens by roughly 2 to 3 centimetres per year as new seafloor forms at the Mid-Atlantic Ridge.",
+    "verification_source": "https://www.usgs.gov/",
+    "verification_type": "government",
+    "complexity_rating": 4,
+    "tags": ["plate_tectonics", "seafloor_spreading"]
+  },
+  {
+    "category": "Geopolitics & Civics",
+    "subcategory": "Geography",
+    "content": "Canada has the longest coastline of any country in the world, at over 200,000 kilometres.",
+    "verification_source": "https://www.britannica.com/place/Canada",
+    "verification_type": "encyclopedia",
+    "complexity_rating": 2,
+    "tags": ["canada", "coastline"]
+  },
+  {
+    "category": "Geopolitics & Civics",
+    "subcategory": "International Relations",
+    "content": "The United Nations has 193 member states.",
+    "verification_source": "https://www.un.org/",
+    "verification_type": "institution",
+    "complexity_rating": 2,
+    "tags": ["united_nations", "member_states"]
+  },
+  {
+    "category": "Geopolitics & Civics",
+    "subcategory": "Geography",
+    "content": "The Pacific Ocean covers a greater area than all of Earth's land combined.",
+    "verification_source": "https://www.noaa.gov/",
+    "verification_type": "government",
+    "complexity_rating": 3,
+    "tags": ["pacific_ocean", "geography"]
+  },
+  {
+    "category": "Linguistics & Language",
+    "subcategory": "Demographics",
+    "content": "Papua New Guinea has more living languages than any other country — well over 800.",
+    "verification_source": "https://www.ethnologue.com/",
+    "verification_type": "encyclopedia",
+    "complexity_rating": 3,
+    "tags": ["papua_new_guinea", "languages"],
+    "language_concepts": ["demographics"]
+  },
+  {
+    "category": "Linguistics & Language",
+    "subcategory": "Demographics",
+    "content": "Counting both native and second-language speakers, English is the most widely spoken language in the world.",
+    "verification_source": "https://www.ethnologue.com/",
+    "verification_type": "encyclopedia",
+    "complexity_rating": 2,
+    "tags": ["english", "global_language"],
+    "language_concepts": ["demographics"]
+  },
+  {
+    "category": "History & Archaeology",
+    "subcategory": "Chronology",
+    "content": "Cleopatra lived closer in time to the first Moon landing than to the building of the Great Pyramid of Giza.",
+    "verification_source": "https://www.britannica.com/biography/Cleopatra-queen-of-Egypt",
+    "verification_type": "encyclopedia",
+    "complexity_rating": 3,
+    "tags": ["cleopatra", "chronology"]
+  },
+  {
+    "category": "History & Archaeology",
+    "subcategory": "Ancient Civilizations",
+    "content": "The Great Wall of China is not a single continuous wall but many walls built and rebuilt across different dynasties.",
+    "verification_source": "https://www.britannica.com/topic/Great-Wall-of-China",
+    "verification_type": "encyclopedia",
+    "complexity_rating": 2,
+    "tags": ["great_wall", "china"]
+  },
+  {
+    "category": "Technology & Engineering",
+    "subcategory": "Computing History",
+    "content": "The term 'computer bug' spread after a moth was found in a Harvard Mark II relay in 1947 and taped into the logbook.",
+    "verification_source": "https://www.si.edu/",
+    "verification_type": "institution",
+    "complexity_rating": 3,
+    "tags": ["computer_bug", "history"]
+  },
+  {
+    "category": "Technology & Engineering",
+    "subcategory": "Computing History",
+    "content": "Ray Tomlinson chose the @ symbol to separate the user from the host in email addresses in 1971.",
+    "verification_source": "https://www.britannica.com/biography/Ray-Tomlinson",
+    "verification_type": "encyclopedia",
+    "complexity_rating": 2,
+    "tags": ["email", "at_symbol"]
+  },
+  {
+    "category": "Arts & Architecture",
+    "subcategory": "Engineering",
+    "content": "The Eiffel Tower can grow more than 15 centimetres taller in summer as its iron structure expands in the heat.",
+    "verification_source": "https://www.britannica.com/topic/Eiffel-Tower-Paris-France",
+    "verification_type": "encyclopedia",
+    "complexity_rating": 3,
+    "tags": ["eiffel_tower", "thermal_expansion"]
+  },
+  {
+    "category": "Health & Medicine",
+    "subcategory": "Anatomy",
+    "content": "The cornea of the eye has no blood vessels; it gets most of its oxygen directly from the air.",
+    "verification_source": "https://www.britannica.com/science/cornea",
+    "verification_type": "encyclopedia",
+    "complexity_rating": 3,
+    "tags": ["cornea", "eye"]
+  },
+  {
+    "category": "Philosophy & Logic",
+    "subcategory": "Metaphysics",
+    "content": "The Ship of Theseus asks whether an object whose parts have all been replaced over time remains the same object.",
+    "verification_source": "https://plato.stanford.edu/",
+    "verification_type": "encyclopedia",
+    "complexity_rating": 3,
+    "tags": ["ship_of_theseus", "identity"]
+  },
+  {
+    "category": "Miscellaneous Global Facts",
+    "subcategory": "Mathematics",
+    "content": "There are more possible games of chess than there are atoms in the observable universe.",
+    "verification_source": "https://www.britannica.com/topic/chess",
+    "verification_type": "encyclopedia",
+    "complexity_rating": 3,
+    "tags": ["chess", "combinatorics"],
+    "math_domains": ["combinatorics"]
+  },
+  {
+    "category": "Mathematics & Logic",
+    "subcategory": "Number Theory",
+    "content": "Zero is an even number, because it is an integer multiple of two.",
+    "verification_source": "https://www.britannica.com/science/even-number",
+    "verification_type": "encyclopedia",
+    "complexity_rating": 2,
+    "tags": ["zero", "even"],
+    "math_domains": ["number_theory"]
+  },
+  {
+    "category": "Mathematics & Logic",
+    "subcategory": "Geometry",
+    "content": "On a flat surface, the three interior angles of any triangle always add up to 180 degrees.",
+    "verification_source": "https://www.britannica.com/science/triangle-mathematics",
+    "verification_type": "encyclopedia",
+    "complexity_rating": 2,
+    "tags": ["triangle", "angles"],
+    "math_domains": ["geometry"]
+  },
+  {
+    "category": "Physical Sciences",
+    "subcategory": "Thermodynamics",
+    "content": "Hot water can sometimes freeze faster than cold water — a debated phenomenon named the Mpemba effect after the student who observed it.",
+    "verification_source": "https://www.ncbi.nlm.nih.gov/",
+    "verification_type": "peer_reviewed",
+    "complexity_rating": 4,
+    "tags": ["mpemba_effect", "freezing"]
+  },
+  {
+    "category": "Physical Sciences",
+    "subcategory": "Astronomy",
+    "content": "The Sun accounts for about 99.8% of all the mass in the Solar System.",
+    "verification_source": "https://science.nasa.gov/sun/",
+    "verification_type": "government",
+    "complexity_rating": 3,
+    "tags": ["sun", "solar_system"]
+  },
+  {
+    "category": "Physical Sciences",
+    "subcategory": "Astronomy",
+    "content": "Jupiter is the largest planet in the Solar System — more than 1,300 Earths could fit inside it.",
+    "verification_source": "https://science.nasa.gov/jupiter/",
+    "verification_type": "government",
+    "complexity_rating": 2,
+    "tags": ["jupiter", "planets"]
+  },
+  {
+    "category": "Physical Sciences",
+    "subcategory": "Optics",
+    "content": "A rainbow is really a full circle of light; from the ground we usually see only the upper arc.",
+    "verification_source": "https://www.noaa.gov/",
+    "verification_type": "government",
+    "complexity_rating": 2,
+    "tags": ["rainbow", "optics"]
+  },
+  {
+    "category": "Physical Sciences",
+    "subcategory": "Astronomy",
+    "content": "Mercury is the closest planet to the Sun, but Venus is the hottest because of its dense, heat-trapping atmosphere.",
+    "verification_source": "https://science.nasa.gov/mercury/",
+    "verification_type": "government",
+    "complexity_rating": 3,
+    "tags": ["venus", "mercury", "temperature"]
+  },
+  {
+    "category": "Life Sciences",
+    "subcategory": "Physiology",
+    "content": "An adult human body is roughly 60% water by weight.",
+    "verification_source": "https://www.usgs.gov/special-topics/water-science-school",
+    "verification_type": "government",
+    "complexity_rating": 2,
+    "tags": ["human_body", "water"]
+  },
+  {
+    "category": "Life Sciences",
+    "subcategory": "Mycology",
+    "content": "The largest known living organism is a honey fungus in Oregon that spreads across several square kilometres of forest soil.",
+    "verification_source": "https://www.britannica.com/science/Armillaria",
+    "verification_type": "encyclopedia",
+    "complexity_rating": 3,
+    "tags": ["fungus", "largest_organism"]
+  },
+  {
+    "category": "Life Sciences",
+    "subcategory": "Marine Biology",
+    "content": "Starfish have no brain and no blood; they move and feed using a water-powered network of tube feet.",
+    "verification_source": "https://ocean.si.edu/",
+    "verification_type": "institution",
+    "complexity_rating": 3,
+    "tags": ["starfish", "anatomy"]
+  },
+  {
+    "category": "Life Sciences",
+    "subcategory": "Zoology",
+    "content": "Penguins live almost entirely in the Southern Hemisphere.",
+    "verification_source": "https://www.britannica.com/animal/penguin",
+    "verification_type": "encyclopedia",
+    "complexity_rating": 1,
+    "tags": ["penguins"]
+  },
+  {
+    "category": "Earth & Geosciences",
+    "subcategory": "Hydrology",
+    "content": "The Dead Sea is so salty that swimmers float on its surface with ease.",
+    "verification_source": "https://www.britannica.com/place/Dead-Sea",
+    "verification_type": "encyclopedia",
+    "complexity_rating": 2,
+    "tags": ["dead_sea", "salinity"]
+  },
+  {
+    "category": "Earth & Geosciences",
+    "subcategory": "Geography",
+    "content": "Because Earth bulges at the equator, the summit of Ecuador's Mount Chimborazo is the point on the surface farthest from Earth's centre — not Everest.",
+    "verification_source": "https://www.britannica.com/place/Chimborazo",
+    "verification_type": "encyclopedia",
+    "complexity_rating": 4,
+    "tags": ["chimborazo", "everest"]
+  },
+  {
+    "category": "Earth & Geosciences",
+    "subcategory": "Geology",
+    "content": "Natural diamonds form deep underground under intense heat and pressure over billions of years.",
+    "verification_source": "https://www.britannica.com/science/diamond-gemstone",
+    "verification_type": "encyclopedia",
+    "complexity_rating": 2,
+    "tags": ["diamonds", "geology"]
+  },
+  {
+    "category": "Geopolitics & Civics",
+    "subcategory": "Geography",
+    "content": "Australia is both a country and a continent.",
+    "verification_source": "https://www.britannica.com/place/Australia",
+    "verification_type": "encyclopedia",
+    "complexity_rating": 1,
+    "tags": ["australia", "continent"]
+  },
+  {
+    "category": "Geopolitics & Civics",
+    "subcategory": "Geography",
+    "content": "Istanbul straddles two continents, with neighbourhoods in both Europe and Asia.",
+    "verification_source": "https://www.britannica.com/place/Istanbul",
+    "verification_type": "encyclopedia",
+    "complexity_rating": 2,
+    "tags": ["istanbul", "continents"]
+  },
+  {
+    "category": "Linguistics & Language",
+    "subcategory": "Etymology",
+    "content": "The word 'robot' comes from the Czech 'robota', meaning forced labour; it was coined in Karel Capek's 1920 play R.U.R.",
+    "verification_source": "https://www.britannica.com/technology/robot-technology",
+    "verification_type": "encyclopedia",
+    "complexity_rating": 3,
+    "tags": ["robot", "etymology"],
+    "language_concepts": ["etymology"]
+  },
+  {
+    "category": "Linguistics & Language",
+    "subcategory": "Linguistics",
+    "content": "Sign languages are complete natural languages with their own grammar, not simply hand signs for spoken words.",
+    "verification_source": "https://www.britannica.com/topic/sign-language",
+    "verification_type": "encyclopedia",
+    "complexity_rating": 2,
+    "tags": ["sign_language"],
+    "language_concepts": ["grammar"]
+  },
+  {
+    "category": "History & Archaeology",
+    "subcategory": "Chronology",
+    "content": "Teaching at the University of Oxford began before the Aztec Empire was founded.",
+    "verification_source": "https://www.britannica.com/topic/University-of-Oxford",
+    "verification_type": "encyclopedia",
+    "complexity_rating": 3,
+    "tags": ["oxford", "chronology"]
+  },
+  {
+    "category": "History & Archaeology",
+    "subcategory": "Modern History",
+    "content": "The shortest recorded war, the Anglo-Zanzibar War of 1896, lasted under an hour.",
+    "verification_source": "https://www.britannica.com/event/Anglo-Zanzibar-War",
+    "verification_type": "encyclopedia",
+    "complexity_rating": 3,
+    "tags": ["anglo_zanzibar_war", "shortest_war"]
+  },
+  {
+    "category": "Technology & Engineering",
+    "subcategory": "Computing History",
+    "content": "The first message sent over ARPANET in 1969 was meant to be 'LOGIN', but the system crashed after the first two letters, 'LO'.",
+    "verification_source": "https://www.britannica.com/topic/ARPANET",
+    "verification_type": "encyclopedia",
+    "complexity_rating": 3,
+    "tags": ["arpanet", "internet_history"]
+  },
+  {
+    "category": "Arts & Architecture",
+    "subcategory": "Painting",
+    "content": "Leonardo da Vinci's Mona Lisa has no clearly visible eyebrows.",
+    "verification_source": "https://www.britannica.com/topic/Mona-Lisa-painting",
+    "verification_type": "encyclopedia",
+    "complexity_rating": 2,
+    "tags": ["mona_lisa", "leonardo"]
+  },
+  {
+    "category": "Health & Medicine",
+    "subcategory": "Anatomy",
+    "content": "The three smallest bones in the human body — the malleus, incus, and stapes — are found in the middle ear.",
+    "verification_source": "https://www.britannica.com/science/ear",
+    "verification_type": "encyclopedia",
+    "complexity_rating": 2,
+    "tags": ["bones", "middle_ear"]
+  },
+  {
+    "category": "Miscellaneous Global Facts",
+    "subcategory": "Physics",
+    "content": "Bananas are faintly radioactive because they contain naturally occurring potassium-40.",
+    "verification_source": "https://www.britannica.com/science/potassium",
+    "verification_type": "encyclopedia",
+    "complexity_rating": 3,
+    "tags": ["bananas", "potassium", "radioactivity"]
+  },
+  {
+    "category": "Miscellaneous Global Facts",
+    "subcategory": "Astronomy",
+    "content": "Earth's days are slowly getting longer as the Moon gradually drifts farther away.",
+    "verification_source": "https://science.nasa.gov/moon/",
+    "verification_type": "government",
+    "complexity_rating": 3,
+    "tags": ["moon", "day_length"]
+  },
+  {
+    "category": "Mathematics & Logic",
+    "subcategory": "Calendars",
+    "content": "A leap year adds an extra day almost every four years to keep the calendar aligned with Earth's orbit around the Sun.",
+    "verification_source": "https://www.britannica.com/science/leap-year",
+    "verification_type": "encyclopedia",
+    "complexity_rating": 2,
+    "tags": ["leap_year", "calendar"]
+  },
+  {
+    "category": "Mathematics & Logic",
+    "subcategory": "History of Mathematics",
+    "content": "The equals sign (=) was introduced in 1557 by the Welsh mathematician Robert Recorde.",
+    "verification_source": "https://www.britannica.com/biography/Robert-Recorde",
+    "verification_type": "encyclopedia",
+    "complexity_rating": 3,
+    "tags": ["equals_sign", "notation"]
+  },
+  {
+    "category": "Mathematics & Logic",
+    "subcategory": "Counting",
+    "content": "A dozen is 12 and a gross is a dozen dozen, equal to 144.",
+    "verification_source": "https://www.britannica.com/science/number-mathematics",
+    "verification_type": "encyclopedia",
+    "complexity_rating": 2,
+    "tags": ["dozen", "gross"]
+  },
+  {
+    "category": "Physical Sciences",
+    "subcategory": "Gases",
+    "content": "Helium balloons float because helium is lighter than the surrounding air.",
+    "verification_source": "https://www.britannica.com/science/helium-chemical-element",
+    "verification_type": "encyclopedia",
+    "complexity_rating": 1,
+    "tags": ["helium", "buoyancy"]
+  },
+  {
+    "category": "Physical Sciences",
+    "subcategory": "Physics",
+    "content": "Light travels so fast it could circle the Earth about seven and a half times in a single second.",
+    "verification_source": "https://science.nasa.gov/",
+    "verification_type": "government",
+    "complexity_rating": 3,
+    "tags": ["speed_of_light"]
+  },
+  {
+    "category": "Physical Sciences",
+    "subcategory": "Chemistry",
+    "content": "Rust forms when iron reacts with oxygen and water to produce iron oxide.",
+    "verification_source": "https://www.britannica.com/science/rust-chemical-reaction",
+    "verification_type": "encyclopedia",
+    "complexity_rating": 2,
+    "tags": ["rust", "oxidation"]
+  },
+  {
+    "category": "Physical Sciences",
+    "subcategory": "Astronomy",
+    "content": "Stars appear to twinkle because their light is bent as it passes through Earth's moving atmosphere.",
+    "verification_source": "https://science.nasa.gov/",
+    "verification_type": "government",
+    "complexity_rating": 2,
+    "tags": ["stars", "atmosphere"]
+  },
+  {
+    "category": "Physical Sciences",
+    "subcategory": "Astronomy",
+    "content": "A year on Mercury — one orbit of the Sun — lasts only about 88 Earth days.",
+    "verification_source": "https://science.nasa.gov/mercury/",
+    "verification_type": "government",
+    "complexity_rating": 3,
+    "tags": ["mercury", "orbit"]
+  },
+  {
+    "category": "Life Sciences",
+    "subcategory": "Physiology",
+    "content": "Humans are the only animals known to blush.",
+    "verification_source": "https://www.britannica.com/science/blushing",
+    "verification_type": "encyclopedia",
+    "complexity_rating": 3,
+    "tags": ["blushing", "humans"]
+  },
+  {
+    "category": "Life Sciences",
+    "subcategory": "Zoology",
+    "content": "A hummingbird's heart can beat more than 1,200 times per minute during flight.",
+    "verification_source": "https://www.britannica.com/animal/hummingbird",
+    "verification_type": "encyclopedia",
+    "complexity_rating": 3,
+    "tags": ["hummingbird", "heart_rate"]
+  },
+  {
+    "category": "Life Sciences",
+    "subcategory": "Ecology",
+    "content": "Trees can share nutrients and warning signals through underground networks of fungi linking their roots.",
+    "verification_source": "https://www.ncbi.nlm.nih.gov/",
+    "verification_type": "peer_reviewed",
+    "complexity_rating": 4,
+    "tags": ["trees", "mycorrhizal_networks"]
+  },
+  {
+    "category": "Life Sciences",
+    "subcategory": "Regeneration",
+    "content": "The axolotl, a Mexican salamander, can regrow lost limbs, parts of its heart, and even portions of its brain.",
+    "verification_source": "https://www.britannica.com/animal/axolotl",
+    "verification_type": "encyclopedia",
+    "complexity_rating": 4,
+    "tags": ["axolotl", "regeneration"]
+  },
+  {
+    "category": "Life Sciences",
+    "subcategory": "Entomology",
+    "content": "Ants have no lungs; they take in oxygen through tiny holes called spiracles along their bodies.",
+    "verification_source": "https://www.britannica.com/animal/ant",
+    "verification_type": "encyclopedia",
+    "complexity_rating": 3,
+    "tags": ["ants", "spiracles"]
+  },
+  {
+    "category": "Earth & Geosciences",
+    "subcategory": "Meteorology",
+    "content": "Contrary to the saying, lightning can and often does strike the same place many times.",
+    "verification_source": "https://www.weather.gov/",
+    "verification_type": "government",
+    "complexity_rating": 2,
+    "tags": ["lightning", "myth"]
+  },
+  {
+    "category": "Earth & Geosciences",
+    "subcategory": "Astronomy",
+    "content": "Earth is the only planet in the Solar System not named after a Greek or Roman god.",
+    "verification_source": "https://science.nasa.gov/earth/",
+    "verification_type": "government",
+    "complexity_rating": 2,
+    "tags": ["earth", "naming"]
+  },
+  {
+    "category": "Earth & Geosciences",
+    "subcategory": "Volcanology",
+    "content": "Volcanic lightning can flash within the dense ash clouds of an erupting volcano.",
+    "verification_source": "https://www.usgs.gov/",
+    "verification_type": "government",
+    "complexity_rating": 3,
+    "tags": ["volcanic_lightning"]
+  },
+  {
+    "category": "Geopolitics & Civics",
+    "subcategory": "Geography",
+    "content": "Africa is the only continent that lies in all four hemispheres — northern, southern, eastern, and western.",
+    "verification_source": "https://www.britannica.com/place/Africa",
+    "verification_type": "encyclopedia",
+    "complexity_rating": 3,
+    "tags": ["africa", "hemispheres"]
+  },
+  {
+    "category": "Geopolitics & Civics",
+    "subcategory": "Geography",
+    "content": "The Great Barrier Reef is the largest living structure on Earth and can be seen from space.",
+    "verification_source": "https://www.britannica.com/place/Great-Barrier-Reef",
+    "verification_type": "encyclopedia",
+    "complexity_rating": 2,
+    "tags": ["great_barrier_reef"]
+  },
+  {
+    "category": "Geopolitics & Civics",
+    "subcategory": "Geography",
+    "content": "Monaco is the second-smallest country in the world, after Vatican City.",
+    "verification_source": "https://www.britannica.com/place/Monaco",
+    "verification_type": "encyclopedia",
+    "complexity_rating": 2,
+    "tags": ["monaco", "smallest_countries"]
+  },
+  {
+    "category": "Linguistics & Language",
+    "subcategory": "Constructed Languages",
+    "content": "Esperanto is a constructed language created in the late 1880s to be easy to learn as a neutral international tongue.",
+    "verification_source": "https://www.britannica.com/topic/Esperanto-language",
+    "verification_type": "encyclopedia",
+    "complexity_rating": 3,
+    "tags": ["esperanto"],
+    "language_concepts": ["constructed_languages"]
+  },
+  {
+    "category": "Linguistics & Language",
+    "subcategory": "Writing Systems",
+    "content": "The Hawaiian alphabet uses only 13 letters.",
+    "verification_source": "https://www.britannica.com/topic/Hawaiian-language",
+    "verification_type": "encyclopedia",
+    "complexity_rating": 2,
+    "tags": ["hawaiian", "alphabet"],
+    "language_concepts": ["writing_systems"]
+  },
+  {
+    "category": "History & Archaeology",
+    "subcategory": "Modern History",
+    "content": "The first modern Olympic Games were held in Athens, Greece, in 1896.",
+    "verification_source": "https://www.britannica.com/sports/Olympic-Games",
+    "verification_type": "encyclopedia",
+    "complexity_rating": 2,
+    "tags": ["olympics", "1896"]
+  },
+  {
+    "category": "History & Archaeology",
+    "subcategory": "Exploration",
+    "content": "Vikings reached North America around the year 1000, roughly 500 years before Christopher Columbus.",
+    "verification_source": "https://www.britannica.com/topic/Vinland",
+    "verification_type": "encyclopedia",
+    "complexity_rating": 3,
+    "tags": ["vikings", "north_america"]
+  },
+  {
+    "category": "Technology & Engineering",
+    "subcategory": "Computing History",
+    "content": "The first webcam was set up at the University of Cambridge to watch a coffee pot so people could avoid empty-pot trips.",
+    "verification_source": "https://www.cam.ac.uk/",
+    "verification_type": "institution",
+    "complexity_rating": 3,
+    "tags": ["webcam", "coffee_pot"]
+  },
+  {
+    "category": "Technology & Engineering",
+    "subcategory": "Computing History",
+    "content": "The QWERTY keyboard layout dates from the 1870s and was designed for early mechanical typewriters.",
+    "verification_source": "https://www.britannica.com/technology/typewriter",
+    "verification_type": "encyclopedia",
+    "complexity_rating": 2,
+    "tags": ["qwerty", "typewriter"]
+  },
+  {
+    "category": "Arts & Architecture",
+    "subcategory": "Music",
+    "content": "Wolfgang Amadeus Mozart began composing music at around the age of five.",
+    "verification_source": "https://www.britannica.com/biography/Wolfgang-Amadeus-Mozart",
+    "verification_type": "encyclopedia",
+    "complexity_rating": 2,
+    "tags": ["mozart", "music"]
+  },
+  {
+    "category": "Health & Medicine",
+    "subcategory": "Physiology",
+    "content": "The human body produces roughly 1 to 1.5 litres of saliva every day.",
+    "verification_source": "https://www.britannica.com/science/saliva",
+    "verification_type": "encyclopedia",
+    "complexity_rating": 2,
+    "tags": ["saliva", "physiology"]
+  },
+  {
+    "category": "Philosophy & Logic",
+    "subcategory": "Ancient Philosophy",
+    "content": "Socrates wrote nothing himself; most of what we know about him comes from his student Plato.",
+    "verification_source": "https://plato.stanford.edu/entries/socrates/",
+    "verification_type": "encyclopedia",
+    "complexity_rating": 3,
+    "tags": ["socrates", "plato"]
+  },
+  {
+    "category": "Miscellaneous Global Facts",
+    "subcategory": "Language Trivia",
+    "content": "The dot over a lowercase letter 'i' or 'j' is called a tittle.",
+    "verification_source": "https://www.merriam-webster.com/dictionary/tittle",
+    "verification_type": "encyclopedia",
+    "complexity_rating": 3,
+    "tags": ["tittle", "typography"]
+  },
+  {
+    "category": "Miscellaneous Global Facts",
+    "subcategory": "Zoology",
+    "content": "A group of crows is traditionally called a murder.",
+    "verification_source": "https://www.britannica.com/animal/crow-bird",
+    "verification_type": "encyclopedia",
+    "complexity_rating": 2,
+    "tags": ["crows", "collective_noun"]
+  },
+  {
+    "category": "Philosophy & Logic",
+    "subcategory": "Ethics",
+    "content": "The trolley problem is a thought experiment asking whether one should divert a runaway trolley to save several lives at the cost of one.",
+    "verification_source": "https://plato.stanford.edu/",
+    "verification_type": "encyclopedia",
+    "complexity_rating": 3,
+    "tags": ["trolley_problem", "ethics"]
+  },
+  {
+    "category": "Philosophy & Logic",
+    "subcategory": "Reasoning",
+    "content": "Occam's razor is the principle that, all else being equal, the simplest explanation is usually the best.",
+    "verification_source": "https://www.britannica.com/topic/Occams-razor",
+    "verification_type": "encyclopedia",
+    "complexity_rating": 3,
+    "tags": ["occams_razor"]
+  },
+  {
+    "category": "Philosophy & Logic",
+    "subcategory": "Epistemology",
+    "content": "Rene Descartes argued 'I think, therefore I am': the very act of doubting proves that a thinker exists.",
+    "verification_source": "https://www.britannica.com/biography/Rene-Descartes",
+    "verification_type": "encyclopedia",
+    "complexity_rating": 3,
+    "tags": ["descartes", "cogito"]
+  },
+  {
+    "category": "Philosophy & Logic",
+    "subcategory": "Formal Logic",
+    "content": "A syllogism is a logical argument with two premises and a conclusion, a form first analysed systematically by Aristotle.",
+    "verification_source": "https://www.britannica.com/topic/syllogism",
+    "verification_type": "encyclopedia",
+    "complexity_rating": 4,
+    "tags": ["syllogism", "aristotle"]
+  },
+  {
+    "category": "Philosophy & Logic",
+    "subcategory": "Ethics",
+    "content": "Utilitarianism judges actions by whether they produce the greatest good for the greatest number of people.",
+    "verification_source": "https://www.britannica.com/topic/utilitarianism-philosophy",
+    "verification_type": "encyclopedia",
+    "complexity_rating": 3,
+    "tags": ["utilitarianism"]
+  },
+  {
+    "category": "Arts & Architecture",
+    "subcategory": "Ancient Architecture",
+    "content": "The Great Pyramid of Giza was originally clad in smooth white limestone that made it gleam in the sunlight.",
+    "verification_source": "https://www.britannica.com/topic/Great-Pyramid-of-Giza",
+    "verification_type": "encyclopedia",
+    "complexity_rating": 3,
+    "tags": ["great_pyramid", "limestone"]
+  },
+  {
+    "category": "Arts & Architecture",
+    "subcategory": "Architecture",
+    "content": "Gothic cathedrals use pointed arches and flying buttresses to support tall walls and large stained-glass windows.",
+    "verification_source": "https://www.britannica.com/art/Gothic-architecture",
+    "verification_type": "encyclopedia",
+    "complexity_rating": 3,
+    "tags": ["gothic", "flying_buttress"]
+  },
+  {
+    "category": "Arts & Architecture",
+    "subcategory": "Colour Theory",
+    "content": "On a colour wheel, hues placed directly opposite one another are called complementary colours.",
+    "verification_source": "https://www.britannica.com/science/colour",
+    "verification_type": "encyclopedia",
+    "complexity_rating": 2,
+    "tags": ["colour_wheel", "complementary"]
+  },
+  {
+    "category": "Arts & Architecture",
+    "subcategory": "Music Theory",
+    "content": "In Western music, moving up one octave doubles the frequency of a note.",
+    "verification_source": "https://www.britannica.com/art/octave-music",
+    "verification_type": "encyclopedia",
+    "complexity_rating": 3,
+    "tags": ["octave", "frequency"],
+    "math_domains": ["ratios"]
+  },
+  {
+    "category": "Arts & Architecture",
+    "subcategory": "Architecture",
+    "content": "The Taj Mahal in Agra, India, was built in the 17th century as a mausoleum for the wife of emperor Shah Jahan.",
+    "verification_source": "https://www.britannica.com/topic/Taj-Mahal",
+    "verification_type": "encyclopedia",
+    "complexity_rating": 2,
+    "tags": ["taj_mahal"]
+  },
+  {
+    "category": "Arts & Architecture",
+    "subcategory": "Painting",
+    "content": "Impressionist painters such as Claude Monet sought to capture the changing effects of light rather than precise detail.",
+    "verification_source": "https://www.britannica.com/art/Impressionism-art",
+    "verification_type": "encyclopedia",
+    "complexity_rating": 3,
+    "tags": ["impressionism", "monet"]
+  },
+  {
+    "category": "Health & Medicine",
+    "subcategory": "Pharmacology",
+    "content": "Antibiotics fight bacterial infections but have no effect on viruses such as those causing the common cold.",
+    "verification_source": "https://www.cdc.gov/",
+    "verification_type": "government",
+    "complexity_rating": 3,
+    "tags": ["antibiotics", "viruses"]
+  },
+  {
+    "category": "Health & Medicine",
+    "subcategory": "Anatomy",
+    "content": "The liver is the only internal human organ that can regrow lost tissue.",
+    "verification_source": "https://www.britannica.com/science/liver",
+    "verification_type": "encyclopedia",
+    "complexity_rating": 3,
+    "tags": ["liver", "regeneration"]
+  },
+  {
+    "category": "Health & Medicine",
+    "subcategory": "Immunology",
+    "content": "Vaccines train the immune system to recognise a pathogen without causing the disease itself.",
+    "verification_source": "https://www.cdc.gov/vaccines/",
+    "verification_type": "government",
+    "complexity_rating": 3,
+    "tags": ["vaccines", "immune_system"]
+  },
+  {
+    "category": "Health & Medicine",
+    "subcategory": "Physiology",
+    "content": "An adult human heart beats roughly 100,000 times a day.",
+    "verification_source": "https://www.britannica.com/science/heart",
+    "verification_type": "encyclopedia",
+    "complexity_rating": 2,
+    "tags": ["heart", "heartbeat"]
+  },
+  {
+    "category": "Technology & Engineering",
+    "subcategory": "Computer Science",
+    "content": "An algorithm is a precise step-by-step procedure for solving a problem or completing a task.",
+    "verification_source": "https://www.britannica.com/science/algorithm",
+    "verification_type": "encyclopedia",
+    "complexity_rating": 2,
+    "tags": ["algorithm"]
+  },
+  {
+    "category": "Technology & Engineering",
+    "subcategory": "Computer Science",
+    "content": "Binary code represents all data using only two digits, 0 and 1.",
+    "verification_source": "https://www.britannica.com/technology/binary-code",
+    "verification_type": "encyclopedia",
+    "complexity_rating": 2,
+    "tags": ["binary", "data"],
+    "math_domains": ["number_theory"]
+  },
+  {
+    "category": "Technology & Engineering",
+    "subcategory": "Internet",
+    "content": "The World Wide Web was invented by Tim Berners-Lee, who wrote his proposal for it in 1989.",
+    "verification_source": "https://www.britannica.com/topic/World-Wide-Web",
+    "verification_type": "encyclopedia",
+    "complexity_rating": 3,
+    "tags": ["world_wide_web", "berners_lee"]
+  },
+  {
+    "category": "Technology & Engineering",
+    "subcategory": "Navigation",
+    "content": "GPS works by using the timing signals from several orbiting satellites to pinpoint a receiver's location.",
+    "verification_source": "https://www.gps.gov/",
+    "verification_type": "government",
+    "complexity_rating": 3,
+    "tags": ["gps", "satellites"]
+  },
+  {
+    "category": "Linguistics & Language",
+    "subcategory": "Phonetics",
+    "content": "Onomatopoeia describes words that imitate the sounds they refer to, such as 'buzz' or 'splash'.",
+    "verification_source": "https://www.britannica.com/art/onomatopoeia",
+    "verification_type": "encyclopedia",
+    "complexity_rating": 2,
+    "tags": ["onomatopoeia"],
+    "language_concepts": ["phonetics"]
+  },
+  {
+    "category": "Linguistics & Language",
+    "subcategory": "Sociolinguistics",
+    "content": "A lingua franca is a shared language used for communication between speakers of different native languages.",
+    "verification_source": "https://www.britannica.com/topic/lingua-franca",
+    "verification_type": "encyclopedia",
+    "complexity_rating": 3,
+    "tags": ["lingua_franca"],
+    "language_concepts": ["sociolinguistics"]
+  },
+  {
+    "category": "Linguistics & Language",
+    "subcategory": "Phonetics",
+    "content": "The International Phonetic Alphabet provides a distinct symbol for each recognised speech sound.",
+    "verification_source": "https://www.britannica.com/topic/International-Phonetic-Alphabet",
+    "verification_type": "encyclopedia",
+    "complexity_rating": 3,
+    "tags": ["ipa", "phonetics"],
+    "language_concepts": ["phonetics"]
+  },
+  {
+    "category": "Mathematics & Logic",
+    "subcategory": "Number Theory",
+    "content": "A prime number has exactly two distinct positive divisors: 1 and the number itself.",
+    "verification_source": "https://www.britannica.com/science/prime",
+    "verification_type": "encyclopedia",
+    "complexity_rating": 2,
+    "tags": ["prime", "divisors"],
+    "math_domains": ["number_theory"]
+  },
+  {
+    "category": "Mathematics & Logic",
+    "subcategory": "Probability",
+    "content": "Probability is measured on a scale from 0, meaning impossible, to 1, meaning certain.",
+    "verification_source": "https://www.britannica.com/science/probability",
+    "verification_type": "encyclopedia",
+    "complexity_rating": 2,
+    "tags": ["probability"],
+    "math_domains": ["statistics"]
+  },
+  {
+    "category": "Mathematics & Logic",
+    "subcategory": "Geometry",
+    "content": "A circle's circumference divided by its diameter always equals pi, approximately 3.14159.",
+    "verification_source": "https://www.britannica.com/science/pi-mathematics",
+    "verification_type": "encyclopedia",
+    "complexity_rating": 2,
+    "tags": ["pi", "circle"],
+    "math_domains": ["geometry"]
+  },
+  {
+    "category": "Mathematics & Logic",
+    "subcategory": "Combinatorics",
+    "content": "The factorial of a number is the product of all positive integers up to it; for example, 4 factorial equals 24.",
+    "verification_source": "https://www.britannica.com/science/factorial",
+    "verification_type": "encyclopedia",
+    "complexity_rating": 3,
+    "tags": ["factorial"],
+    "math_domains": ["combinatorics"]
+  },
+  {
+    "category": "Physical Sciences",
+    "subcategory": "Thermodynamics",
+    "content": "Water boils at 100 degrees Celsius at sea level, but at lower temperatures higher up, where air pressure is reduced.",
+    "verification_source": "https://www.usgs.gov/special-topics/water-science-school",
+    "verification_type": "government",
+    "complexity_rating": 2,
+    "tags": ["boiling_point", "pressure"]
+  },
+  {
+    "category": "Physical Sciences",
+    "subcategory": "Geochemistry",
+    "content": "Iron is the most abundant element on Earth by mass, largely because it makes up much of the planet's core.",
+    "verification_source": "https://www.britannica.com/science/iron-chemical-element",
+    "verification_type": "encyclopedia",
+    "complexity_rating": 3,
+    "tags": ["iron", "earth_core"]
+  },
+  {
+    "category": "Physical Sciences",
+    "subcategory": "Magnetism",
+    "content": "Every magnet has two poles, north and south; cutting one in half simply creates two smaller magnets.",
+    "verification_source": "https://www.britannica.com/science/magnet",
+    "verification_type": "encyclopedia",
+    "complexity_rating": 2,
+    "tags": ["magnet", "poles"]
+  },
+  {
+    "category": "Life Sciences",
+    "subcategory": "Botany",
+    "content": "Photosynthesis is the process by which plants use sunlight to turn carbon dioxide and water into energy and oxygen.",
+    "verification_source": "https://www.britannica.com/science/photosynthesis",
+    "verification_type": "encyclopedia",
+    "complexity_rating": 2,
+    "tags": ["photosynthesis"]
+  },
+  {
+    "category": "Life Sciences",
+    "subcategory": "Genetics",
+    "content": "DNA stores genetic instructions in a twisted double-helix structure built from four chemical bases.",
+    "verification_source": "https://www.britannica.com/science/DNA",
+    "verification_type": "encyclopedia",
+    "complexity_rating": 3,
+    "tags": ["dna", "double_helix"]
+  },
+  {
+    "category": "Life Sciences",
+    "subcategory": "Evolution",
+    "content": "Jellyfish have drifted through the oceans for more than 500 million years, long before the dinosaurs.",
+    "verification_source": "https://ocean.si.edu/",
+    "verification_type": "institution",
+    "complexity_rating": 3,
+    "tags": ["jellyfish", "evolution"]
+  },
+  {
+    "category": "Earth & Geosciences",
+    "subcategory": "Geophysics",
+    "content": "Earth's magnetic field shields the planet from much of the Sun's harmful stream of charged particles.",
+    "verification_source": "https://science.nasa.gov/",
+    "verification_type": "government",
+    "complexity_rating": 3,
+    "tags": ["magnetic_field", "solar_wind"]
+  },
+  {
+    "category": "Earth & Geosciences",
+    "subcategory": "Soil Science",
+    "content": "A single handful of healthy soil can contain billions of microorganisms.",
+    "verification_source": "https://www.usda.gov/",
+    "verification_type": "government",
+    "complexity_rating": 3,
+    "tags": ["soil", "microorganisms"]
+  },
+  {
+    "category": "Geopolitics & Civics",
+    "subcategory": "Geography",
+    "content": "The world is divided into 24 standard time zones, each spanning roughly 15 degrees of longitude.",
+    "verification_source": "https://www.britannica.com/science/time-zone",
+    "verification_type": "encyclopedia",
+    "complexity_rating": 2,
+    "tags": ["time_zones"]
+  },
+  {
+    "category": "Geopolitics & Civics",
+    "subcategory": "Geography",
+    "content": "The Equator passes through 13 countries across South America, Africa, and Asia.",
+    "verification_source": "https://www.britannica.com/science/Equator",
+    "verification_type": "encyclopedia",
+    "complexity_rating": 3,
+    "tags": ["equator"]
+  },
+  {
+    "category": "History & Archaeology",
+    "subcategory": "Technology History",
+    "content": "Johannes Gutenberg's printing press, developed around 1440, made books far cheaper and helped spread literacy.",
+    "verification_source": "https://www.britannica.com/biography/Johannes-Gutenberg",
+    "verification_type": "encyclopedia",
+    "complexity_rating": 2,
+    "tags": ["gutenberg", "printing_press"]
+  },
+  {
+    "category": "History & Archaeology",
+    "subcategory": "Ancient Engineering",
+    "content": "The ancient Romans built with a form of concrete so durable that many of their structures still stand today.",
+    "verification_source": "https://www.britannica.com/technology/concrete-building-material",
+    "verification_type": "encyclopedia",
+    "complexity_rating": 3,
+    "tags": ["roman_concrete"]
+  },
+  {
+    "category": "Linguistics & Language",
+    "subcategory": "Language Families",
+    "content": "Latin is the ancestor of the Romance languages, which include Spanish, French, Italian, Portuguese, and Romanian.",
+    "verification_source": "https://www.britannica.com/topic/Romance-languages",
+    "verification_type": "encyclopedia",
+    "complexity_rating": 2,
+    "tags": ["latin", "romance_languages"],
+    "language_concepts": ["language_families"]
+  },
+  {
+    "category": "Mathematics & Logic",
+    "subcategory": "Complex Numbers",
+    "content": "The imaginary unit 'i' is defined as the square root of negative one, extending arithmetic to complex numbers.",
+    "verification_source": "https://www.britannica.com/science/imaginary-number",
+    "verification_type": "encyclopedia",
+    "complexity_rating": 4,
+    "tags": ["imaginary_unit", "complex_numbers"],
+    "math_domains": ["complex_analysis"]
+  },
+  {
+    "category": "Mathematics & Logic",
+    "subcategory": "Numeral Systems",
+    "content": "Roman numerals use the letters I, V, X, L, C, D, and M to represent numbers.",
+    "verification_source": "https://www.britannica.com/topic/Roman-numeral",
+    "verification_type": "encyclopedia",
+    "complexity_rating": 2,
+    "tags": ["roman_numerals"]
+  },
+  {
+    "category": "Physical Sciences",
+    "subcategory": "Astronomy",
+    "content": "Light from distant stars can take thousands or millions of years to reach us, so we see them as they were long ago.",
+    "verification_source": "https://science.nasa.gov/",
+    "verification_type": "government",
+    "complexity_rating": 3,
+    "tags": ["starlight", "light_years"]
+  },
+  {
+    "category": "Physical Sciences",
+    "subcategory": "Electricity",
+    "content": "Electric current is the flow of electric charge, usually carried by electrons moving through a wire.",
+    "verification_source": "https://www.britannica.com/science/electric-current",
+    "verification_type": "encyclopedia",
+    "complexity_rating": 2,
+    "tags": ["electric_current"]
+  },
+  {
+    "category": "Physical Sciences",
+    "subcategory": "Acoustics",
+    "content": "Sound is a vibration that travels as a wave through a medium such as air, water, or solid material.",
+    "verification_source": "https://www.britannica.com/science/sound-physics",
+    "verification_type": "encyclopedia",
+    "complexity_rating": 2,
+    "tags": ["sound", "waves"]
+  },
+  {
+    "category": "Life Sciences",
+    "subcategory": "Microbiology",
+    "content": "The human body is home to trillions of bacteria, most of which are harmless or actively helpful to health.",
+    "verification_source": "https://www.ncbi.nlm.nih.gov/",
+    "verification_type": "peer_reviewed",
+    "complexity_rating": 3,
+    "tags": ["microbiome", "bacteria"]
+  },
+  {
+    "category": "Life Sciences",
+    "subcategory": "Zoology",
+    "content": "Chameleons change colour mainly to regulate temperature and communicate, not only to blend in with their surroundings.",
+    "verification_source": "https://www.britannica.com/animal/chameleon-lizard",
+    "verification_type": "encyclopedia",
+    "complexity_rating": 3,
+    "tags": ["chameleon", "colour_change"]
+  },
+  {
+    "category": "Life Sciences",
+    "subcategory": "Zoology",
+    "content": "A newborn kangaroo is only about the size of a jellybean when it is born.",
+    "verification_source": "https://www.britannica.com/animal/kangaroo",
+    "verification_type": "encyclopedia",
+    "complexity_rating": 2,
+    "tags": ["kangaroo", "marsupials"]
+  },
+  {
+    "category": "Earth & Geosciences",
+    "subcategory": "Seismology",
+    "content": "Most earthquakes happen along the boundaries where Earth's tectonic plates meet.",
+    "verification_source": "https://www.usgs.gov/programs/earthquake-hazards",
+    "verification_type": "government",
+    "complexity_rating": 2,
+    "tags": ["earthquakes", "tectonic_plates"]
+  },
+  {
+    "category": "Earth & Geosciences",
+    "subcategory": "Atmosphere",
+    "content": "The ozone layer high in the atmosphere absorbs most of the Sun's harmful ultraviolet radiation.",
+    "verification_source": "https://www.noaa.gov/",
+    "verification_type": "government",
+    "complexity_rating": 3,
+    "tags": ["ozone_layer", "uv_radiation"]
+  },
+  {
+    "category": "Geopolitics & Civics",
+    "subcategory": "Geography",
+    "content": "Indonesia is made up of more than 17,000 islands.",
+    "verification_source": "https://www.britannica.com/place/Indonesia",
+    "verification_type": "encyclopedia",
+    "complexity_rating": 2,
+    "tags": ["indonesia", "islands"]
+  },
+  {
+    "category": "Geopolitics & Civics",
+    "subcategory": "Geography",
+    "content": "At their closest point in the Bering Strait, Russia and the United States lie less than 4 kilometres apart.",
+    "verification_source": "https://www.britannica.com/place/Bering-Strait",
+    "verification_type": "encyclopedia",
+    "complexity_rating": 3,
+    "tags": ["bering_strait"]
+  },
+  {
+    "category": "History & Archaeology",
+    "subcategory": "Ancient Civilizations",
+    "content": "The ancient Library of Alexandria was one of the largest and most important collections of knowledge in the ancient world.",
+    "verification_source": "https://www.britannica.com/topic/Library-of-Alexandria",
+    "verification_type": "encyclopedia",
+    "complexity_rating": 2,
+    "tags": ["library_of_alexandria"]
+  },
+  {
+    "category": "Technology & Engineering",
+    "subcategory": "Computing",
+    "content": "A pixel is the smallest controllable element of a digital image on a screen.",
+    "verification_source": "https://www.britannica.com/technology/pixel",
+    "verification_type": "encyclopedia",
+    "complexity_rating": 2,
+    "tags": ["pixel", "digital_image"]
+  },
+  {
+    "category": "Arts & Architecture",
+    "subcategory": "Crafts",
+    "content": "Pottery is one of the oldest human crafts, with examples dating back tens of thousands of years.",
+    "verification_source": "https://www.britannica.com/art/pottery",
+    "verification_type": "encyclopedia",
+    "complexity_rating": 2,
+    "tags": ["pottery", "crafts"]
+  },
+  {
+    "category": "Health & Medicine",
+    "subcategory": "Immunology",
+    "content": "A fever is part of the body's immune response and helps it fight off infection.",
+    "verification_source": "https://www.britannica.com/science/fever",
+    "verification_type": "encyclopedia",
+    "complexity_rating": 2,
+    "tags": ["fever", "immune_response"]
+  },
+  {
+    "category": "Health & Medicine",
+    "subcategory": "Physiology",
+    "content": "Hiccups are caused by sudden involuntary contractions of the diaphragm, the muscle used in breathing.",
+    "verification_source": "https://www.britannica.com/science/hiccup",
+    "verification_type": "encyclopedia",
+    "complexity_rating": 2,
+    "tags": ["hiccups", "diaphragm"]
+  },
+  {
+    "category": "Health & Medicine",
+    "subcategory": "Physiology",
+    "content": "Blood is red because of haemoglobin, an iron-rich protein that carries oxygen around the body.",
+    "verification_source": "https://www.britannica.com/science/hemoglobin",
+    "verification_type": "encyclopedia",
+    "complexity_rating": 2,
+    "tags": ["blood", "haemoglobin"]
+  },
+  {
+    "category": "Technology & Engineering",
+    "subcategory": "Computing",
+    "content": "RAM, a computer's random-access memory, loses its contents when the machine is switched off.",
+    "verification_source": "https://www.britannica.com/technology/RAM",
+    "verification_type": "encyclopedia",
+    "complexity_rating": 2,
+    "tags": ["ram", "memory"]
+  },
+  {
+    "category": "Technology & Engineering",
+    "subcategory": "Computing",
+    "content": "A byte is made up of 8 bits.",
+    "verification_source": "https://www.britannica.com/technology/byte",
+    "verification_type": "encyclopedia",
+    "complexity_rating": 2,
+    "tags": ["byte", "bits"],
+    "math_domains": ["number_theory"]
+  },
+  {
+    "category": "Technology & Engineering",
+    "subcategory": "Computing History",
+    "content": "Bluetooth wireless technology is named after Harald Bluetooth, a 10th-century Scandinavian king who united tribes.",
+    "verification_source": "https://www.britannica.com/technology/Bluetooth",
+    "verification_type": "encyclopedia",
+    "complexity_rating": 3,
+    "tags": ["bluetooth", "etymology"]
+  },
+  {
+    "category": "Linguistics & Language",
+    "subcategory": "Orthography",
+    "content": "The most common letter in everyday English text is 'e'.",
+    "verification_source": "https://www.britannica.com/topic/alphabet-writing",
+    "verification_type": "encyclopedia",
+    "complexity_rating": 2,
+    "tags": ["letter_frequency"],
+    "language_concepts": ["orthography"]
+  },
+  {
+    "category": "Linguistics & Language",
+    "subcategory": "Wordplay",
+    "content": "A pangram is a sentence that uses every letter of the alphabet, such as 'The quick brown fox jumps over the lazy dog'.",
+    "verification_source": "https://www.merriam-webster.com/dictionary/pangram",
+    "verification_type": "encyclopedia",
+    "complexity_rating": 2,
+    "tags": ["pangram"],
+    "language_concepts": ["orthography"]
+  },
+  {
+    "category": "Linguistics & Language",
+    "subcategory": "Writing Systems",
+    "content": "Braille represents letters and numbers using patterns of raised dots that are read by touch.",
+    "verification_source": "https://www.britannica.com/topic/Braille-writing-system",
+    "verification_type": "encyclopedia",
+    "complexity_rating": 2,
+    "tags": ["braille"],
+    "language_concepts": ["writing_systems"]
+  },
+  {
+    "category": "Philosophy & Logic",
+    "subcategory": "Ancient Philosophy",
+    "content": "Aristotle was a student of Plato, who in turn was a student of Socrates.",
+    "verification_source": "https://www.britannica.com/biography/Aristotle",
+    "verification_type": "encyclopedia",
+    "complexity_rating": 2,
+    "tags": ["aristotle", "plato", "socrates"]
+  },
+  {
+    "category": "Philosophy & Logic",
+    "subcategory": "Ethics",
+    "content": "Stoicism teaches focusing on what is within one's control and calmly accepting what is not.",
+    "verification_source": "https://plato.stanford.edu/entries/stoicism/",
+    "verification_type": "encyclopedia",
+    "complexity_rating": 3,
+    "tags": ["stoicism"]
+  },
+  {
+    "category": "Philosophy & Logic",
+    "subcategory": "Paradoxes",
+    "content": "Zeno's paradoxes are famous arguments that appear to show, puzzlingly, that motion is impossible.",
+    "verification_source": "https://plato.stanford.edu/entries/paradox-zeno/",
+    "verification_type": "encyclopedia",
+    "complexity_rating": 4,
+    "tags": ["zeno", "paradox"]
+  },
+  {
+    "category": "Mathematics & Logic",
+    "subcategory": "Arithmetic",
+    "content": "An even number is divisible by 2 with no remainder; an odd number is not.",
+    "verification_source": "https://www.britannica.com/science/even-number",
+    "verification_type": "encyclopedia",
+    "complexity_rating": 1,
+    "tags": ["even", "odd"],
+    "math_domains": ["number_theory"]
+  },
+  {
+    "category": "Mathematics & Logic",
+    "subcategory": "Geometry",
+    "content": "The Pythagorean theorem states that in a right triangle, the square of the longest side equals the sum of the squares of the other two.",
+    "verification_source": "https://www.britannica.com/science/Pythagorean-theorem",
+    "verification_type": "encyclopedia",
+    "complexity_rating": 3,
+    "tags": ["pythagorean_theorem"],
+    "math_domains": ["geometry"]
+  },
+  {
+    "category": "Mathematics & Logic",
+    "subcategory": "Arithmetic",
+    "content": "A percentage is simply a fraction expressed out of 100.",
+    "verification_source": "https://www.britannica.com/science/percentage",
+    "verification_type": "encyclopedia",
+    "complexity_rating": 2,
+    "tags": ["percentage"],
+    "math_domains": ["arithmetic"]
+  },
+  {
+    "category": "Physical Sciences",
+    "subcategory": "Materials",
+    "content": "Diamond is the hardest known naturally occurring material.",
+    "verification_source": "https://www.britannica.com/science/diamond-gemstone",
+    "verification_type": "encyclopedia",
+    "complexity_rating": 2,
+    "tags": ["diamond", "hardness"]
+  },
+  {
+    "category": "Physical Sciences",
+    "subcategory": "States of Matter",
+    "content": "Evaporation is the process by which a liquid gradually turns into a gas.",
+    "verification_source": "https://www.britannica.com/science/evaporation",
+    "verification_type": "encyclopedia",
+    "complexity_rating": 2,
+    "tags": ["evaporation"]
+  },
+  {
+    "category": "Physical Sciences",
+    "subcategory": "States of Matter",
+    "content": "The three states of matter most familiar on Earth are solid, liquid, and gas.",
+    "verification_source": "https://www.britannica.com/science/state-of-matter",
+    "verification_type": "encyclopedia",
+    "complexity_rating": 1,
+    "tags": ["states_of_matter"]
+  },
+  {
+    "category": "Life Sciences",
+    "subcategory": "Entomology",
+    "content": "A caterpillar transforms into a butterfly through a process called metamorphosis.",
+    "verification_source": "https://www.britannica.com/science/metamorphosis",
+    "verification_type": "encyclopedia",
+    "complexity_rating": 2,
+    "tags": ["metamorphosis", "butterfly"]
+  },
+  {
+    "category": "Life Sciences",
+    "subcategory": "Marine Biology",
+    "content": "Coral reefs are built over time by tiny animals called coral polyps.",
+    "verification_source": "https://oceanservice.noaa.gov/",
+    "verification_type": "government",
+    "complexity_rating": 3,
+    "tags": ["coral_reefs", "polyps"]
+  },
+  {
+    "category": "Life Sciences",
+    "subcategory": "Botany",
+    "content": "Most of a tree's mass comes from carbon dioxide drawn out of the air, not from the soil.",
+    "verification_source": "https://www.ncbi.nlm.nih.gov/",
+    "verification_type": "peer_reviewed",
+    "complexity_rating": 4,
+    "tags": ["trees", "carbon", "photosynthesis"]
+  },
+  {
+    "category": "Earth & Geosciences",
+    "subcategory": "Geology",
+    "content": "A geyser is a hot spring that periodically erupts, throwing water and steam into the air.",
+    "verification_source": "https://www.usgs.gov/",
+    "verification_type": "government",
+    "complexity_rating": 3,
+    "tags": ["geyser"]
+  },
+  {
+    "category": "Earth & Geosciences",
+    "subcategory": "Geomorphology",
+    "content": "Sand dunes can slowly migrate over time as wind carries their grains from one side to the other.",
+    "verification_source": "https://www.usgs.gov/",
+    "verification_type": "government",
+    "complexity_rating": 3,
+    "tags": ["sand_dunes"]
+  },
+  {
+    "category": "Geopolitics & Civics",
+    "subcategory": "Geography",
+    "content": "Lake Baikal in Russia is the deepest freshwater lake in the world.",
+    "verification_source": "https://www.britannica.com/place/Lake-Baikal",
+    "verification_type": "encyclopedia",
+    "complexity_rating": 3,
+    "tags": ["lake_baikal"]
+  },
+  {
+    "category": "Geopolitics & Civics",
+    "subcategory": "Microstates",
+    "content": "Vatican City issues its own postage stamps and mints its own euro coins.",
+    "verification_source": "https://www.britannica.com/place/Vatican-City",
+    "verification_type": "encyclopedia",
+    "complexity_rating": 3,
+    "tags": ["vatican", "stamps", "coins"]
+  },
+  {
+    "category": "History & Archaeology",
+    "subcategory": "Technology History",
+    "content": "The wheel was invented thousands of years ago; some of the earliest known wheels were used for making pottery before transport.",
+    "verification_source": "https://www.britannica.com/technology/wheel",
+    "verification_type": "encyclopedia",
+    "complexity_rating": 3,
+    "tags": ["wheel", "invention"]
+  },
+  {
+    "category": "History & Archaeology",
+    "subcategory": "Writing Systems",
+    "content": "Ancient Egyptian hieroglyphs were finally deciphered with the help of the Rosetta Stone.",
+    "verification_source": "https://www.britannica.com/topic/Rosetta-Stone",
+    "verification_type": "encyclopedia",
+    "complexity_rating": 3,
+    "tags": ["hieroglyphs", "rosetta_stone"]
+  },
+  {
+    "category": "Arts & Architecture",
+    "subcategory": "Painting",
+    "content": "A fresco is a painting made on wet plaster, so the colours become part of the wall as it dries.",
+    "verification_source": "https://www.britannica.com/art/fresco-painting",
+    "verification_type": "encyclopedia",
+    "complexity_rating": 3,
+    "tags": ["fresco"]
+  },
+  {
+    "category": "Miscellaneous Global Facts",
+    "subcategory": "Everyday Science",
+    "content": "Helium can make a person's voice sound higher because sound travels faster through it than through ordinary air.",
+    "verification_source": "https://www.britannica.com/science/helium-chemical-element",
+    "verification_type": "encyclopedia",
+    "complexity_rating": 3,
+    "tags": ["helium", "voice"]
+  },
+  {
+    "category": "Miscellaneous Global Facts",
+    "subcategory": "Everyday Numbers",
+    "content": "A 'baker's dozen' is 13 — one more than a standard dozen.",
+    "verification_source": "https://www.merriam-webster.com/dictionary/baker%27s%20dozen",
+    "verification_type": "encyclopedia",
+    "complexity_rating": 2,
+    "tags": ["bakers_dozen"],
+    "math_domains": ["number_theory"]
+  },
+  {
+    "category": "Miscellaneous Global Facts",
+    "subcategory": "Symbols",
+    "content": "The '#' symbol is sometimes called an octothorpe.",
+    "verification_source": "https://www.merriam-webster.com/dictionary/octothorpe",
+    "verification_type": "encyclopedia",
+    "complexity_rating": 3,
+    "tags": ["octothorpe", "symbols"]
+  },
+  {
+    "category": "Miscellaneous Global Facts",
+    "subcategory": "Everyday Objects",
+    "content": "The small plastic or metal tip at the end of a shoelace is called an aglet.",
+    "verification_source": "https://www.merriam-webster.com/dictionary/aglet",
+    "verification_type": "encyclopedia",
+    "complexity_rating": 3,
+    "tags": ["aglet"]
+  },
+  {
+    "category": "Miscellaneous Global Facts",
+    "subcategory": "Mathematics",
+    "content": "The infinity symbol, written as a sideways figure eight, is called a lemniscate.",
+    "verification_source": "https://www.britannica.com/science/lemniscate",
+    "verification_type": "encyclopedia",
+    "complexity_rating": 3,
+    "tags": ["lemniscate", "infinity"],
+    "math_domains": ["geometry"]
+  },
+  {
+    "category": "Miscellaneous Global Facts",
+    "subcategory": "Time",
+    "content": "A 'jiffy' is an actual unit of time used in physics, though its exact length depends on the field.",
+    "verification_source": "https://www.britannica.com/science/time",
+    "verification_type": "encyclopedia",
+    "complexity_rating": 3,
+    "tags": ["jiffy", "time"]
+  },
+  {
+    "category": "Philosophy & Logic",
+    "subcategory": "Epistemology",
+    "content": "Epistemology is the branch of philosophy concerned with the nature, sources, and limits of knowledge.",
+    "verification_source": "https://www.britannica.com/topic/epistemology",
+    "verification_type": "encyclopedia",
+    "complexity_rating": 3,
+    "tags": ["epistemology"]
+  },
+  {
+    "category": "Philosophy & Logic",
+    "subcategory": "Existentialism",
+    "content": "Existentialism emphasises individual freedom and the responsibility each person has to create their own meaning.",
+    "verification_source": "https://www.britannica.com/topic/existentialism",
+    "verification_type": "encyclopedia",
+    "complexity_rating": 3,
+    "tags": ["existentialism"]
+  },
+  {
+    "category": "Philosophy & Logic",
+    "subcategory": "Ethics",
+    "content": "The 'golden rule' — treat others as you would like to be treated — appears across many cultures and traditions.",
+    "verification_source": "https://www.britannica.com/topic/golden-rule",
+    "verification_type": "encyclopedia",
+    "complexity_rating": 2,
+    "tags": ["golden_rule"]
+  },
+  {
+    "category": "Health & Medicine",
+    "subcategory": "Anatomy",
+    "content": "The pupil of the eye widens in dim light to let in more light and narrows in bright light.",
+    "verification_source": "https://www.britannica.com/science/pupil-eye",
+    "verification_type": "encyclopedia",
+    "complexity_rating": 2,
+    "tags": ["pupil", "eye"]
+  },
+  {
+    "category": "Health & Medicine",
+    "subcategory": "Nutrition",
+    "content": "The body can produce vitamin D when the skin is exposed to sunlight.",
+    "verification_source": "https://www.britannica.com/science/vitamin-D",
+    "verification_type": "encyclopedia",
+    "complexity_rating": 3,
+    "tags": ["vitamin_d", "sunlight"]
+  },
+  {
+    "category": "Health & Medicine",
+    "subcategory": "Exercise",
+    "content": "Warming up before exercise gradually raises the heart rate and prepares the muscles for activity.",
+    "verification_source": "https://www.britannica.com/science/exercise-physical-fitness",
+    "verification_type": "encyclopedia",
+    "complexity_rating": 2,
+    "tags": ["warm_up", "exercise"]
+  },
+  {
+    "category": "Arts & Architecture",
+    "subcategory": "Colour Theory",
+    "content": "The colours of the visible spectrum are often remembered by the name ROYGBIV: red, orange, yellow, green, blue, indigo, violet.",
+    "verification_source": "https://www.britannica.com/science/colour",
+    "verification_type": "encyclopedia",
+    "complexity_rating": 2,
+    "tags": ["spectrum", "roygbiv"]
+  },
+  {
+    "category": "Arts & Architecture",
+    "subcategory": "Music",
+    "content": "A symphony is usually a large work for orchestra, typically written in several movements.",
+    "verification_source": "https://www.britannica.com/art/symphony",
+    "verification_type": "encyclopedia",
+    "complexity_rating": 3,
+    "tags": ["symphony"]
+  },
+  {
+    "category": "Arts & Architecture",
+    "subcategory": "Crafts",
+    "content": "Origami is the Japanese art of folding paper into decorative or representational shapes.",
+    "verification_source": "https://www.britannica.com/art/origami",
+    "verification_type": "encyclopedia",
+    "complexity_rating": 2,
+    "tags": ["origami"]
+  },
+  {
+    "category": "Mathematics & Logic",
+    "subcategory": "Combinatorics",
+    "content": "Zero factorial (0!) is defined to equal 1.",
+    "verification_source": "https://www.britannica.com/science/factorial",
+    "verification_type": "encyclopedia",
+    "complexity_rating": 3,
+    "tags": ["factorial", "zero"],
+    "math_domains": ["combinatorics"]
+  },
+  {
+    "category": "Mathematics & Logic",
+    "subcategory": "Geometry",
+    "content": "A right angle measures exactly 90 degrees.",
+    "verification_source": "https://www.britannica.com/science/angle-mathematics",
+    "verification_type": "encyclopedia",
+    "complexity_rating": 1,
+    "tags": ["right_angle"],
+    "math_domains": ["geometry"]
+  },
+  {
+    "category": "Mathematics & Logic",
+    "subcategory": "Geometry",
+    "content": "A polygon is named for its number of sides: a pentagon has five, a hexagon six, and an octagon eight.",
+    "verification_source": "https://www.britannica.com/science/polygon",
+    "verification_type": "encyclopedia",
+    "complexity_rating": 2,
+    "tags": ["polygon"],
+    "math_domains": ["geometry"]
+  },
+  {
+    "category": "Physical Sciences",
+    "subcategory": "Electricity",
+    "content": "Static electricity can build up when two materials rub together and transfer electric charge.",
+    "verification_source": "https://www.britannica.com/science/static-electricity",
+    "verification_type": "encyclopedia",
+    "complexity_rating": 2,
+    "tags": ["static_electricity"]
+  },
+  {
+    "category": "Physical Sciences",
+    "subcategory": "Optics",
+    "content": "A glass prism can split white light into the colours of the rainbow by bending each colour by a different amount.",
+    "verification_source": "https://www.britannica.com/science/prism-optics",
+    "verification_type": "encyclopedia",
+    "complexity_rating": 2,
+    "tags": ["prism", "refraction"]
+  },
+  {
+    "category": "Life Sciences",
+    "subcategory": "Zoology",
+    "content": "Whales are mammals, not fish: they breathe air and nurse their young.",
+    "verification_source": "https://www.britannica.com/animal/whale",
+    "verification_type": "encyclopedia",
+    "complexity_rating": 2,
+    "tags": ["whales", "mammals"]
+  },
+  {
+    "category": "Life Sciences",
+    "subcategory": "Zoology",
+    "content": "Spiders are not insects: they have eight legs and two body segments, while insects have six legs and three.",
+    "verification_source": "https://www.britannica.com/animal/spider-arachnid",
+    "verification_type": "encyclopedia",
+    "complexity_rating": 2,
+    "tags": ["spiders", "arachnids"]
+  },
+  {
+    "category": "Earth & Geosciences",
+    "subcategory": "Speleology",
+    "content": "Stalactites hang down from cave ceilings, while stalagmites build up from the cave floor.",
+    "verification_source": "https://www.britannica.com/science/stalactite",
+    "verification_type": "encyclopedia",
+    "complexity_rating": 3,
+    "tags": ["stalactite", "stalagmite"]
+  },
+  {
+    "category": "Earth & Geosciences",
+    "subcategory": "Hydrology",
+    "content": "The water cycle continually moves water between the oceans, the atmosphere, and the land through evaporation and precipitation.",
+    "verification_source": "https://www.usgs.gov/special-topics/water-science-school",
+    "verification_type": "government",
+    "complexity_rating": 2,
+    "tags": ["water_cycle"]
+  },
+  {
+    "category": "Technology & Engineering",
+    "subcategory": "Software",
+    "content": "Open-source software makes its source code freely available for anyone to study, use, and modify.",
+    "verification_source": "https://www.britannica.com/technology/open-source",
+    "verification_type": "encyclopedia",
+    "complexity_rating": 3,
+    "tags": ["open_source"]
+  },
+  {
+    "category": "Geopolitics & Civics",
+    "subcategory": "Geography",
+    "content": "The Prime Meridian, the line of 0 degrees longitude, passes through Greenwich in London.",
+    "verification_source": "https://www.britannica.com/science/Prime-Meridian",
+    "verification_type": "encyclopedia",
+    "complexity_rating": 2,
+    "tags": ["prime_meridian", "greenwich"]
+  },
+  {
+    "category": "Linguistics & Language",
+    "subcategory": "Wordplay",
+    "content": "A palindrome reads the same forwards and backwards, like the word 'level' or 'racecar'.",
+    "verification_source": "https://www.merriam-webster.com/dictionary/palindrome",
+    "verification_type": "encyclopedia",
+    "complexity_rating": 2,
+    "tags": ["palindrome"],
+    "language_concepts": ["wordplay"]
+  },
+  {
+    "category": "History & Archaeology",
+    "subcategory": "Ancient History",
+    "content": "The ancient Olympic Games were held every four years, and that four-year span was called an Olympiad.",
+    "verification_source": "https://www.britannica.com/sports/ancient-Olympic-Games",
+    "verification_type": "encyclopedia",
+    "complexity_rating": 3,
+    "tags": ["olympiad"]
+  },
+  {
+    "category": "History & Archaeology",
+    "subcategory": "Economics History",
+    "content": "Paper money was first used in China, centuries before it came into use in Europe.",
+    "verification_source": "https://www.britannica.com/topic/money",
+    "verification_type": "encyclopedia",
+    "complexity_rating": 3,
+    "tags": ["paper_money", "china"]
+  },
+  {
+    "category": "History & Archaeology",
+    "subcategory": "Ancient Law",
+    "content": "The Code of Hammurabi, from ancient Babylon, is one of the earliest known written sets of laws.",
+    "verification_source": "https://www.britannica.com/topic/Code-of-Hammurabi",
+    "verification_type": "encyclopedia",
+    "complexity_rating": 3,
+    "tags": ["hammurabi", "law"]
+  },
+  {
+    "category": "History & Archaeology",
+    "subcategory": "Medieval History",
+    "content": "The Black Death, a plague pandemic, killed a large fraction of Europe's population in the 14th century.",
+    "verification_source": "https://www.britannica.com/event/Black-Death",
+    "verification_type": "encyclopedia",
+    "complexity_rating": 3,
+    "tags": ["black_death", "plague"]
+  },
+  {
+    "category": "History & Archaeology",
+    "subcategory": "Renaissance",
+    "content": "The Renaissance was a period of renewed interest in art and learning that began in Italy.",
+    "verification_source": "https://www.britannica.com/event/Renaissance",
+    "verification_type": "encyclopedia",
+    "complexity_rating": 2,
+    "tags": ["renaissance"]
+  },
+  {
+    "category": "History & Archaeology",
+    "subcategory": "Ancient History",
+    "content": "The Roman town of Pompeii was buried and preserved under volcanic ash when Mount Vesuvius erupted in 79 CE.",
+    "verification_source": "https://www.britannica.com/place/Pompeii",
+    "verification_type": "encyclopedia",
+    "complexity_rating": 2,
+    "tags": ["pompeii", "vesuvius"]
+  },
+  {
+    "category": "Miscellaneous Global Facts",
+    "subcategory": "Animals",
+    "content": "A group of lions is called a pride.",
+    "verification_source": "https://www.britannica.com/animal/lion",
+    "verification_type": "encyclopedia",
+    "complexity_rating": 1,
+    "tags": ["lions", "collective_noun"]
+  },
+  {
+    "category": "Miscellaneous Global Facts",
+    "subcategory": "Inventions",
+    "content": "Bubble wrap was originally invented as a textured wallpaper before it became packaging material.",
+    "verification_source": "https://www.britannica.com/technology/bubble-wrap",
+    "verification_type": "encyclopedia",
+    "complexity_rating": 3,
+    "tags": ["bubble_wrap", "inventions"]
+  },
+  {
+    "category": "Miscellaneous Global Facts",
+    "subcategory": "Nature",
+    "content": "Honeybees must visit a very large number of flowers to produce even a single jar of honey.",
+    "verification_source": "https://www.britannica.com/animal/honeybee",
+    "verification_type": "encyclopedia",
+    "complexity_rating": 2,
+    "tags": ["honeybees", "honey"]
+  },
+  {
+    "category": "Geopolitics & Civics",
+    "subcategory": "Geography",
+    "content": "Mount Everest sits on the border between Nepal and China.",
+    "verification_source": "https://www.britannica.com/place/Mount-Everest",
+    "verification_type": "encyclopedia",
+    "complexity_rating": 2,
+    "tags": ["everest", "border"]
+  },
+  {
+    "category": "Geopolitics & Civics",
+    "subcategory": "Geography",
+    "content": "Greenland is the world's largest island that is not also a continent.",
+    "verification_source": "https://www.britannica.com/place/Greenland",
+    "verification_type": "encyclopedia",
+    "complexity_rating": 2,
+    "tags": ["greenland", "island"]
+  },
+  {
+    "category": "Earth & Geosciences",
+    "subcategory": "Geomorphology",
+    "content": "The Grand Canyon was carved over millions of years, mainly by the flow of the Colorado River.",
+    "verification_source": "https://www.usgs.gov/",
+    "verification_type": "government",
+    "complexity_rating": 2,
+    "tags": ["grand_canyon", "colorado_river"]
+  },
+  {
+    "category": "Earth & Geosciences",
+    "subcategory": "Oceanography",
+    "content": "Tsunamis are large ocean waves most often triggered by underwater earthquakes.",
+    "verification_source": "https://www.tsunami.gov/",
+    "verification_type": "government",
+    "complexity_rating": 3,
+    "tags": ["tsunami"]
+  },
+  {
+    "category": "Linguistics & Language",
+    "subcategory": "Etymology",
+    "content": "A cognate is a word that shares a common origin with a word in another language, like English 'night' and German 'Nacht'.",
+    "verification_source": "https://www.britannica.com/topic/cognate",
+    "verification_type": "encyclopedia",
+    "complexity_rating": 3,
+    "tags": ["cognate"],
+    "language_concepts": ["etymology"]
+  },
+  {
+    "category": "Linguistics & Language",
+    "subcategory": "Etymology",
+    "content": "Etymology is the study of the origin and history of words.",
+    "verification_source": "https://www.britannica.com/topic/etymology",
+    "verification_type": "encyclopedia",
+    "complexity_rating": 2,
+    "tags": ["etymology"],
+    "language_concepts": ["etymology"]
+  },
+  {
+    "category": "Technology & Engineering",
+    "subcategory": "Computing",
+    "content": "A QR code can store much more information than a traditional one-dimensional barcode.",
+    "verification_source": "https://www.britannica.com/technology/QR-Code",
+    "verification_type": "encyclopedia",
+    "complexity_rating": 2,
+    "tags": ["qr_code", "barcode"]
+  },
+  {
+    "category": "Technology & Engineering",
+    "subcategory": "Computing",
+    "content": "In computing, 'the cloud' refers to servers and services accessed over the internet rather than from a local machine.",
+    "verification_source": "https://www.britannica.com/technology/cloud-computing",
+    "verification_type": "encyclopedia",
+    "complexity_rating": 2,
+    "tags": ["cloud_computing"]
+  },
+  {
+    "category": "Mathematics & Logic",
+    "subcategory": "Fractions",
+    "content": "In a fraction, the top number is the numerator and the bottom number is the denominator.",
+    "verification_source": "https://www.britannica.com/science/fraction-mathematics",
+    "verification_type": "encyclopedia",
+    "complexity_rating": 2,
+    "tags": ["fraction", "numerator", "denominator"],
+    "math_domains": ["arithmetic"]
+  },
+  {
+    "category": "Mathematics & Logic",
+    "subcategory": "Number Theory",
+    "content": "Prime factorisation breaks a whole number down into the prime numbers that multiply together to make it.",
+    "verification_source": "https://www.britannica.com/science/prime",
+    "verification_type": "encyclopedia",
+    "complexity_rating": 3,
+    "tags": ["prime_factorisation"],
+    "math_domains": ["number_theory"]
+  },
+  {
+    "category": "Physical Sciences",
+    "subcategory": "Mechanics",
+    "content": "Friction is the force that resists motion when two surfaces rub against each other.",
+    "verification_source": "https://www.britannica.com/science/friction",
+    "verification_type": "encyclopedia",
+    "complexity_rating": 2,
+    "tags": ["friction"]
+  },
+  {
+    "category": "Physical Sciences",
+    "subcategory": "Mechanics",
+    "content": "Ignoring air resistance, gravity makes all objects fall toward Earth at the same rate regardless of their mass.",
+    "verification_source": "https://www.britannica.com/science/gravity-physics",
+    "verification_type": "encyclopedia",
+    "complexity_rating": 3,
+    "tags": ["gravity", "free_fall"]
+  },
+  {
+    "category": "Life Sciences",
+    "subcategory": "Ecology",
+    "content": "Pollinators such as bees and butterflies help many plants reproduce by carrying pollen between flowers.",
+    "verification_source": "https://www.usda.gov/",
+    "verification_type": "government",
+    "complexity_rating": 2,
+    "tags": ["pollinators"]
+  },
+  {
+    "category": "Health & Medicine",
+    "subcategory": "Public Health",
+    "content": "Regular handwashing is one of the most effective ways to prevent the spread of many illnesses.",
+    "verification_source": "https://www.cdc.gov/handwashing/",
+    "verification_type": "government",
+    "complexity_rating": 2,
+    "tags": ["handwashing", "hygiene"]
+  },
+  {
+    "category": "Arts & Architecture",
+    "subcategory": "Drawing",
+    "content": "Perspective is a drawing technique that creates the illusion of depth and distance on a flat surface.",
+    "verification_source": "https://www.britannica.com/art/perspective-representation",
+    "verification_type": "encyclopedia",
+    "complexity_rating": 3,
+    "tags": ["perspective", "drawing"]
+  },
+  {
+    "category": "Philosophy & Logic",
+    "subcategory": "Logic",
+    "content": "Logic is the study of correct reasoning and what makes an argument valid.",
+    "verification_source": "https://www.britannica.com/topic/logic",
+    "verification_type": "encyclopedia",
+    "complexity_rating": 2,
+    "tags": ["logic", "reasoning"]
+  },
+  {
+    "category": "Physical Sciences",
+    "subcategory": "Atomic Physics",
+    "content": "Atoms are mostly empty space, with nearly all their mass packed into a tiny central nucleus.",
+    "verification_source": "https://www.britannica.com/science/atom",
+    "verification_type": "encyclopedia",
+    "complexity_rating": 3,
+    "tags": ["atom", "nucleus"]
+  },
+  {
+    "category": "Physical Sciences",
+    "subcategory": "Astronomy",
+    "content": "Helium is the second most abundant element in the universe, after hydrogen.",
+    "verification_source": "https://science.nasa.gov/",
+    "verification_type": "government",
+    "complexity_rating": 3,
+    "tags": ["helium", "abundance"]
+  },
+  {
+    "category": "Physical Sciences",
+    "subcategory": "Thermodynamics",
+    "content": "Temperature is a measure of the average kinetic energy of the particles in a substance.",
+    "verification_source": "https://www.britannica.com/science/temperature",
+    "verification_type": "encyclopedia",
+    "complexity_rating": 3,
+    "tags": ["temperature", "kinetic_energy"]
+  },
+  {
+    "category": "Life Sciences",
+    "subcategory": "Immunology",
+    "content": "Antibodies are proteins the immune system makes to recognise and help neutralise specific invaders.",
+    "verification_source": "https://www.britannica.com/science/antibody",
+    "verification_type": "encyclopedia",
+    "complexity_rating": 3,
+    "tags": ["antibodies"]
+  },
+  {
+    "category": "Life Sciences",
+    "subcategory": "Biology",
+    "content": "A species is generally defined as a group of organisms that can interbreed and produce fertile offspring.",
+    "verification_source": "https://www.britannica.com/science/species-taxon",
+    "verification_type": "encyclopedia",
+    "complexity_rating": 3,
+    "tags": ["species"]
+  },
+  {
+    "category": "Life Sciences",
+    "subcategory": "Animal Behaviour",
+    "content": "Migration is the regular, often seasonal, movement of animals from one region to another.",
+    "verification_source": "https://www.britannica.com/science/migration-animal",
+    "verification_type": "encyclopedia",
+    "complexity_rating": 2,
+    "tags": ["migration"]
+  },
+  {
+    "category": "Earth & Geosciences",
+    "subcategory": "Timekeeping",
+    "content": "A leap second is occasionally added to official clocks to keep them in step with Earth's slightly irregular rotation.",
+    "verification_source": "https://www.bipm.org/en/measurement-units",
+    "verification_type": "institution",
+    "complexity_rating": 4,
+    "tags": ["leap_second"]
+  },
+  {
+    "category": "Earth & Geosciences",
+    "subcategory": "Meteorology",
+    "content": "Clouds form when water vapour in the air cools and condenses into tiny droplets or ice crystals.",
+    "verification_source": "https://www.noaa.gov/",
+    "verification_type": "government",
+    "complexity_rating": 2,
+    "tags": ["clouds", "condensation"]
+  },
+  {
+    "category": "Mathematics & Logic",
+    "subcategory": "Geometry",
+    "content": "Parallel lines are lines in a plane that never meet, no matter how far they are extended.",
+    "verification_source": "https://www.britannica.com/science/parallel-mathematics",
+    "verification_type": "encyclopedia",
+    "complexity_rating": 2,
+    "tags": ["parallel_lines"],
+    "math_domains": ["geometry"]
+  },
+  {
+    "category": "Mathematics & Logic",
+    "subcategory": "Statistics",
+    "content": "The mean, or average, of a set of numbers is their sum divided by how many numbers there are.",
+    "verification_source": "https://www.britannica.com/science/mean",
+    "verification_type": "encyclopedia",
+    "complexity_rating": 2,
+    "tags": ["mean", "average"],
+    "math_domains": ["statistics"]
+  },
+  {
+    "category": "Mathematics & Logic",
+    "subcategory": "Number Theory",
+    "content": "Every prime number greater than 2 is odd, because any even number is divisible by 2.",
+    "verification_source": "https://www.britannica.com/science/prime",
+    "verification_type": "encyclopedia",
+    "complexity_rating": 3,
+    "tags": ["primes", "odd"],
+    "math_domains": ["number_theory"]
+  },
+  {
+    "category": "Geopolitics & Civics",
+    "subcategory": "Geography",
+    "content": "Brazil is the largest country in South America by both area and population.",
+    "verification_source": "https://www.britannica.com/place/Brazil",
+    "verification_type": "encyclopedia",
+    "complexity_rating": 2,
+    "tags": ["brazil"]
+  },
+  {
+    "category": "Geopolitics & Civics",
+    "subcategory": "International Relations",
+    "content": "The United Nations has six official languages: Arabic, Chinese, English, French, Russian, and Spanish.",
+    "verification_source": "https://www.un.org/",
+    "verification_type": "institution",
+    "complexity_rating": 3,
+    "tags": ["united_nations", "languages"]
+  },
+  {
+    "category": "History & Archaeology",
+    "subcategory": "Medieval History",
+    "content": "The Magna Carta, agreed in 1215, limited the power of the English king and influenced later ideas about rights.",
+    "verification_source": "https://www.britannica.com/topic/Magna-Carta",
+    "verification_type": "encyclopedia",
+    "complexity_rating": 3,
+    "tags": ["magna_carta"]
+  },
+  {
+    "category": "History & Archaeology",
+    "subcategory": "Technology History",
+    "content": "The first sustained, powered, controlled airplane flight was made by the Wright brothers in 1903.",
+    "verification_source": "https://www.britannica.com/biography/Wright-brothers",
+    "verification_type": "encyclopedia",
+    "complexity_rating": 2,
+    "tags": ["wright_brothers", "aviation"]
+  },
+  {
+    "category": "Technology & Engineering",
+    "subcategory": "Security",
+    "content": "A firewall is a security system that monitors and controls the traffic flowing in and out of a network.",
+    "verification_source": "https://www.britannica.com/technology/firewall",
+    "verification_type": "encyclopedia",
+    "complexity_rating": 3,
+    "tags": ["firewall"]
+  },
+  {
+    "category": "Technology & Engineering",
+    "subcategory": "Hardware",
+    "content": "Many touchscreens locate a finger by sensing tiny changes in electrical charge where it touches the display.",
+    "verification_source": "https://www.britannica.com/technology/touch-screen",
+    "verification_type": "encyclopedia",
+    "complexity_rating": 3,
+    "tags": ["touchscreen"]
+  },
+  {
+    "category": "Linguistics & Language",
+    "subcategory": "Semantics",
+    "content": "An idiom is a phrase whose meaning cannot be worked out from its individual words, like 'break a leg'.",
+    "verification_source": "https://www.britannica.com/topic/idiom",
+    "verification_type": "encyclopedia",
+    "complexity_rating": 3,
+    "tags": ["idiom"],
+    "language_concepts": ["semantics"]
+  },
+  {
+    "category": "Linguistics & Language",
+    "subcategory": "Writing Systems",
+    "content": "Most writing systems are read left to right, but Arabic and Hebrew are read right to left.",
+    "verification_source": "https://www.britannica.com/topic/writing",
+    "verification_type": "encyclopedia",
+    "complexity_rating": 2,
+    "tags": ["writing_direction"],
+    "language_concepts": ["writing_systems"]
+  },
+  {
+    "category": "Health & Medicine",
+    "subcategory": "Physiology",
+    "content": "Sleep helps the brain consolidate memories and gives the body time to repair itself.",
+    "verification_source": "https://www.britannica.com/science/sleep",
+    "verification_type": "encyclopedia",
+    "complexity_rating": 2,
+    "tags": ["sleep", "memory"]
+  },
+  {
+    "category": "Health & Medicine",
+    "subcategory": "Anatomy",
+    "content": "The skin is the largest organ of the human body.",
+    "verification_source": "https://www.britannica.com/science/human-skin",
+    "verification_type": "encyclopedia",
+    "complexity_rating": 1,
+    "tags": ["skin"]
+  },
+  {
+    "category": "Arts & Architecture",
+    "subcategory": "Sculpture",
+    "content": "Sculpture can be made by carving material away, as in stone, or by building it up, as with clay.",
+    "verification_source": "https://www.britannica.com/art/sculpture",
+    "verification_type": "encyclopedia",
+    "complexity_rating": 2,
+    "tags": ["sculpture"]
+  },
+  {
+    "category": "Philosophy & Logic",
+    "subcategory": "Logic",
+    "content": "A paradox is a statement that seems to contradict itself, yet may point to a deeper truth.",
+    "verification_source": "https://www.britannica.com/topic/paradox",
+    "verification_type": "encyclopedia",
+    "complexity_rating": 3,
+    "tags": ["paradox"]
+  },
+  {
+    "category": "Miscellaneous Global Facts",
+    "subcategory": "Architecture",
+    "content": "The Eiffel Tower was originally intended to be a temporary structure for a world's fair.",
+    "verification_source": "https://www.britannica.com/topic/Eiffel-Tower-Paris-France",
+    "verification_type": "encyclopedia",
+    "complexity_rating": 3,
+    "tags": ["eiffel_tower"]
+  },
+  {
+    "category": "Miscellaneous Global Facts",
+    "subcategory": "Astronomy",
+    "content": "A light-year measures distance, not time: it is how far light travels in one year.",
+    "verification_source": "https://science.nasa.gov/",
+    "verification_type": "government",
+    "complexity_rating": 2,
+    "tags": ["light_year"]
+  },
+  {
+    "category": "Physical Sciences",
+    "subcategory": "Magnetism",
+    "content": "A magnet's pull is strongest at its poles.",
+    "verification_source": "https://www.britannica.com/science/magnet",
+    "verification_type": "encyclopedia",
+    "complexity_rating": 2,
+    "tags": ["magnet", "poles"]
+  },
+  {
+    "category": "Physical Sciences",
+    "subcategory": "Optics",
+    "content": "Combining all the colours of light together produces white light.",
+    "verification_source": "https://www.britannica.com/science/colour",
+    "verification_type": "encyclopedia",
+    "complexity_rating": 2,
+    "tags": ["light", "colour"]
+  },
+  {
+    "category": "Life Sciences",
+    "subcategory": "Animal Behaviour",
+    "content": "Nocturnal animals are active mainly at night and rest during the day.",
+    "verification_source": "https://www.britannica.com/science/nocturnal-activity",
+    "verification_type": "encyclopedia",
+    "complexity_rating": 2,
+    "tags": ["nocturnal"]
+  },
+  {
+    "category": "Life Sciences",
+    "subcategory": "Zoology",
+    "content": "Some lizards can shed and later regrow their tails to escape predators.",
+    "verification_source": "https://www.britannica.com/animal/lizard",
+    "verification_type": "encyclopedia",
+    "complexity_rating": 3,
+    "tags": ["lizard", "regeneration"]
+  },
+  {
+    "category": "Life Sciences",
+    "subcategory": "Cell Biology",
+    "content": "The cells of the human body are continually replaced as old ones die and new ones are produced.",
+    "verification_source": "https://www.britannica.com/science/cell-biology",
+    "verification_type": "encyclopedia",
+    "complexity_rating": 3,
+    "tags": ["cells", "renewal"]
+  },
+  {
+    "category": "Earth & Geosciences",
+    "subcategory": "Seismology",
+    "content": "The strength of an earthquake is reported using scales such as the moment magnitude scale.",
+    "verification_source": "https://www.usgs.gov/programs/earthquake-hazards",
+    "verification_type": "government",
+    "complexity_rating": 3,
+    "tags": ["earthquake", "magnitude"]
+  },
+  {
+    "category": "Earth & Geosciences",
+    "subcategory": "Hydrology",
+    "content": "Most of Earth's fresh water is locked away frozen in ice caps and glaciers.",
+    "verification_source": "https://www.usgs.gov/special-topics/water-science-school",
+    "verification_type": "government",
+    "complexity_rating": 2,
+    "tags": ["fresh_water", "glaciers"]
+  },
+  {
+    "category": "Mathematics & Logic",
+    "subcategory": "Geometry",
+    "content": "A shape has symmetry if it looks the same after being flipped, turned, or slid.",
+    "verification_source": "https://www.britannica.com/science/symmetry-physics",
+    "verification_type": "encyclopedia",
+    "complexity_rating": 2,
+    "tags": ["symmetry"],
+    "math_domains": ["geometry"]
+  },
+  {
+    "category": "Mathematics & Logic",
+    "subcategory": "Geometry",
+    "content": "A square is a special rectangle whose four sides are all equal in length.",
+    "verification_source": "https://www.britannica.com/science/square-mathematics",
+    "verification_type": "encyclopedia",
+    "complexity_rating": 1,
+    "tags": ["square", "rectangle"],
+    "math_domains": ["geometry"]
+  },
+  {
+    "category": "Mathematics & Logic",
+    "subcategory": "Arithmetic",
+    "content": "Negative numbers are less than zero and are written with a minus sign in front.",
+    "verification_source": "https://www.britannica.com/science/negative-number",
+    "verification_type": "encyclopedia",
+    "complexity_rating": 2,
+    "tags": ["negative_numbers"],
+    "math_domains": ["arithmetic"]
+  },
+  {
+    "category": "Geopolitics & Civics",
+    "subcategory": "Geography",
+    "content": "The Amazon River carries more water than any other river in the world.",
+    "verification_source": "https://www.britannica.com/place/Amazon-River",
+    "verification_type": "encyclopedia",
+    "complexity_rating": 3,
+    "tags": ["amazon_river"]
+  },
+  {
+    "category": "Geopolitics & Civics",
+    "subcategory": "Demographics",
+    "content": "The Tokyo metropolitan area is one of the most populous urban regions on Earth.",
+    "verification_source": "https://www.britannica.com/place/Tokyo",
+    "verification_type": "encyclopedia",
+    "complexity_rating": 2,
+    "tags": ["tokyo"]
+  },
+  {
+    "category": "History & Archaeology",
+    "subcategory": "Modern History",
+    "content": "The Great Fire of London in 1666 destroyed much of the medieval centre of the city.",
+    "verification_source": "https://www.britannica.com/event/Great-Fire-of-London",
+    "verification_type": "encyclopedia",
+    "complexity_rating": 3,
+    "tags": ["great_fire_london"]
+  },
+  {
+    "category": "History & Archaeology",
+    "subcategory": "Ancient Civilizations",
+    "content": "The ancient Maya developed a sophisticated calendar system and their own writing.",
+    "verification_source": "https://www.britannica.com/topic/Maya-people",
+    "verification_type": "encyclopedia",
+    "complexity_rating": 3,
+    "tags": ["maya", "calendar"]
+  },
+  {
+    "category": "Technology & Engineering",
+    "subcategory": "Communications",
+    "content": "GPS, Wi-Fi, and Bluetooth all use radio waves to send information without wires.",
+    "verification_source": "https://www.britannica.com/science/radio-wave",
+    "verification_type": "encyclopedia",
+    "complexity_rating": 2,
+    "tags": ["radio_waves", "wireless"]
+  },
+  {
+    "category": "Technology & Engineering",
+    "subcategory": "Internet",
+    "content": "A web cookie is a small file a website stores on your device to remember information between visits.",
+    "verification_source": "https://www.britannica.com/technology/cookie",
+    "verification_type": "encyclopedia",
+    "complexity_rating": 3,
+    "tags": ["cookie", "web"]
+  },
+  {
+    "category": "Linguistics & Language",
+    "subcategory": "Sign Language",
+    "content": "Sign language users convey tone and emphasis through facial expressions and movement, not just hand shapes.",
+    "verification_source": "https://www.britannica.com/topic/sign-language",
+    "verification_type": "encyclopedia",
+    "complexity_rating": 3,
+    "tags": ["sign_language"],
+    "language_concepts": ["pragmatics"]
+  },
+  {
+    "category": "Linguistics & Language",
+    "subcategory": "Phonology",
+    "content": "Tonal languages, such as Mandarin Chinese, use changes in pitch to distinguish the meanings of words.",
+    "verification_source": "https://www.britannica.com/topic/tone-linguistics",
+    "verification_type": "encyclopedia",
+    "complexity_rating": 3,
+    "tags": ["tonal_languages"],
+    "language_concepts": ["phonology"]
+  },
+  {
+    "category": "Health & Medicine",
+    "subcategory": "Physiology",
+    "content": "Drinking enough water helps the body regulate its temperature and carry nutrients to cells.",
+    "verification_source": "https://www.britannica.com/science/human-nutrition",
+    "verification_type": "encyclopedia",
+    "complexity_rating": 2,
+    "tags": ["hydration"]
+  },
+  {
+    "category": "Health & Medicine",
+    "subcategory": "Anatomy",
+    "content": "The heart pumps blood through a network of arteries, veins, and tiny capillaries.",
+    "verification_source": "https://www.britannica.com/science/cardiovascular-system",
+    "verification_type": "encyclopedia",
+    "complexity_rating": 2,
+    "tags": ["heart", "circulation"]
+  },
+  {
+    "category": "Arts & Architecture",
+    "subcategory": "Photography",
+    "content": "Photography captures an image by letting light fall onto a light-sensitive surface or electronic sensor.",
+    "verification_source": "https://www.britannica.com/technology/photography",
+    "verification_type": "encyclopedia",
+    "complexity_rating": 2,
+    "tags": ["photography"]
+  },
+  {
+    "category": "Philosophy & Logic",
+    "subcategory": "Ethics",
+    "content": "Ethics is the branch of philosophy that examines what is morally right and wrong.",
+    "verification_source": "https://www.britannica.com/topic/ethics-philosophy",
+    "verification_type": "encyclopedia",
+    "complexity_rating": 2,
+    "tags": ["ethics"]
+  },
+  {
+    "category": "Miscellaneous Global Facts",
+    "subcategory": "Geography",
+    "content": "Antarctica has no permanent human residents — only researchers and support staff who stay temporarily.",
+    "verification_source": "https://www.britannica.com/place/Antarctica",
+    "verification_type": "encyclopedia",
+    "complexity_rating": 2,
+    "tags": ["antarctica"]
+  },
+  {
+    "category": "Miscellaneous Global Facts",
+    "subcategory": "Measurement",
+    "content": "The metric system of measurement is used by the great majority of countries in the world.",
+    "verification_source": "https://www.bipm.org/en/measurement-units",
+    "verification_type": "institution",
+    "complexity_rating": 2,
+    "tags": ["metric_system"]
+  },
+  {
+    "category": "Miscellaneous Global Facts",
+    "subcategory": "Time",
+    "content": "A decade is ten years, a century is one hundred years, and a millennium is one thousand years.",
+    "verification_source": "https://www.merriam-webster.com/dictionary/decade",
+    "verification_type": "encyclopedia",
+    "complexity_rating": 1,
+    "tags": ["decade", "century"]
+  },
+  {
+    "category": "Physical Sciences",
+    "subcategory": "Acoustics",
+    "content": "An echo is simply sound reflecting off a distant surface and returning to the listener.",
+    "verification_source": "https://www.britannica.com/science/echo-sound",
+    "verification_type": "encyclopedia",
+    "complexity_rating": 2,
+    "tags": ["echo", "sound"]
+  },
+  {
+    "category": "Physical Sciences",
+    "subcategory": "Energy",
+    "content": "Solar panels convert sunlight directly into electricity.",
+    "verification_source": "https://www.energy.gov/",
+    "verification_type": "government",
+    "complexity_rating": 2,
+    "tags": ["solar_panels"]
+  },
+  {
+    "category": "Physical Sciences",
+    "subcategory": "Matter",
+    "content": "Density describes how much mass is packed into a given volume of a substance.",
+    "verification_source": "https://www.britannica.com/science/density",
+    "verification_type": "encyclopedia",
+    "complexity_rating": 3,
+    "tags": ["density"]
+  },
+  {
+    "category": "Life Sciences",
+    "subcategory": "Zoology",
+    "content": "Frogs begin life as tadpoles that breathe with gills before developing lungs and legs.",
+    "verification_source": "https://www.britannica.com/animal/frog",
+    "verification_type": "encyclopedia",
+    "complexity_rating": 2,
+    "tags": ["frogs", "tadpoles"]
+  },
+  {
+    "category": "Life Sciences",
+    "subcategory": "Zoology",
+    "content": "Bats are the only mammals capable of true sustained flight.",
+    "verification_source": "https://www.britannica.com/animal/bat-mammal",
+    "verification_type": "encyclopedia",
+    "complexity_rating": 2,
+    "tags": ["bats", "flight"]
+  },
+  {
+    "category": "Earth & Geosciences",
+    "subcategory": "Geomorphology",
+    "content": "Rivers carry sediment that can build up into fertile deltas where they reach the sea.",
+    "verification_source": "https://www.usgs.gov/",
+    "verification_type": "government",
+    "complexity_rating": 3,
+    "tags": ["delta", "sediment"]
+  },
+  {
+    "category": "Earth & Geosciences",
+    "subcategory": "Astronomy",
+    "content": "Earth's seasons are caused by the tilt of its axis as the planet orbits the Sun.",
+    "verification_source": "https://science.nasa.gov/",
+    "verification_type": "government",
+    "complexity_rating": 2,
+    "tags": ["seasons", "axial_tilt"]
+  },
+  {
+    "category": "Mathematics & Logic",
+    "subcategory": "Geometry",
+    "content": "The perimeter of a shape is the total distance around its outer edges.",
+    "verification_source": "https://www.britannica.com/science/perimeter",
+    "verification_type": "encyclopedia",
+    "complexity_rating": 1,
+    "tags": ["perimeter"],
+    "math_domains": ["geometry"]
+  },
+  {
+    "category": "Mathematics & Logic",
+    "subcategory": "Arithmetic",
+    "content": "Multiplication can be seen as repeated addition: 3 times 4 is the same as 4 plus 4 plus 4.",
+    "verification_source": "https://www.britannica.com/science/multiplication",
+    "verification_type": "encyclopedia",
+    "complexity_rating": 1,
+    "tags": ["multiplication"],
+    "math_domains": ["arithmetic"]
+  },
+  {
+    "category": "Mathematics & Logic",
+    "subcategory": "Geometry",
+    "content": "The area of a rectangle is found by multiplying its length by its width.",
+    "verification_source": "https://www.britannica.com/science/area",
+    "verification_type": "encyclopedia",
+    "complexity_rating": 2,
+    "tags": ["area", "rectangle"],
+    "math_domains": ["geometry"]
+  },
+  {
+    "category": "Geopolitics & Civics",
+    "subcategory": "International Relations",
+    "content": "Switzerland is well known for its long-standing policy of neutrality in international conflicts.",
+    "verification_source": "https://www.britannica.com/place/Switzerland",
+    "verification_type": "encyclopedia",
+    "complexity_rating": 2,
+    "tags": ["switzerland", "neutrality"]
+  },
+  {
+    "category": "Geopolitics & Civics",
+    "subcategory": "Geography",
+    "content": "The Nile flows northward through northeastern Africa.",
+    "verification_source": "https://www.britannica.com/place/Nile-River",
+    "verification_type": "encyclopedia",
+    "complexity_rating": 2,
+    "tags": ["nile"]
+  },
+  {
+    "category": "History & Archaeology",
+    "subcategory": "Modern History",
+    "content": "The Industrial Revolution, beginning in the 18th century, transformed manufacturing through the use of machines.",
+    "verification_source": "https://www.britannica.com/event/Industrial-Revolution",
+    "verification_type": "encyclopedia",
+    "complexity_rating": 3,
+    "tags": ["industrial_revolution"]
+  },
+  {
+    "category": "History & Archaeology",
+    "subcategory": "Trade History",
+    "content": "The ancient Silk Road was a network of trade routes that connected Asia with Europe.",
+    "verification_source": "https://www.britannica.com/topic/Silk-Road-trade-route",
+    "verification_type": "encyclopedia",
+    "complexity_rating": 3,
+    "tags": ["silk_road"]
+  },
+  {
+    "category": "Technology & Engineering",
+    "subcategory": "Robotics",
+    "content": "A robot is a machine that can be programmed to carry out tasks automatically.",
+    "verification_source": "https://www.britannica.com/technology/robot-technology",
+    "verification_type": "encyclopedia",
+    "complexity_rating": 2,
+    "tags": ["robot"]
+  },
+  {
+    "category": "Technology & Engineering",
+    "subcategory": "Energy",
+    "content": "Solar-powered calculators can run on light alone, with no batteries required.",
+    "verification_source": "https://www.britannica.com/technology/calculator",
+    "verification_type": "encyclopedia",
+    "complexity_rating": 2,
+    "tags": ["solar_calculator"]
+  },
+  {
+    "category": "Linguistics & Language",
+    "subcategory": "Sociolinguistics",
+    "content": "A dialect is a regional or social variety of a language with its own words and pronunciations.",
+    "verification_source": "https://www.britannica.com/topic/dialect",
+    "verification_type": "encyclopedia",
+    "complexity_rating": 3,
+    "tags": ["dialect"],
+    "language_concepts": ["sociolinguistics"]
+  },
+  {
+    "category": "Linguistics & Language",
+    "subcategory": "Writing",
+    "content": "Punctuation marks help show the structure and intended meaning of written sentences.",
+    "verification_source": "https://www.britannica.com/topic/punctuation",
+    "verification_type": "encyclopedia",
+    "complexity_rating": 2,
+    "tags": ["punctuation"],
+    "language_concepts": ["writing_systems"]
+  },
+  {
+    "category": "Health & Medicine",
+    "subcategory": "Anatomy",
+    "content": "Teeth are coated in enamel, the hardest substance in the human body.",
+    "verification_source": "https://www.britannica.com/science/tooth-anatomy",
+    "verification_type": "encyclopedia",
+    "complexity_rating": 2,
+    "tags": ["teeth", "enamel"]
+  },
+  {
+    "category": "Health & Medicine",
+    "subcategory": "Fitness",
+    "content": "Regular exercise strengthens the heart and improves the body's blood circulation.",
+    "verification_source": "https://www.britannica.com/science/exercise-physical-fitness",
+    "verification_type": "encyclopedia",
+    "complexity_rating": 2,
+    "tags": ["exercise", "heart"]
+  },
+  {
+    "category": "Arts & Architecture",
+    "subcategory": "Painting",
+    "content": "A mural is a large painting made directly onto a wall or ceiling.",
+    "verification_source": "https://www.britannica.com/art/mural",
+    "verification_type": "encyclopedia",
+    "complexity_rating": 2,
+    "tags": ["mural"]
+  },
+  {
+    "category": "Philosophy & Logic",
+    "subcategory": "Aesthetics",
+    "content": "Aesthetics is the branch of philosophy concerned with beauty, art, and taste.",
+    "verification_source": "https://www.britannica.com/topic/aesthetics",
+    "verification_type": "encyclopedia",
+    "complexity_rating": 3,
+    "tags": ["aesthetics"]
+  },
+  {
+    "category": "Miscellaneous Global Facts",
+    "subcategory": "Monuments",
+    "content": "The Statue of Liberty was a gift from the people of France to the United States.",
+    "verification_source": "https://www.britannica.com/topic/Statue-of-Liberty",
+    "verification_type": "encyclopedia",
+    "complexity_rating": 2,
+    "tags": ["statue_of_liberty"]
+  },
+  {
+    "category": "Miscellaneous Global Facts",
+    "subcategory": "Weather",
+    "content": "A rainbow always appears in the part of the sky opposite the Sun.",
+    "verification_source": "https://www.noaa.gov/",
+    "verification_type": "government",
+    "complexity_rating": 3,
+    "tags": ["rainbow"]
+  },
+  {
+    "category": "Physical Sciences",
+    "subcategory": "Chemistry",
+    "content": "Mixing an acid with a base can neutralise both, often producing water and a salt.",
+    "verification_source": "https://www.britannica.com/science/acid-base-reaction",
+    "verification_type": "encyclopedia",
+    "complexity_rating": 3,
+    "tags": ["acid", "base", "neutralisation"]
+  },
+  {
+    "category": "Mathematics & Logic",
+    "subcategory": "Analysis",
+    "content": "Euler's identity, e raised to the i-pi power plus 1 equals 0, links five of the most important constants in mathematics.",
+    "verification_source": "https://www.britannica.com/science/Euler-identity",
+    "verification_type": "encyclopedia",
+    "complexity_rating": 5,
+    "tags": ["eulers_identity"],
+    "math_domains": ["complex_analysis"]
+  },
+  {
+    "category": "Mathematics & Logic",
+    "subcategory": "Calculus",
+    "content": "A function is continuous if arbitrarily small changes in its input produce small changes in its output.",
+    "verification_source": "https://www.britannica.com/science/continuity-mathematics",
+    "verification_type": "encyclopedia",
+    "complexity_rating": 4,
+    "tags": ["continuity"],
+    "math_domains": ["calculus"]
+  },
+  {
+    "category": "Mathematics & Logic",
+    "subcategory": "Abstract Algebra",
+    "content": "In abstract algebra, a group is a set with an operation satisfying closure, associativity, an identity element, and inverses.",
+    "verification_source": "https://www.britannica.com/science/group-theory",
+    "verification_type": "encyclopedia",
+    "complexity_rating": 5,
+    "tags": ["group_theory"],
+    "math_domains": ["abstract_algebra"]
+  },
+  {
+    "category": "Mathematics & Logic",
+    "subcategory": "Calculus",
+    "content": "The derivative of a function measures its instantaneous rate of change.",
+    "verification_source": "https://www.britannica.com/science/derivative-mathematics",
+    "verification_type": "encyclopedia",
+    "complexity_rating": 4,
+    "tags": ["derivative"],
+    "math_domains": ["calculus"]
+  },
+  {
+    "category": "Mathematics & Logic",
+    "subcategory": "Linear Algebra",
+    "content": "A matrix is a rectangular array of numbers often used to represent linear transformations.",
+    "verification_source": "https://www.britannica.com/science/matrix-mathematics",
+    "verification_type": "encyclopedia",
+    "complexity_rating": 4,
+    "tags": ["matrix"],
+    "math_domains": ["linear_algebra"]
+  },
+  {
+    "category": "Mathematics & Logic",
+    "subcategory": "Probability",
+    "content": "Probability theory provides the mathematical foundation for statistics and the analysis of risk.",
+    "verification_source": "https://www.britannica.com/science/probability-theory",
+    "verification_type": "encyclopedia",
+    "complexity_rating": 4,
+    "tags": ["probability_theory"],
+    "math_domains": ["statistics"]
+  },
+  {
+    "category": "Physical Sciences",
+    "subcategory": "Relativity",
+    "content": "Einstein's general theory of relativity describes gravity as the curving of spacetime by mass and energy.",
+    "verification_source": "https://science.nasa.gov/",
+    "verification_type": "government",
+    "complexity_rating": 5,
+    "tags": ["general_relativity", "spacetime"]
+  },
+  {
+    "category": "Physical Sciences",
+    "subcategory": "Quantum Mechanics",
+    "content": "The Heisenberg uncertainty principle says a particle's position and momentum cannot both be known with perfect precision.",
+    "verification_source": "https://www.britannica.com/science/uncertainty-principle",
+    "verification_type": "encyclopedia",
+    "complexity_rating": 5,
+    "tags": ["uncertainty_principle"]
+  },
+  {
+    "category": "Physical Sciences",
+    "subcategory": "Thermodynamics",
+    "content": "Entropy is a measure of disorder, or of the energy in a system that is unavailable to do useful work.",
+    "verification_source": "https://www.britannica.com/science/entropy-physics",
+    "verification_type": "encyclopedia",
+    "complexity_rating": 4,
+    "tags": ["entropy"]
+  },
+  {
+    "category": "Physical Sciences",
+    "subcategory": "Condensed Matter",
+    "content": "Superconductors can carry electric current with zero resistance once cooled below a critical temperature.",
+    "verification_source": "https://www.britannica.com/science/superconductivity",
+    "verification_type": "encyclopedia",
+    "complexity_rating": 5,
+    "tags": ["superconductivity"]
+  },
+  {
+    "category": "Physical Sciences",
+    "subcategory": "Particle Physics",
+    "content": "Antimatter is made of particles with the same mass as ordinary matter but opposite electric charge.",
+    "verification_source": "https://www.britannica.com/science/antimatter",
+    "verification_type": "encyclopedia",
+    "complexity_rating": 4,
+    "tags": ["antimatter"]
+  },
+  {
+    "category": "Physical Sciences",
+    "subcategory": "Waves",
+    "content": "The Doppler effect is the change in a wave's observed frequency when its source and the observer move relative to each other.",
+    "verification_source": "https://www.britannica.com/science/Doppler-effect",
+    "verification_type": "encyclopedia",
+    "complexity_rating": 4,
+    "tags": ["doppler_effect"]
+  },
+  {
+    "category": "Physical Sciences",
+    "subcategory": "Nuclear Physics",
+    "content": "Nuclear fusion powers the Sun by combining hydrogen nuclei into helium and releasing enormous energy.",
+    "verification_source": "https://science.nasa.gov/sun/",
+    "verification_type": "government",
+    "complexity_rating": 4,
+    "tags": ["nuclear_fusion"]
+  },
+  {
+    "category": "Physical Sciences",
+    "subcategory": "Astrophysics",
+    "content": "A black hole's gravity is so strong that not even light can escape from beyond its event horizon.",
+    "verification_source": "https://science.nasa.gov/universe/black-holes/",
+    "verification_type": "government",
+    "complexity_rating": 4,
+    "tags": ["black_hole", "event_horizon"]
+  },
+  {
+    "category": "Physical Sciences",
+    "subcategory": "Chemistry",
+    "content": "The periodic table arranges the chemical elements by atomic number and groups those with similar properties.",
+    "verification_source": "https://www.britannica.com/science/periodic-table",
+    "verification_type": "encyclopedia",
+    "complexity_rating": 3,
+    "tags": ["periodic_table"]
+  },
+  {
+    "category": "Life Sciences",
+    "subcategory": "Cell Biology",
+    "content": "Mitochondria, often called the powerhouse of the cell, generate most of a cell's usable chemical energy.",
+    "verification_source": "https://www.britannica.com/science/mitochondrion",
+    "verification_type": "encyclopedia",
+    "complexity_rating": 3,
+    "tags": ["mitochondria"]
+  },
+  {
+    "category": "Life Sciences",
+    "subcategory": "Evolution",
+    "content": "Natural selection is the process by which traits that improve survival and reproduction become more common over generations.",
+    "verification_source": "https://www.britannica.com/science/natural-selection",
+    "verification_type": "encyclopedia",
+    "complexity_rating": 3,
+    "tags": ["natural_selection"]
+  },
+  {
+    "category": "Life Sciences",
+    "subcategory": "Genetics",
+    "content": "CRISPR is a tool that allows scientists to edit DNA at precise, targeted locations.",
+    "verification_source": "https://www.ncbi.nlm.nih.gov/",
+    "verification_type": "peer_reviewed",
+    "complexity_rating": 5,
+    "tags": ["crispr", "gene_editing"]
+  },
+  {
+    "category": "Life Sciences",
+    "subcategory": "Biochemistry",
+    "content": "Enzymes are biological catalysts that speed up chemical reactions in living organisms.",
+    "verification_source": "https://www.britannica.com/science/enzyme",
+    "verification_type": "encyclopedia",
+    "complexity_rating": 4,
+    "tags": ["enzymes"]
+  },
+  {
+    "category": "Earth & Geosciences",
+    "subcategory": "Geophysics",
+    "content": "Plate tectonics explains how Earth's rigid outer shell is broken into large plates that slowly move.",
+    "verification_source": "https://www.usgs.gov/",
+    "verification_type": "government",
+    "complexity_rating": 3,
+    "tags": ["plate_tectonics"]
+  },
+  {
+    "category": "Technology & Engineering",
+    "subcategory": "Cryptography",
+    "content": "Public-key cryptography uses a pair of keys — one to encrypt a message and a different one to decrypt it.",
+    "verification_source": "https://www.britannica.com/topic/cryptography",
+    "verification_type": "encyclopedia",
+    "complexity_rating": 5,
+    "tags": ["public_key_cryptography"]
+  },
+  {
+    "category": "Technology & Engineering",
+    "subcategory": "Artificial Intelligence",
+    "content": "Machine learning lets computer systems improve at a task by finding patterns in data rather than being explicitly programmed.",
+    "verification_source": "https://www.britannica.com/technology/machine-learning",
+    "verification_type": "encyclopedia",
+    "complexity_rating": 4,
+    "tags": ["machine_learning"]
+  },
+  {
+    "category": "Philosophy & Logic",
+    "subcategory": "Formal Logic",
+    "content": "Formal logic uses symbols to represent the structure of arguments so their validity can be analysed precisely.",
+    "verification_source": "https://www.britannica.com/topic/formal-logic",
+    "verification_type": "encyclopedia",
+    "complexity_rating": 4,
+    "tags": ["formal_logic"]
+  },
+  {
+    "category": "Philosophy & Logic",
+    "subcategory": "Philosophy of Mind",
+    "content": "The mind-body problem asks how mental states relate to the physical processes of the brain.",
+    "verification_source": "https://plato.stanford.edu/entries/mind-identity/",
+    "verification_type": "encyclopedia",
+    "complexity_rating": 4,
+    "tags": ["mind_body_problem"]
+  },
+  {
+    "category": "Linguistics & Language",
+    "subcategory": "Syntax",
+    "content": "Syntax is the set of rules that governs how words combine into phrases and sentences.",
+    "verification_source": "https://www.britannica.com/topic/syntax",
+    "verification_type": "encyclopedia",
+    "complexity_rating": 4,
+    "tags": ["syntax"],
+    "language_concepts": ["syntax"]
+  },
+  {
+    "category": "Physical Sciences",
+    "subcategory": "Nuclear Physics",
+    "content": "Radioactive elements decay over time, and each has a characteristic half-life — the time for half of a sample to decay.",
+    "verification_source": "https://www.britannica.com/science/half-life-radioactivity",
+    "verification_type": "encyclopedia",
+    "complexity_rating": 4,
+    "tags": ["radioactivity", "half_life"]
+  },
+  {
+    "category": "Physical Sciences",
+    "subcategory": "Optics",
+    "content": "A laser produces a narrow, focused beam of light of a single colour, with its waves marching in step.",
+    "verification_source": "https://www.britannica.com/technology/laser",
+    "verification_type": "encyclopedia",
+    "complexity_rating": 3,
+    "tags": ["laser"]
+  },
+  {
+    "category": "Physical Sciences",
+    "subcategory": "Energy",
+    "content": "The law of conservation of energy states that energy cannot be created or destroyed, only changed from one form to another.",
+    "verification_source": "https://www.britannica.com/science/conservation-of-energy",
+    "verification_type": "encyclopedia",
+    "complexity_rating": 3,
+    "tags": ["conservation_of_energy"]
+  },
+  {
+    "category": "Physical Sciences",
+    "subcategory": "Acoustics",
+    "content": "Sound travels through air at about 343 metres per second at room temperature.",
+    "verification_source": "https://www.britannica.com/science/sound-physics",
+    "verification_type": "encyclopedia",
+    "complexity_rating": 3,
+    "tags": ["speed_of_sound"]
+  },
+  {
+    "category": "Life Sciences",
+    "subcategory": "Microbiology",
+    "content": "Viruses are not considered fully alive because they cannot reproduce without hijacking a host cell.",
+    "verification_source": "https://www.britannica.com/science/virus",
+    "verification_type": "encyclopedia",
+    "complexity_rating": 4,
+    "tags": ["viruses"]
+  },
+  {
+    "category": "Life Sciences",
+    "subcategory": "Ecology",
+    "content": "Plants and animals exchange gases in a cycle: plants release oxygen and absorb carbon dioxide, while animals do the reverse.",
+    "verification_source": "https://www.britannica.com/science/carbon-cycle",
+    "verification_type": "encyclopedia",
+    "complexity_rating": 3,
+    "tags": ["carbon_cycle", "oxygen"]
+  },
+  {
+    "category": "Life Sciences",
+    "subcategory": "Genetics",
+    "content": "Genes are segments of DNA that carry the instructions for building proteins.",
+    "verification_source": "https://www.britannica.com/science/gene",
+    "verification_type": "encyclopedia",
+    "complexity_rating": 3,
+    "tags": ["genes", "dna"]
+  },
+  {
+    "category": "Earth & Geosciences",
+    "subcategory": "Paleontology",
+    "content": "Fossils are the preserved remains or traces of living things from the distant past.",
+    "verification_source": "https://www.britannica.com/science/fossil",
+    "verification_type": "encyclopedia",
+    "complexity_rating": 2,
+    "tags": ["fossils"]
+  },
+  {
+    "category": "Earth & Geosciences",
+    "subcategory": "Seismology",
+    "content": "The Richter scale was an early method for measuring the strength of earthquakes.",
+    "verification_source": "https://www.usgs.gov/programs/earthquake-hazards",
+    "verification_type": "government",
+    "complexity_rating": 3,
+    "tags": ["richter_scale"]
+  },
+  {
+    "category": "Mathematics & Logic",
+    "subcategory": "Geometry",
+    "content": "Geometry is the branch of mathematics concerned with shapes, sizes, positions, and the properties of space.",
+    "verification_source": "https://www.britannica.com/science/geometry",
+    "verification_type": "encyclopedia",
+    "complexity_rating": 2,
+    "tags": ["geometry"],
+    "math_domains": ["geometry"]
+  },
+  {
+    "category": "Mathematics & Logic",
+    "subcategory": "Arithmetic",
+    "content": "The order of operations tells you which parts of a mathematical expression to calculate first.",
+    "verification_source": "https://www.britannica.com/science/arithmetic",
+    "verification_type": "encyclopedia",
+    "complexity_rating": 2,
+    "tags": ["order_of_operations"],
+    "math_domains": ["arithmetic"]
+  },
+  {
+    "category": "Mathematics & Logic",
+    "subcategory": "Statistics",
+    "content": "Statistics is the study of collecting, organising, analysing, and interpreting data.",
+    "verification_source": "https://www.britannica.com/science/statistics",
+    "verification_type": "encyclopedia",
+    "complexity_rating": 3,
+    "tags": ["statistics"],
+    "math_domains": ["statistics"]
+  },
+  {
+    "category": "Geopolitics & Civics",
+    "subcategory": "Governance",
+    "content": "Democracy is a system of government in which power ultimately rests with the people, usually through voting.",
+    "verification_source": "https://www.britannica.com/topic/democracy",
+    "verification_type": "encyclopedia",
+    "complexity_rating": 3,
+    "tags": ["democracy"]
+  },
+  {
+    "category": "Geopolitics & Civics",
+    "subcategory": "Geography",
+    "content": "A peninsula is a piece of land nearly surrounded by water but still joined to a larger landmass.",
+    "verification_source": "https://www.britannica.com/science/peninsula",
+    "verification_type": "encyclopedia",
+    "complexity_rating": 2,
+    "tags": ["peninsula"]
+  },
+  {
+    "category": "History & Archaeology",
+    "subcategory": "Modern History",
+    "content": "The Cold War was a decades-long period of political and military tension between the United States and the Soviet Union.",
+    "verification_source": "https://www.britannica.com/event/Cold-War",
+    "verification_type": "encyclopedia",
+    "complexity_rating": 3,
+    "tags": ["cold_war"]
+  },
+  {
+    "category": "History & Archaeology",
+    "subcategory": "Ancient Civilizations",
+    "content": "The ancient Egyptians preserved bodies as mummies as part of their beliefs about the afterlife.",
+    "verification_source": "https://www.britannica.com/topic/mummy",
+    "verification_type": "encyclopedia",
+    "complexity_rating": 2,
+    "tags": ["mummies", "ancient_egypt"]
+  },
+  {
+    "category": "Technology & Engineering",
+    "subcategory": "Software",
+    "content": "An operating system manages a computer's hardware and provides a platform for running its programs.",
+    "verification_source": "https://www.britannica.com/technology/operating-system",
+    "verification_type": "encyclopedia",
+    "complexity_rating": 3,
+    "tags": ["operating_system"]
+  },
+  {
+    "category": "Technology & Engineering",
+    "subcategory": "Manufacturing",
+    "content": "3D printing builds physical objects layer by layer from a digital design.",
+    "verification_source": "https://www.britannica.com/technology/3D-printing",
+    "verification_type": "encyclopedia",
+    "complexity_rating": 3,
+    "tags": ["3d_printing"]
+  },
+  {
+    "category": "Linguistics & Language",
+    "subcategory": "Morphology",
+    "content": "Morphology is the study of how words are built from smaller meaningful units called morphemes.",
+    "verification_source": "https://www.britannica.com/topic/morphology-linguistics",
+    "verification_type": "encyclopedia",
+    "complexity_rating": 4,
+    "tags": ["morphology"],
+    "language_concepts": ["morphology"]
+  },
+  {
+    "category": "Linguistics & Language",
+    "subcategory": "Etymology",
+    "content": "Loanwords are words borrowed from one language into another, like English 'sushi' from Japanese.",
+    "verification_source": "https://www.britannica.com/topic/loanword",
+    "verification_type": "encyclopedia",
+    "complexity_rating": 3,
+    "tags": ["loanwords"],
+    "language_concepts": ["etymology"]
+  },
+  {
+    "category": "Health & Medicine",
+    "subcategory": "Microbiology",
+    "content": "Antiseptics are substances used to kill or slow the growth of germs on living tissue, such as skin.",
+    "verification_source": "https://www.britannica.com/science/antiseptic",
+    "verification_type": "encyclopedia",
+    "complexity_rating": 3,
+    "tags": ["antiseptics"]
+  },
+  {
+    "category": "Health & Medicine",
+    "subcategory": "Anatomy",
+    "content": "The nervous system carries electrical and chemical signals between the brain and the rest of the body.",
+    "verification_source": "https://www.britannica.com/science/nervous-system",
+    "verification_type": "encyclopedia",
+    "complexity_rating": 3,
+    "tags": ["nervous_system"]
+  },
+  {
+    "category": "Arts & Architecture",
+    "subcategory": "Architecture",
+    "content": "Architecture combines art and engineering to design buildings and other structures.",
+    "verification_source": "https://www.britannica.com/topic/architecture",
+    "verification_type": "encyclopedia",
+    "complexity_rating": 2,
+    "tags": ["architecture"]
+  },
+  {
+    "category": "Philosophy & Logic",
+    "subcategory": "Metaphysics",
+    "content": "Metaphysics is the branch of philosophy that studies the fundamental nature of reality and existence.",
+    "verification_source": "https://www.britannica.com/topic/metaphysics",
+    "verification_type": "encyclopedia",
+    "complexity_rating": 4,
+    "tags": ["metaphysics"]
+  },
+  {
+    "category": "Miscellaneous Global Facts",
+    "subcategory": "Navigation",
+    "content": "A magnetic compass needle aligns itself with Earth's magnetic field to point roughly toward the poles.",
+    "verification_source": "https://www.britannica.com/technology/compass-navigational-instrument",
+    "verification_type": "encyclopedia",
+    "complexity_rating": 2,
+    "tags": ["compass"]
+  },
+  {
+    "category": "Physical Sciences",
+    "subcategory": "Fluids",
+    "content": "Surface tension makes the surface of water behave like a thin elastic skin, letting some insects walk on it.",
+    "verification_source": "https://www.britannica.com/science/surface-tension",
+    "verification_type": "encyclopedia",
+    "complexity_rating": 3,
+    "tags": ["surface_tension"]
+  },
+  {
+    "category": "Physical Sciences",
+    "subcategory": "Optics",
+    "content": "Refraction is the bending of light as it passes from one transparent material into another.",
+    "verification_source": "https://www.britannica.com/science/refraction",
+    "verification_type": "encyclopedia",
+    "complexity_rating": 3,
+    "tags": ["refraction"]
+  },
+  {
+    "category": "Physical Sciences",
+    "subcategory": "Matter",
+    "content": "A vacuum is a region of space containing little or no matter.",
+    "verification_source": "https://www.britannica.com/science/vacuum-physics",
+    "verification_type": "encyclopedia",
+    "complexity_rating": 2,
+    "tags": ["vacuum"]
+  },
+  {
+    "category": "Life Sciences",
+    "subcategory": "Zoology",
+    "content": "Corals, sea anemones, and jellyfish all belong to a group of animals called cnidarians.",
+    "verification_source": "https://www.britannica.com/animal/cnidarian",
+    "verification_type": "encyclopedia",
+    "complexity_rating": 4,
+    "tags": ["cnidarians"]
+  },
+  {
+    "category": "Life Sciences",
+    "subcategory": "Botany",
+    "content": "Some plants are pollinated by the wind, which carries their pollen from flower to flower without animals.",
+    "verification_source": "https://www.britannica.com/science/pollination",
+    "verification_type": "encyclopedia",
+    "complexity_rating": 3,
+    "tags": ["wind_pollination"]
+  },
+  {
+    "category": "Life Sciences",
+    "subcategory": "Anatomy",
+    "content": "The liver is the largest internal organ in the human body.",
+    "verification_source": "https://www.britannica.com/science/liver",
+    "verification_type": "encyclopedia",
+    "complexity_rating": 2,
+    "tags": ["liver"]
+  },
+  {
+    "category": "Earth & Geosciences",
+    "subcategory": "Glaciology",
+    "content": "Glaciers are slow-moving masses of ice that carve and reshape the land as they flow.",
+    "verification_source": "https://www.usgs.gov/",
+    "verification_type": "government",
+    "complexity_rating": 3,
+    "tags": ["glaciers"]
+  },
+  {
+    "category": "Earth & Geosciences",
+    "subcategory": "Atmosphere",
+    "content": "Earth's atmosphere has several layers; the lowest one, where weather occurs and we live, is the troposphere.",
+    "verification_source": "https://www.noaa.gov/",
+    "verification_type": "government",
+    "complexity_rating": 3,
+    "tags": ["troposphere", "atmosphere"]
+  },
+  {
+    "category": "Mathematics & Logic",
+    "subcategory": "Number Systems",
+    "content": "An integer is a whole number that may be positive, negative, or zero.",
+    "verification_source": "https://www.britannica.com/science/integer",
+    "verification_type": "encyclopedia",
+    "complexity_rating": 2,
+    "tags": ["integer"],
+    "math_domains": ["number_theory"]
+  },
+  {
+    "category": "Mathematics & Logic",
+    "subcategory": "Geometry",
+    "content": "A circle has no corners, and every point on it lies the same distance from its centre.",
+    "verification_source": "https://www.britannica.com/science/circle-geometry",
+    "verification_type": "encyclopedia",
+    "complexity_rating": 1,
+    "tags": ["circle"],
+    "math_domains": ["geometry"]
+  },
+  {
+    "category": "Mathematics & Logic",
+    "subcategory": "Arithmetic",
+    "content": "Exponents show how many times a number is multiplied by itself, so 2 cubed means 2 times 2 times 2.",
+    "verification_source": "https://www.britannica.com/science/exponent",
+    "verification_type": "encyclopedia",
+    "complexity_rating": 2,
+    "tags": ["exponents"],
+    "math_domains": ["arithmetic"]
+  },
+  {
+    "category": "Geopolitics & Civics",
+    "subcategory": "Geography",
+    "content": "An archipelago is a group or chain of islands.",
+    "verification_source": "https://www.britannica.com/science/archipelago",
+    "verification_type": "encyclopedia",
+    "complexity_rating": 2,
+    "tags": ["archipelago"]
+  },
+  {
+    "category": "Geopolitics & Civics",
+    "subcategory": "Governance",
+    "content": "A constitution is a set of fundamental principles and rules by which a country is governed.",
+    "verification_source": "https://www.britannica.com/topic/constitution-politics-and-law",
+    "verification_type": "encyclopedia",
+    "complexity_rating": 3,
+    "tags": ["constitution"]
+  },
+  {
+    "category": "History & Archaeology",
+    "subcategory": "Modern History",
+    "content": "The Berlin Wall, which divided the city for nearly three decades, fell in 1989.",
+    "verification_source": "https://www.britannica.com/topic/Berlin-Wall",
+    "verification_type": "encyclopedia",
+    "complexity_rating": 3,
+    "tags": ["berlin_wall"]
+  },
+  {
+    "category": "History & Archaeology",
+    "subcategory": "Writing Systems",
+    "content": "Writing was invented independently in several ancient civilisations, including Mesopotamia.",
+    "verification_source": "https://www.britannica.com/topic/writing",
+    "verification_type": "encyclopedia",
+    "complexity_rating": 4,
+    "tags": ["writing", "mesopotamia"]
+  },
+  {
+    "category": "Technology & Engineering",
+    "subcategory": "Computer Science",
+    "content": "The efficiency of an algorithm is often described by how its running time grows as the size of the input increases.",
+    "verification_source": "https://www.britannica.com/science/algorithm",
+    "verification_type": "encyclopedia",
+    "complexity_rating": 4,
+    "tags": ["algorithm_efficiency"]
+  },
+  {
+    "category": "Technology & Engineering",
+    "subcategory": "Communications",
+    "content": "Satellites in orbit relay signals used for television, weather forecasting, and navigation.",
+    "verification_source": "https://www.britannica.com/technology/satellite-communication",
+    "verification_type": "encyclopedia",
+    "complexity_rating": 3,
+    "tags": ["satellites"]
+  },
+  {
+    "category": "Linguistics & Language",
+    "subcategory": "Phonetics",
+    "content": "Phonetics is the study of the physical sounds of human speech — how they are made, transmitted, and heard.",
+    "verification_source": "https://www.britannica.com/science/phonetics",
+    "verification_type": "encyclopedia",
+    "complexity_rating": 3,
+    "tags": ["phonetics"],
+    "language_concepts": ["phonetics"]
+  },
+  {
+    "category": "Linguistics & Language",
+    "subcategory": "Semantics",
+    "content": "Semantics is the study of meaning in language.",
+    "verification_source": "https://www.britannica.com/science/semantics",
+    "verification_type": "encyclopedia",
+    "complexity_rating": 3,
+    "tags": ["semantics"],
+    "language_concepts": ["semantics"]
+  },
+  {
+    "category": "Health & Medicine",
+    "subcategory": "Physiology",
+    "content": "Red blood cells carry oxygen around the body, while white blood cells help fight infection.",
+    "verification_source": "https://www.britannica.com/science/blood-biochemistry",
+    "verification_type": "encyclopedia",
+    "complexity_rating": 2,
+    "tags": ["blood_cells"]
+  },
+  {
+    "category": "Health & Medicine",
+    "subcategory": "Physiology",
+    "content": "The lungs exchange oxygen and carbon dioxide between the air we breathe and the bloodstream.",
+    "verification_source": "https://www.britannica.com/science/lung",
+    "verification_type": "encyclopedia",
+    "complexity_rating": 2,
+    "tags": ["lungs"]
+  },
+  {
+    "category": "Arts & Architecture",
+    "subcategory": "Calligraphy",
+    "content": "Calligraphy is the art of beautiful, decorative handwriting.",
+    "verification_source": "https://www.britannica.com/art/calligraphy",
+    "verification_type": "encyclopedia",
+    "complexity_rating": 2,
+    "tags": ["calligraphy"]
+  },
+  {
+    "category": "Philosophy & Logic",
+    "subcategory": "Epistemology",
+    "content": "Rationalism is the view that reason is a primary source and test of knowledge.",
+    "verification_source": "https://www.britannica.com/topic/rationalism",
+    "verification_type": "encyclopedia",
+    "complexity_rating": 4,
+    "tags": ["rationalism"]
+  },
+  {
+    "category": "Miscellaneous Global Facts",
+    "subcategory": "Earth History",
+    "content": "Thousands of years ago, the Sahara was a much greener, wetter landscape with lakes and grassland.",
+    "verification_source": "https://www.britannica.com/place/Sahara-desert-Africa",
+    "verification_type": "encyclopedia",
+    "complexity_rating": 4,
+    "tags": ["sahara", "green_sahara"]
+  },
+  {
+    "category": "Miscellaneous Global Facts",
+    "subcategory": "Geography",
+    "content": "The seven continents are Africa, Antarctica, Asia, Australia, Europe, North America, and South America.",
+    "verification_source": "https://www.britannica.com/science/continent",
+    "verification_type": "encyclopedia",
+    "complexity_rating": 1,
+    "tags": ["continents"]
+  },
+  {
+    "category": "Physical Sciences",
+    "subcategory": "Mechanics",
+    "content": "Inertia is the tendency of an object to resist changes to its state of motion.",
+    "verification_source": "https://www.britannica.com/science/inertia",
+    "verification_type": "encyclopedia",
+    "complexity_rating": 3,
+    "tags": ["inertia"]
+  },
+  {
+    "category": "Physical Sciences",
+    "subcategory": "Heat",
+    "content": "Convection transfers heat through the movement of a fluid such as air or water.",
+    "verification_source": "https://www.britannica.com/science/convection",
+    "verification_type": "encyclopedia",
+    "complexity_rating": 3,
+    "tags": ["convection"]
+  },
+  {
+    "category": "Physical Sciences",
+    "subcategory": "Chemistry",
+    "content": "A catalyst speeds up a chemical reaction without being consumed by it.",
+    "verification_source": "https://www.britannica.com/science/catalyst",
+    "verification_type": "encyclopedia",
+    "complexity_rating": 3,
+    "tags": ["catalyst"]
+  },
+  {
+    "category": "Life Sciences",
+    "subcategory": "Animal Behaviour",
+    "content": "Camouflage helps animals blend into their surroundings to avoid being seen by predators or prey.",
+    "verification_source": "https://www.britannica.com/science/camouflage-biology",
+    "verification_type": "encyclopedia",
+    "complexity_rating": 2,
+    "tags": ["camouflage"]
+  },
+  {
+    "category": "Life Sciences",
+    "subcategory": "Animal Behaviour",
+    "content": "Hibernation lets some animals survive winter by greatly slowing their heartbeat, breathing, and body temperature.",
+    "verification_source": "https://www.britannica.com/science/hibernation",
+    "verification_type": "encyclopedia",
+    "complexity_rating": 2,
+    "tags": ["hibernation"]
+  },
+  {
+    "category": "Life Sciences",
+    "subcategory": "Botany",
+    "content": "Chlorophyll is the green pigment plants use to capture light energy for photosynthesis.",
+    "verification_source": "https://www.britannica.com/science/chlorophyll",
+    "verification_type": "encyclopedia",
+    "complexity_rating": 3,
+    "tags": ["chlorophyll"]
+  },
+  {
+    "category": "Earth & Geosciences",
+    "subcategory": "Geomorphology",
+    "content": "Erosion is the gradual wearing away of rock and soil by wind, water, or ice.",
+    "verification_source": "https://www.usgs.gov/",
+    "verification_type": "government",
+    "complexity_rating": 2,
+    "tags": ["erosion"]
+  },
+  {
+    "category": "Earth & Geosciences",
+    "subcategory": "Meteorology",
+    "content": "The eye of a hurricane is a relatively calm centre surrounded by a ring of powerful winds.",
+    "verification_source": "https://www.noaa.gov/",
+    "verification_type": "government",
+    "complexity_rating": 3,
+    "tags": ["hurricane", "eye"]
+  },
+  {
+    "category": "Mathematics & Logic",
+    "subcategory": "Algebra",
+    "content": "A variable is a symbol, often a letter, that stands for an unknown or changeable number.",
+    "verification_source": "https://www.britannica.com/science/variable-mathematics-and-logic",
+    "verification_type": "encyclopedia",
+    "complexity_rating": 2,
+    "tags": ["variable"],
+    "math_domains": ["algebra"]
+  },
+  {
+    "category": "Mathematics & Logic",
+    "subcategory": "Geometry",
+    "content": "The circumference of a circle is the distance all the way around its edge.",
+    "verification_source": "https://www.britannica.com/science/circumference",
+    "verification_type": "encyclopedia",
+    "complexity_rating": 1,
+    "tags": ["circumference"],
+    "math_domains": ["geometry"]
+  },
+  {
+    "category": "Mathematics & Logic",
+    "subcategory": "Arithmetic",
+    "content": "Rounding replaces a number with a nearby, simpler value, such as rounding 47 to 50.",
+    "verification_source": "https://www.britannica.com/science/arithmetic",
+    "verification_type": "encyclopedia",
+    "complexity_rating": 2,
+    "tags": ["rounding"],
+    "math_domains": ["arithmetic"]
+  },
+  {
+    "category": "Geopolitics & Civics",
+    "subcategory": "Geography",
+    "content": "An isthmus is a narrow strip of land that connects two larger land areas.",
+    "verification_source": "https://www.britannica.com/science/isthmus",
+    "verification_type": "encyclopedia",
+    "complexity_rating": 3,
+    "tags": ["isthmus"]
+  },
+  {
+    "category": "Geopolitics & Civics",
+    "subcategory": "Governance",
+    "content": "A capital city is the place where a country's or region's government is based.",
+    "verification_source": "https://www.britannica.com/topic/capital-city",
+    "verification_type": "encyclopedia",
+    "complexity_rating": 1,
+    "tags": ["capital_city"]
+  },
+  {
+    "category": "History & Archaeology",
+    "subcategory": "Ancient Civilizations",
+    "content": "At its height, the Roman Empire surrounded the entire Mediterranean Sea.",
+    "verification_source": "https://www.britannica.com/place/Roman-Empire",
+    "verification_type": "encyclopedia",
+    "complexity_rating": 3,
+    "tags": ["roman_empire"]
+  },
+  {
+    "category": "History & Archaeology",
+    "subcategory": "Inventions",
+    "content": "Gunpowder was invented in ancient China, originally during the search for an elixir of life.",
+    "verification_source": "https://www.britannica.com/technology/gunpowder",
+    "verification_type": "encyclopedia",
+    "complexity_rating": 3,
+    "tags": ["gunpowder", "china"]
+  },
+  {
+    "category": "Technology & Engineering",
+    "subcategory": "Electronics",
+    "content": "A semiconductor is a material whose ability to conduct electricity can be controlled, making modern electronics possible.",
+    "verification_source": "https://www.britannica.com/science/semiconductor",
+    "verification_type": "encyclopedia",
+    "complexity_rating": 4,
+    "tags": ["semiconductor"]
+  },
+  {
+    "category": "Technology & Engineering",
+    "subcategory": "Internet",
+    "content": "Email lets people send written messages over the internet almost instantly.",
+    "verification_source": "https://www.britannica.com/technology/e-mail",
+    "verification_type": "encyclopedia",
+    "complexity_rating": 2,
+    "tags": ["email"]
+  },
+  {
+    "category": "Linguistics & Language",
+    "subcategory": "Grammar",
+    "content": "Grammar is the system of rules that structures how a language is put together.",
+    "verification_source": "https://www.britannica.com/topic/grammar",
+    "verification_type": "encyclopedia",
+    "complexity_rating": 3,
+    "tags": ["grammar"],
+    "language_concepts": ["grammar"]
+  },
+  {
+    "category": "Linguistics & Language",
+    "subcategory": "Semantics",
+    "content": "A synonym is a word that has the same or a very similar meaning to another word.",
+    "verification_source": "https://www.britannica.com/dictionary/synonym",
+    "verification_type": "encyclopedia",
+    "complexity_rating": 2,
+    "tags": ["synonym"],
+    "language_concepts": ["semantics"]
+  },
+  {
+    "category": "Health & Medicine",
+    "subcategory": "Anatomy",
+    "content": "Bones store minerals such as calcium, and their inner marrow produces blood cells.",
+    "verification_source": "https://www.britannica.com/science/bone-anatomy",
+    "verification_type": "encyclopedia",
+    "complexity_rating": 3,
+    "tags": ["bones", "marrow"]
+  },
+  {
+    "category": "Health & Medicine",
+    "subcategory": "Nutrition",
+    "content": "A balanced diet includes a variety of foods that together provide the nutrients the body needs.",
+    "verification_source": "https://www.britannica.com/science/human-nutrition",
+    "verification_type": "encyclopedia",
+    "complexity_rating": 2,
+    "tags": ["balanced_diet"]
+  },
+  {
+    "category": "Arts & Architecture",
+    "subcategory": "Painting",
+    "content": "A still life is an artwork depicting inanimate objects, such as fruit, flowers, or everyday items.",
+    "verification_source": "https://www.britannica.com/art/still-life-painting",
+    "verification_type": "encyclopedia",
+    "complexity_rating": 2,
+    "tags": ["still_life"]
+  },
+  {
+    "category": "Philosophy & Logic",
+    "subcategory": "Metaphysics",
+    "content": "Free will is the philosophical question of whether and how people can genuinely choose their own actions.",
+    "verification_source": "https://www.britannica.com/topic/free-will",
+    "verification_type": "encyclopedia",
+    "complexity_rating": 4,
+    "tags": ["free_will"]
+  },
+  {
+    "category": "Miscellaneous Global Facts",
+    "subcategory": "Time",
+    "content": "A fortnight is a period of two weeks, or fourteen days.",
+    "verification_source": "https://www.merriam-webster.com/dictionary/fortnight",
+    "verification_type": "encyclopedia",
+    "complexity_rating": 2,
+    "tags": ["fortnight"]
+  },
+  {
+    "category": "Miscellaneous Global Facts",
+    "subcategory": "Navigation",
+    "content": "The four cardinal directions are north, south, east, and west.",
+    "verification_source": "https://www.britannica.com/science/cardinal-points",
+    "verification_type": "encyclopedia",
+    "complexity_rating": 1,
+    "tags": ["cardinal_directions"]
+  },
+  {
+    "category": "Mathematics & Logic",
+    "subcategory": "Geometry",
+    "content": "A fractal is a shape that looks similar at every scale, like a coastline, a fern, or a snowflake.",
+    "verification_source": "https://www.britannica.com/science/fractal",
+    "verification_type": "encyclopedia",
+    "complexity_rating": 4,
+    "tags": ["fractal"],
+    "math_domains": ["geometry"]
+  },
+  {
+    "category": "Mathematics & Logic",
+    "subcategory": "Number Theory",
+    "content": "Modular arithmetic deals with numbers that wrap around upon reaching a set value, the way hours wrap around on a clock.",
+    "verification_source": "https://www.britannica.com/science/modular-arithmetic",
+    "verification_type": "encyclopedia",
+    "complexity_rating": 4,
+    "tags": ["modular_arithmetic"],
+    "math_domains": ["number_theory"]
+  },
+  {
+    "category": "Mathematics & Logic",
+    "subcategory": "Analysis",
+    "content": "The number e, approximately 2.718, is the base of the natural logarithm.",
+    "verification_source": "https://www.britannica.com/science/e-mathematics",
+    "verification_type": "encyclopedia",
+    "complexity_rating": 4,
+    "tags": ["eulers_number"],
+    "math_domains": ["calculus"]
+  },
+  {
+    "category": "Physical Sciences",
+    "subcategory": "States of Matter",
+    "content": "Plasma, often called the fourth state of matter, is an ionised gas found in stars and lightning.",
+    "verification_source": "https://www.britannica.com/science/plasma-state-of-matter",
+    "verification_type": "encyclopedia",
+    "complexity_rating": 4,
+    "tags": ["plasma"]
+  },
+  {
+    "category": "Physical Sciences",
+    "subcategory": "Particle Physics",
+    "content": "Quarks are the elementary particles that combine to form protons and neutrons.",
+    "verification_source": "https://www.britannica.com/science/quark",
+    "verification_type": "encyclopedia",
+    "complexity_rating": 5,
+    "tags": ["quarks"]
+  },
+  {
+    "category": "Physical Sciences",
+    "subcategory": "Thermodynamics",
+    "content": "Absolute zero can be approached ever more closely but never actually reached.",
+    "verification_source": "https://www.britannica.com/science/absolute-zero",
+    "verification_type": "encyclopedia",
+    "complexity_rating": 4,
+    "tags": ["absolute_zero"]
+  },
+  {
+    "category": "Life Sciences",
+    "subcategory": "Cell Biology",
+    "content": "Ribosomes are the cellular machines that assemble proteins from amino acids.",
+    "verification_source": "https://www.britannica.com/science/ribosome",
+    "verification_type": "encyclopedia",
+    "complexity_rating": 4,
+    "tags": ["ribosomes"]
+  },
+  {
+    "category": "Life Sciences",
+    "subcategory": "Ecology",
+    "content": "Symbiosis is a close, long-term biological interaction between two different species.",
+    "verification_source": "https://www.britannica.com/science/symbiosis",
+    "verification_type": "encyclopedia",
+    "complexity_rating": 3,
+    "tags": ["symbiosis"]
+  },
+  {
+    "category": "Life Sciences",
+    "subcategory": "Biochemistry",
+    "content": "DNA and RNA are the two kinds of nucleic acid found in living cells.",
+    "verification_source": "https://www.britannica.com/science/nucleic-acid",
+    "verification_type": "encyclopedia",
+    "complexity_rating": 4,
+    "tags": ["nucleic_acids"]
+  },
+  {
+    "category": "Earth & Geosciences",
+    "subcategory": "Geophysics",
+    "content": "Earth's mantle is a thick layer of hot, slowly flowing rock between the thin crust and the core.",
+    "verification_source": "https://www.usgs.gov/",
+    "verification_type": "government",
+    "complexity_rating": 3,
+    "tags": ["mantle"]
+  },
+  {
+    "category": "Earth & Geosciences",
+    "subcategory": "Speleology",
+    "content": "Cave stalactites and stalagmites grow extremely slowly, often less than a millimetre per year.",
+    "verification_source": "https://www.usgs.gov/",
+    "verification_type": "government",
+    "complexity_rating": 3,
+    "tags": ["stalactite", "growth_rate"]
+  },
+  {
+    "category": "Geopolitics & Civics",
+    "subcategory": "Governance",
+    "content": "A federation is a system in which power is shared between a central government and regional states.",
+    "verification_source": "https://www.britannica.com/topic/federalism",
+    "verification_type": "encyclopedia",
+    "complexity_rating": 3,
+    "tags": ["federation"]
+  },
+  {
+    "category": "Geopolitics & Civics",
+    "subcategory": "Geography",
+    "content": "The Strait of Gibraltar separates Europe from Africa and links the Atlantic Ocean to the Mediterranean Sea.",
+    "verification_source": "https://www.britannica.com/place/Strait-of-Gibraltar",
+    "verification_type": "encyclopedia",
+    "complexity_rating": 3,
+    "tags": ["gibraltar"]
+  },
+  {
+    "category": "History & Archaeology",
+    "subcategory": "Writing Systems",
+    "content": "Cuneiform, an early writing system from Mesopotamia, was pressed into clay with a reed stylus.",
+    "verification_source": "https://www.britannica.com/topic/cuneiform",
+    "verification_type": "encyclopedia",
+    "complexity_rating": 4,
+    "tags": ["cuneiform"]
+  },
+  {
+    "category": "History & Archaeology",
+    "subcategory": "Instruments",
+    "content": "The astrolabe was an ancient instrument used to measure the positions of stars and to tell time.",
+    "verification_source": "https://www.britannica.com/technology/astrolabe",
+    "verification_type": "encyclopedia",
+    "complexity_rating": 4,
+    "tags": ["astrolabe"]
+  },
+  {
+    "category": "Technology & Engineering",
+    "subcategory": "Computing",
+    "content": "Data compression reduces a file's size by removing redundancy in how its information is stored.",
+    "verification_source": "https://www.britannica.com/technology/data-compression",
+    "verification_type": "encyclopedia",
+    "complexity_rating": 3,
+    "tags": ["compression"]
+  },
+  {
+    "category": "Technology & Engineering",
+    "subcategory": "Computing",
+    "content": "A database organises information so it can be stored, searched, and retrieved efficiently.",
+    "verification_source": "https://www.britannica.com/technology/database",
+    "verification_type": "encyclopedia",
+    "complexity_rating": 3,
+    "tags": ["database"]
+  },
+  {
+    "category": "Linguistics & Language",
+    "subcategory": "Pragmatics",
+    "content": "Pragmatics studies how context shapes the meaning of what people say.",
+    "verification_source": "https://www.britannica.com/science/linguistics",
+    "verification_type": "encyclopedia",
+    "complexity_rating": 4,
+    "tags": ["pragmatics"],
+    "language_concepts": ["pragmatics"]
+  },
+  {
+    "category": "Linguistics & Language",
+    "subcategory": "Phonology",
+    "content": "A phoneme is the smallest unit of sound that can change the meaning of a word.",
+    "verification_source": "https://www.britannica.com/topic/phoneme",
+    "verification_type": "encyclopedia",
+    "complexity_rating": 4,
+    "tags": ["phoneme"],
+    "language_concepts": ["phonology"]
+  },
+  {
+    "category": "Health & Medicine",
+    "subcategory": "Endocrinology",
+    "content": "Insulin is a hormone that helps the body regulate the level of sugar in the blood.",
+    "verification_source": "https://www.britannica.com/science/insulin",
+    "verification_type": "encyclopedia",
+    "complexity_rating": 3,
+    "tags": ["insulin"]
+  },
+  {
+    "category": "Health & Medicine",
+    "subcategory": "Anatomy",
+    "content": "The retina at the back of the eye converts incoming light into nerve signals for the brain.",
+    "verification_source": "https://www.britannica.com/science/retina",
+    "verification_type": "encyclopedia",
+    "complexity_rating": 3,
+    "tags": ["retina"]
+  },
+  {
+    "category": "Arts & Architecture",
+    "subcategory": "Music Theory",
+    "content": "In music, harmony is the sound of two or more notes played at the same time.",
+    "verification_source": "https://www.britannica.com/art/harmony-music",
+    "verification_type": "encyclopedia",
+    "complexity_rating": 3,
+    "tags": ["harmony"]
+  },
+  {
+    "category": "Arts & Architecture",
+    "subcategory": "Sculpture",
+    "content": "A sculpture 'in the round' can be viewed from every side, unlike a relief carved into a flat surface.",
+    "verification_source": "https://www.britannica.com/art/sculpture",
+    "verification_type": "encyclopedia",
+    "complexity_rating": 3,
+    "tags": ["sculpture", "relief"]
+  },
+  {
+    "category": "Philosophy & Logic",
+    "subcategory": "Epistemology",
+    "content": "Empiricism is the view that knowledge comes primarily from sensory experience.",
+    "verification_source": "https://www.britannica.com/topic/empiricism",
+    "verification_type": "encyclopedia",
+    "complexity_rating": 4,
+    "tags": ["empiricism"]
+  },
+  {
+    "category": "Miscellaneous Global Facts",
+    "subcategory": "Measurement",
+    "content": "On the Celsius scale, water freezes at 0 degrees and boils at 100 degrees at sea level.",
+    "verification_source": "https://www.britannica.com/science/Celsius-temperature-scale",
+    "verification_type": "encyclopedia",
+    "complexity_rating": 2,
+    "tags": ["celsius"]
+  },
+  {
+    "category": "Mathematics & Logic",
+    "subcategory": "Set Theory",
+    "content": "In mathematics, a set is simply a collection of distinct objects.",
+    "verification_source": "https://www.britannica.com/science/set-mathematics-and-logic",
+    "verification_type": "encyclopedia",
+    "complexity_rating": 3,
+    "tags": ["set"],
+    "math_domains": ["set_theory"]
+  },
+  {
+    "category": "Mathematics & Logic",
+    "subcategory": "Trigonometry",
+    "content": "Trigonometry studies the relationships between the angles and the sides of triangles.",
+    "verification_source": "https://www.britannica.com/science/trigonometry",
+    "verification_type": "encyclopedia",
+    "complexity_rating": 3,
+    "tags": ["trigonometry"],
+    "math_domains": ["trigonometry"]
+  },
+  {
+    "category": "Mathematics & Logic",
+    "subcategory": "Linear Algebra",
+    "content": "A vector has both magnitude and direction, while a scalar has only magnitude.",
+    "verification_source": "https://www.britannica.com/science/vector-mathematics",
+    "verification_type": "encyclopedia",
+    "complexity_rating": 4,
+    "tags": ["vector", "scalar"],
+    "math_domains": ["linear_algebra"]
+  },
+  {
+    "category": "Physical Sciences",
+    "subcategory": "Mechanics",
+    "content": "Momentum is the product of an object's mass and its velocity.",
+    "verification_source": "https://www.britannica.com/science/momentum",
+    "verification_type": "encyclopedia",
+    "complexity_rating": 3,
+    "tags": ["momentum"]
+  },
+  {
+    "category": "Physical Sciences",
+    "subcategory": "Atomic Physics",
+    "content": "Isotopes are atoms of the same element that have different numbers of neutrons.",
+    "verification_source": "https://www.britannica.com/science/isotope",
+    "verification_type": "encyclopedia",
+    "complexity_rating": 4,
+    "tags": ["isotopes"]
+  },
+  {
+    "category": "Physical Sciences",
+    "subcategory": "Waves",
+    "content": "The electromagnetic spectrum ranges from low-energy radio waves to high-energy gamma rays.",
+    "verification_source": "https://science.nasa.gov/",
+    "verification_type": "government",
+    "complexity_rating": 4,
+    "tags": ["electromagnetic_spectrum"]
+  },
+  {
+    "category": "Life Sciences",
+    "subcategory": "Cell Biology",
+    "content": "Osmosis is the movement of water across a membrane toward the side with more dissolved substances.",
+    "verification_source": "https://www.britannica.com/science/osmosis",
+    "verification_type": "encyclopedia",
+    "complexity_rating": 4,
+    "tags": ["osmosis"]
+  },
+  {
+    "category": "Life Sciences",
+    "subcategory": "Ecology",
+    "content": "An ecosystem is all the living things in an area together with the non-living environment they interact with.",
+    "verification_source": "https://www.britannica.com/science/ecosystem",
+    "verification_type": "encyclopedia",
+    "complexity_rating": 3,
+    "tags": ["ecosystem"]
+  },
+  {
+    "category": "Life Sciences",
+    "subcategory": "Immunology",
+    "content": "Hay fever is an allergic immune reaction to airborne pollen from plants.",
+    "verification_source": "https://www.britannica.com/science/hay-fever",
+    "verification_type": "encyclopedia",
+    "complexity_rating": 3,
+    "tags": ["hay_fever", "allergy"]
+  },
+  {
+    "category": "Earth & Geosciences",
+    "subcategory": "Geology",
+    "content": "A geological fault is a fracture in rock where the two sides have moved relative to one another.",
+    "verification_source": "https://www.usgs.gov/",
+    "verification_type": "government",
+    "complexity_rating": 3,
+    "tags": ["fault"]
+  },
+  {
+    "category": "Earth & Geosciences",
+    "subcategory": "Geology",
+    "content": "Sedimentary rock forms from layers of sediment that are compacted and cemented over long periods.",
+    "verification_source": "https://www.usgs.gov/",
+    "verification_type": "government",
+    "complexity_rating": 3,
+    "tags": ["sedimentary_rock"]
+  },
+  {
+    "category": "Geopolitics & Civics",
+    "subcategory": "Demographics",
+    "content": "A census is an official count of a country's population.",
+    "verification_source": "https://www.britannica.com/topic/census",
+    "verification_type": "encyclopedia",
+    "complexity_rating": 2,
+    "tags": ["census"]
+  },
+  {
+    "category": "Geopolitics & Civics",
+    "subcategory": "Geography",
+    "content": "The Suez Canal links the Mediterranean Sea to the Red Sea, greatly shortening sea routes between Europe and Asia.",
+    "verification_source": "https://www.britannica.com/topic/Suez-Canal",
+    "verification_type": "encyclopedia",
+    "complexity_rating": 3,
+    "tags": ["suez_canal"]
+  },
+  {
+    "category": "History & Archaeology",
+    "subcategory": "Ancient Civilizations",
+    "content": "The ancient city of Petra was carved directly into rose-coloured sandstone cliffs.",
+    "verification_source": "https://www.britannica.com/place/Petra-ancient-city-Jordan",
+    "verification_type": "encyclopedia",
+    "complexity_rating": 3,
+    "tags": ["petra"]
+  },
+  {
+    "category": "History & Archaeology",
+    "subcategory": "Renaissance",
+    "content": "Leonardo da Vinci often wrote his notebooks in mirror script, reading right to left.",
+    "verification_source": "https://www.britannica.com/biography/Leonardo-da-Vinci",
+    "verification_type": "encyclopedia",
+    "complexity_rating": 3,
+    "tags": ["leonardo", "mirror_writing"]
+  },
+  {
+    "category": "Technology & Engineering",
+    "subcategory": "Software",
+    "content": "An API is a set of rules that lets different software programs communicate with one another.",
+    "verification_source": "https://www.britannica.com/technology/API",
+    "verification_type": "encyclopedia",
+    "complexity_rating": 3,
+    "tags": ["api"]
+  },
+  {
+    "category": "Technology & Engineering",
+    "subcategory": "Displays",
+    "content": "A pixel's colour is usually produced by mixing red, green, and blue light in different amounts.",
+    "verification_source": "https://www.britannica.com/technology/pixel",
+    "verification_type": "encyclopedia",
+    "complexity_rating": 3,
+    "tags": ["pixel", "rgb"]
+  },
+  {
+    "category": "Linguistics & Language",
+    "subcategory": "Dialectology",
+    "content": "In a dialect continuum, neighbouring varieties are mutually understandable but distant ones may not be.",
+    "verification_source": "https://www.britannica.com/topic/dialect",
+    "verification_type": "encyclopedia",
+    "complexity_rating": 4,
+    "tags": ["dialect_continuum"],
+    "language_concepts": ["dialectology"]
+  },
+  {
+    "category": "Linguistics & Language",
+    "subcategory": "Phonetics",
+    "content": "Vowels are speech sounds produced without blocking the flow of air through the mouth.",
+    "verification_source": "https://www.britannica.com/topic/vowel",
+    "verification_type": "encyclopedia",
+    "complexity_rating": 3,
+    "tags": ["vowels"],
+    "language_concepts": ["phonetics"]
+  },
+  {
+    "category": "Health & Medicine",
+    "subcategory": "Anatomy",
+    "content": "Cartilage is a flexible connective tissue found in joints, the nose, and the ears.",
+    "verification_source": "https://www.britannica.com/science/cartilage",
+    "verification_type": "encyclopedia",
+    "complexity_rating": 3,
+    "tags": ["cartilage"]
+  },
+  {
+    "category": "Health & Medicine",
+    "subcategory": "Physiology",
+    "content": "Reflexes are automatic responses that happen without conscious thought, such as pulling away from heat.",
+    "verification_source": "https://www.britannica.com/science/reflex",
+    "verification_type": "encyclopedia",
+    "complexity_rating": 3,
+    "tags": ["reflex"]
+  },
+  {
+    "category": "Arts & Architecture",
+    "subcategory": "Design",
+    "content": "Contrast in design uses differences in colour, size, or shape to draw the eye and create emphasis.",
+    "verification_source": "https://www.britannica.com/art/design",
+    "verification_type": "encyclopedia",
+    "complexity_rating": 3,
+    "tags": ["contrast", "design"]
+  },
+  {
+    "category": "Arts & Architecture",
+    "subcategory": "Music",
+    "content": "A cappella means singing without any instrumental accompaniment.",
+    "verification_source": "https://www.britannica.com/art/a-cappella",
+    "verification_type": "encyclopedia",
+    "complexity_rating": 2,
+    "tags": ["a_cappella"]
+  },
+  {
+    "category": "Philosophy & Logic",
+    "subcategory": "Reasoning",
+    "content": "Deductive reasoning reaches conclusions that must be true if its premises are true.",
+    "verification_source": "https://www.britannica.com/topic/deduction-reason",
+    "verification_type": "encyclopedia",
+    "complexity_rating": 4,
+    "tags": ["deductive_reasoning"]
+  },
+  {
+    "category": "Miscellaneous Global Facts",
+    "subcategory": "Time",
+    "content": "There are 60 seconds in a minute and 60 minutes in an hour — a base-60 system inherited from ancient Babylon.",
+    "verification_source": "https://www.britannica.com/science/time",
+    "verification_type": "encyclopedia",
+    "complexity_rating": 3,
+    "tags": ["time", "sexagesimal"]
+  },
+  {
+    "category": "Mathematics & Logic",
+    "subcategory": "Geometry",
+    "content": "A coordinate system uses numbers to pinpoint a location, the way latitude and longitude locate a place on Earth.",
+    "verification_source": "https://www.britannica.com/science/coordinate-system",
+    "verification_type": "encyclopedia",
+    "complexity_rating": 2,
+    "tags": ["coordinate_system"],
+    "math_domains": ["geometry"]
+  },
+  {
+    "category": "Mathematics & Logic",
+    "subcategory": "Calculus",
+    "content": "Calculus has two main branches: differential calculus and integral calculus.",
+    "verification_source": "https://www.britannica.com/science/calculus-mathematics",
+    "verification_type": "encyclopedia",
+    "complexity_rating": 3,
+    "tags": ["calculus"],
+    "math_domains": ["calculus"]
+  },
+  {
+    "category": "Mathematics & Logic",
+    "subcategory": "Logic",
+    "content": "A theorem is a statement that has been proven true from accepted assumptions.",
+    "verification_source": "https://www.britannica.com/science/theorem",
+    "verification_type": "encyclopedia",
+    "complexity_rating": 3,
+    "tags": ["theorem"]
+  },
+  {
+    "category": "Physical Sciences",
+    "subcategory": "Mechanics",
+    "content": "Velocity describes both how fast something moves and the direction in which it moves.",
+    "verification_source": "https://www.britannica.com/science/velocity",
+    "verification_type": "encyclopedia",
+    "complexity_rating": 3,
+    "tags": ["velocity"]
+  },
+  {
+    "category": "Physical Sciences",
+    "subcategory": "Chemistry",
+    "content": "The pH scale measures how acidic or basic a solution is, running from 0 to 14.",
+    "verification_source": "https://www.britannica.com/science/pH",
+    "verification_type": "encyclopedia",
+    "complexity_rating": 3,
+    "tags": ["ph_scale"]
+  },
+  {
+    "category": "Physical Sciences",
+    "subcategory": "Waves",
+    "content": "A wavelength is the distance between two successive crests of a wave.",
+    "verification_source": "https://www.britannica.com/science/wavelength",
+    "verification_type": "encyclopedia",
+    "complexity_rating": 3,
+    "tags": ["wavelength"]
+  },
+  {
+    "category": "Life Sciences",
+    "subcategory": "Microbiology",
+    "content": "Bacteria reproduce by splitting in two, a process called binary fission.",
+    "verification_source": "https://www.britannica.com/science/binary-fission",
+    "verification_type": "encyclopedia",
+    "complexity_rating": 3,
+    "tags": ["binary_fission", "bacteria"]
+  },
+  {
+    "category": "Life Sciences",
+    "subcategory": "Ecology",
+    "content": "A food chain describes who eats whom, passing energy from one organism to the next.",
+    "verification_source": "https://www.britannica.com/science/food-chain",
+    "verification_type": "encyclopedia",
+    "complexity_rating": 2,
+    "tags": ["food_chain"]
+  },
+  {
+    "category": "Life Sciences",
+    "subcategory": "Botany",
+    "content": "Plants spread and reproduce through pollination and through the dispersal of their seeds.",
+    "verification_source": "https://www.britannica.com/science/seed-plant-reproductive-part",
+    "verification_type": "encyclopedia",
+    "complexity_rating": 2,
+    "tags": ["seed_dispersal"]
+  },
+  {
+    "category": "Earth & Geosciences",
+    "subcategory": "Hydrology",
+    "content": "A watershed is the area of land that drains rain and snowmelt into a common river, lake, or sea.",
+    "verification_source": "https://www.usgs.gov/special-topics/water-science-school",
+    "verification_type": "government",
+    "complexity_rating": 3,
+    "tags": ["watershed"]
+  },
+  {
+    "category": "Earth & Geosciences",
+    "subcategory": "Volcanology",
+    "content": "Magma is molten rock beneath Earth's surface; once it erupts onto the surface it is called lava.",
+    "verification_source": "https://www.usgs.gov/",
+    "verification_type": "government",
+    "complexity_rating": 2,
+    "tags": ["magma", "lava"]
+  },
+  {
+    "category": "Geopolitics & Civics",
+    "subcategory": "Geography",
+    "content": "Lines of longitude run north to south, while lines of latitude run east to west.",
+    "verification_source": "https://www.britannica.com/science/latitude",
+    "verification_type": "encyclopedia",
+    "complexity_rating": 2,
+    "tags": ["latitude", "longitude"]
+  },
+  {
+    "category": "Geopolitics & Civics",
+    "subcategory": "Geography",
+    "content": "The Panama Canal connects the Atlantic and Pacific Oceans across Central America.",
+    "verification_source": "https://www.britannica.com/topic/Panama-Canal",
+    "verification_type": "encyclopedia",
+    "complexity_rating": 2,
+    "tags": ["panama_canal"]
+  },
+  {
+    "category": "History & Archaeology",
+    "subcategory": "Ancient Engineering",
+    "content": "The ancient Romans built a vast network of paved roads, many marked along the way by stone milestones.",
+    "verification_source": "https://www.britannica.com/technology/road",
+    "verification_type": "encyclopedia",
+    "complexity_rating": 3,
+    "tags": ["roman_roads"]
+  },
+  {
+    "category": "History & Archaeology",
+    "subcategory": "Ancient Technology",
+    "content": "The Antikythera mechanism, an ancient Greek device, is considered one of the earliest known analogue computers.",
+    "verification_source": "https://www.britannica.com/topic/Antikythera-mechanism",
+    "verification_type": "encyclopedia",
+    "complexity_rating": 4,
+    "tags": ["antikythera_mechanism"]
+  },
+  {
+    "category": "Technology & Engineering",
+    "subcategory": "Hardware",
+    "content": "The CPU, or central processing unit, carries out the instructions of a computer program.",
+    "verification_source": "https://www.britannica.com/technology/central-processing-unit",
+    "verification_type": "encyclopedia",
+    "complexity_rating": 3,
+    "tags": ["cpu"]
+  },
+  {
+    "category": "Technology & Engineering",
+    "subcategory": "Computing",
+    "content": "A gigabyte is roughly a billion bytes of data.",
+    "verification_source": "https://www.britannica.com/technology/gigabyte",
+    "verification_type": "encyclopedia",
+    "complexity_rating": 2,
+    "tags": ["gigabyte"]
+  },
+  {
+    "category": "Linguistics & Language",
+    "subcategory": "Morphology",
+    "content": "A suffix is added to the end of a word to change its meaning or grammatical role, like '-ly' in 'quickly'.",
+    "verification_source": "https://www.britannica.com/topic/suffix",
+    "verification_type": "encyclopedia",
+    "complexity_rating": 3,
+    "tags": ["suffix"],
+    "language_concepts": ["morphology"]
+  },
+  {
+    "category": "Linguistics & Language",
+    "subcategory": "Communication",
+    "content": "Body language and gestures are forms of non-verbal communication.",
+    "verification_source": "https://www.britannica.com/topic/nonverbal-communication",
+    "verification_type": "encyclopedia",
+    "complexity_rating": 2,
+    "tags": ["nonverbal_communication"]
+  },
+  {
+    "category": "Health & Medicine",
+    "subcategory": "Anatomy",
+    "content": "The kidneys filter waste from the blood and produce urine.",
+    "verification_source": "https://www.britannica.com/science/kidney",
+    "verification_type": "encyclopedia",
+    "complexity_rating": 2,
+    "tags": ["kidneys"]
+  },
+  {
+    "category": "Health & Medicine",
+    "subcategory": "Physiology",
+    "content": "Skeletal muscles often work in pairs: as one contracts, its partner relaxes.",
+    "verification_source": "https://www.britannica.com/science/muscle",
+    "verification_type": "encyclopedia",
+    "complexity_rating": 3,
+    "tags": ["muscles"]
+  },
+  {
+    "category": "Arts & Architecture",
+    "subcategory": "Visual Art",
+    "content": "Texture in art refers to how a surface looks or feels — smooth, rough, soft, or patterned.",
+    "verification_source": "https://www.britannica.com/art/painting",
+    "verification_type": "encyclopedia",
+    "complexity_rating": 3,
+    "tags": ["texture"]
+  },
+  {
+    "category": "Arts & Architecture",
+    "subcategory": "Painting",
+    "content": "A portrait is an artwork that depicts a specific person.",
+    "verification_source": "https://www.britannica.com/art/portrait-painting",
+    "verification_type": "encyclopedia",
+    "complexity_rating": 1,
+    "tags": ["portrait"]
+  },
+  {
+    "category": "Philosophy & Logic",
+    "subcategory": "Reasoning",
+    "content": "Inductive reasoning draws general conclusions from specific observations, though the conclusions are not guaranteed.",
+    "verification_source": "https://www.britannica.com/topic/induction-reason",
+    "verification_type": "encyclopedia",
+    "complexity_rating": 4,
+    "tags": ["inductive_reasoning"]
+  },
+  {
+    "category": "Miscellaneous Global Facts",
+    "subcategory": "Time",
+    "content": "There are seven days in a week, a division used by many cultures for thousands of years.",
+    "verification_source": "https://www.britannica.com/science/week",
+    "verification_type": "encyclopedia",
+    "complexity_rating": 2,
+    "tags": ["week"]
+  }
+]
