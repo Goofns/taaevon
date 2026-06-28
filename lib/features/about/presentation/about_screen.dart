@@ -16,9 +16,9 @@ typedef _Stats = ({int facts, int words, int targets});
 Future<_Stats> _loadStats() async {
   final factsRaw = await rootBundle.loadString('assets/data/facts_seed.json');
   final lexRaw = await rootBundle.loadString('assets/data/lexicon_seed.json');
-  final facts = (json.decode(factsRaw) as List).length;
+  final facts = (json.decode(factsRaw) as List<dynamic>).length;
   final lex = json.decode(lexRaw) as Map<String, dynamic>;
-  final words = (lex['words'] as List).cast<Map<String, dynamic>>();
+  final words = (lex['words'] as List<dynamic>).cast<Map<String, dynamic>>();
   final targets = words.map((w) => w['target_language']).toSet().length;
   return (facts: facts, words: words.length, targets: targets);
 }
