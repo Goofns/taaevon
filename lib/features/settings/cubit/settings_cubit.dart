@@ -81,6 +81,7 @@ class SettingsCubit extends Cubit<SettingsState> {
       // to defaults but still mark hydrated so the app always advances.
       loaded = const SettingsState();
     }
+    if (isClosed) return; // hardening vs emit-after-close if ever screen-scoped
     emit(loaded.copyWith(hydrated: true));
   }
 

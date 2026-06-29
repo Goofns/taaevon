@@ -19,6 +19,7 @@ class StreakCubit extends Cubit<Streak> {
 
   Future<void> hydrate() async {
     final m = await _store.load();
+    if (isClosed) return; // hardening vs emit-after-close if ever screen-scoped
     final loaded = m == null ? const Streak() : Streak.fromMap(m);
     emit(loaded.copyWith(hydrated: true));
   }

@@ -61,6 +61,7 @@ class ProgressCubit extends Cubit<ProgressState> {
   /// Load any saved completions and emit them. Call once at startup.
   Future<void> hydrate() async {
     final saved = await _store.load();
+    if (isClosed) return; // hardening vs emit-after-close if ever screen-scoped
     if (saved.isNotEmpty) {
       emit(state.copyWith(completions: saved));
     }

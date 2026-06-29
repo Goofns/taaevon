@@ -46,6 +46,9 @@ jobs:
       - name: Dataset integrity checks
         run: python tools/validate_data.py assets/data/facts_seed.json assets/data/lexicon_seed.json
 
+      - name: Parser shape contract (data matches Dart fromJson)
+        run: python tools/check_data_shape.py .
+
   build-apk:
     # Generates the Android project (the repo ships lib/ but not android/),
     # builds an installable APK, and uploads it as a downloadable artifact.
