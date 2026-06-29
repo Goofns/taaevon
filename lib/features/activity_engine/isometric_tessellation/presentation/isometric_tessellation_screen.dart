@@ -28,7 +28,8 @@ class IsometricTessellationScreen extends StatelessWidget {
         appBar: AppBar(
           backgroundColor: Colors.transparent,
           elevation: 0,
-          title: const Text('ISOMETRIC TESSELLATION', style: TaaevonTypography.label),
+          title: const Text('ISOMETRIC TESSELLATION',
+              style: TaaevonTypography.label),
         ),
         extendBodyBehindAppBar: true,
         body: GeometricBackground(
@@ -58,12 +59,14 @@ class _ActiveView extends StatelessWidget {
   final TessellationInProgress state;
 
   void _handleTap(BuildContext context, Offset local) {
-    final cellSize = _gridSide /
-        (state.rows > state.cols ? state.rows : state.cols);
+    final cellSize =
+        _gridSide / (state.rows > state.cols ? state.rows : state.cols);
     final row = (local.dy / cellSize).floor();
     final col = (local.dx / cellSize).floor();
     if (row < 0 || row >= state.rows || col < 0 || col >= state.cols) return;
-    context.read<TessellationBloc>().add(TessellationCellTapped(Cell(row, col)));
+    context
+        .read<TessellationBloc>()
+        .add(TessellationCellTapped(Cell(row, col)));
   }
 
   @override
@@ -76,8 +79,10 @@ class _ActiveView extends StatelessWidget {
           Row(
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
-              Text('Tiles earned: ${state.credits}', style: TaaevonTypography.label),
-              Text('${state.placed} / ${state.total} placed', style: TaaevonTypography.label),
+              Text('Tiles earned: ${state.credits}',
+                  style: TaaevonTypography.label),
+              Text('${state.placed} / ${state.total} placed',
+                  style: TaaevonTypography.label),
             ],
           ),
           const SizedBox(height: TaaevonDimensions.md),
@@ -119,8 +124,9 @@ class _ActiveView extends StatelessWidget {
           _ProblemCard(prompt: state.prompt, outcome: state.lastOutcome),
           const SizedBox(height: TaaevonDimensions.md),
           NumericAnswerField(
-            onSubmit: (v) =>
-                context.read<TessellationBloc>().add(TessellationAnswerSubmitted(v)),
+            onSubmit: (v) => context
+                .read<TessellationBloc>()
+                .add(TessellationAnswerSubmitted(v)),
           ),
         ],
       ),
@@ -137,7 +143,10 @@ class _ProblemCard extends StatelessWidget {
   Widget build(BuildContext context) {
     final (note, color) = switch (outcome) {
       TileOutcome.earned => ('Tile earned!', TaaevonColors.success),
-      TileOutcome.missed => ('No tile — try the next one', TaaevonColors.warning),
+      TileOutcome.missed => (
+          'No tile — try the next one',
+          TaaevonColors.warning
+        ),
       TileOutcome.none => ('', Colors.transparent),
     };
     return Container(
@@ -193,13 +202,14 @@ class _DoneView extends StatelessWidget {
             ),
           ),
           const SizedBox(height: TaaevonDimensions.lg),
-          Text('Tessellation complete', style: TaaevonTypography.heading),
+          const Text('Tessellation complete', style: TaaevonTypography.heading),
           const SizedBox(height: TaaevonDimensions.xs),
           Text('$total tiles placed', style: TaaevonTypography.label),
           const SizedBox(height: TaaevonDimensions.lg),
           ElevatedButton(
-            onPressed: () =>
-                context.read<TessellationBloc>().add(const TessellationStarted()),
+            onPressed: () => context
+                .read<TessellationBloc>()
+                .add(const TessellationStarted()),
             child: const Text('Play again'),
           ),
           const SizedBox(height: TaaevonDimensions.sm),

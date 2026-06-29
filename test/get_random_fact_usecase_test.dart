@@ -15,9 +15,11 @@ class _StubFactRepo implements FactRepository {
     required Set<String> excludeIds,
   }) async =>
       _facts
-          .where((f) =>
-              f.complexityRating <= complexityMax &&
-              !excludeIds.contains(f.factId))
+          .where(
+            (f) =>
+                f.complexityRating <= complexityMax &&
+                !excludeIds.contains(f.factId),
+          )
           .toList();
 
   @override

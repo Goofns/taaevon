@@ -41,7 +41,8 @@ void main() {
     test('unlocks exactly at the threshold', () {
       expect(AchievementCatalog.isUnlocked(_byId('first'), _snap()), isFalse);
       expect(
-        AchievementCatalog.isUnlocked(_byId('first'), _snap(totalCompletions: 1)),
+        AchievementCatalog.isUnlocked(
+            _byId('first'), _snap(totalCompletions: 1)),
         isTrue,
       );
     });
@@ -49,12 +50,16 @@ void main() {
     test('stays locked one below the threshold', () {
       expect(
         AchievementCatalog.isUnlocked(
-            _byId('dedicated'), _snap(totalCompletions: 24)),
+          _byId('dedicated'),
+          _snap(totalCompletions: 24),
+        ),
         isFalse,
       );
       expect(
         AchievementCatalog.isUnlocked(
-            _byId('dedicated'), _snap(totalCompletions: 25)),
+          _byId('dedicated'),
+          _snap(totalCompletions: 25),
+        ),
         isTrue,
       );
     });

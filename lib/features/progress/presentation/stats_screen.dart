@@ -37,8 +37,9 @@ class StatsScreen extends StatelessWidget {
               final goal = context.watch<SettingsCubit>().state.dailyGoal;
               final streak = context.watch<StreakCubit>().state.count;
               final ids = _activityNames.keys.toList();
-              final maxCount =
-                  ids.map(p.completionsOf).fold<int>(0, (m, c) => c > m ? c : m);
+              final maxCount = ids
+                  .map(p.completionsOf)
+                  .fold<int>(0, (m, c) => c > m ? c : m);
               final mostId = p.mostCompletedActivity;
               return ListView(
                 padding: const EdgeInsets.all(TaaevonDimensions.lg),
@@ -60,7 +61,7 @@ class StatsScreen extends StatelessWidget {
                     child: const Text('View achievements'),
                   ),
                   const SizedBox(height: TaaevonDimensions.md),
-                  Text('By activity', style: TaaevonTypography.label),
+                  const Text('By activity', style: TaaevonTypography.label),
                   const SizedBox(height: TaaevonDimensions.sm),
                   for (final id in ids)
                     _ActivityBar(
@@ -111,7 +112,7 @@ class _TotalCard extends StatelessWidget {
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          Text('Total completions', style: TaaevonTypography.label),
+          const Text('Total completions', style: TaaevonTypography.label),
           const SizedBox(height: TaaevonDimensions.xs),
           Text(
             '$total',
@@ -166,7 +167,7 @@ class _StreakCard extends StatelessWidget {
           Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              Text('Day streak', style: TaaevonTypography.label),
+              const Text('Day streak', style: TaaevonTypography.label),
               const SizedBox(height: 2),
               Text(
                 count > 0 ? 'Keep it going!' : 'Practise today to start one',

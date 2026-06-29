@@ -38,8 +38,7 @@ class PolygonPolyglotScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final repo =
-        repository ?? LexiconRepository.production();
+    final repo = repository ?? LexiconRepository.production();
 
     return BlocProvider<PolyglotBloc>(
       create: (_) => PolyglotBloc(repository: repo)
@@ -56,7 +55,8 @@ class PolygonPolyglotScreen extends StatelessWidget {
               ? TextDirection.rtl
               : TextDirection.ltr,
           child: GeometricBackground(
-            seed: BackgroundSeedGenerator.fromUserId('polyglot-$targetLanguage'),
+            seed:
+                BackgroundSeedGenerator.fromUserId('polyglot-$targetLanguage'),
             child: SafeArea(
               child: BlocConsumer<PolyglotBloc, PolyglotState>(
                 listener: (context, state) {
@@ -97,7 +97,9 @@ class _ActiveView extends StatelessWidget {
         children: [
           Text('Translate to $langName', style: TaaevonTypography.label),
           const SizedBox(height: TaaevonDimensions.xs),
-          Text(state.round.promptTerm, style: TaaevonTypography.display.copyWith(fontSize: 28, letterSpacing: 0)),
+          Text(state.round.promptTerm,
+              style: TaaevonTypography.display
+                  .copyWith(fontSize: 28, letterSpacing: 0)),
           const SizedBox(height: TaaevonDimensions.md),
           SizedBox(
             height: 200,
@@ -150,9 +152,8 @@ class _ActiveView extends StatelessWidget {
               itemCount: state.round.options.length,
               itemBuilder: (context, i) => OptionTile(
                 option: state.round.options[i],
-                onTap: () => context
-                    .read<PolyglotBloc>()
-                    .add(PolyglotAnswerSelected(i)),
+                onTap: () =>
+                    context.read<PolyglotBloc>().add(PolyglotAnswerSelected(i)),
               ),
             ),
           ),
@@ -186,7 +187,7 @@ class _CompleteView extends StatelessWidget {
               ),
             ),
             const SizedBox(height: TaaevonDimensions.lg),
-            Text('Polygon solved', style: TaaevonTypography.heading),
+            const Text('Polygon solved', style: TaaevonTypography.heading),
             const SizedBox(height: TaaevonDimensions.xs),
             Text('$total vertices locked', style: TaaevonTypography.label),
             const SizedBox(height: TaaevonDimensions.lg),
@@ -215,7 +216,8 @@ class _MessageView extends StatelessWidget {
   Widget build(BuildContext context) => Center(
         child: Padding(
           padding: const EdgeInsets.all(TaaevonDimensions.xl),
-          child: Text(text, textAlign: TextAlign.center, style: TaaevonTypography.body),
+          child: Text(text,
+              textAlign: TextAlign.center, style: TaaevonTypography.body),
         ),
       );
 }
@@ -226,7 +228,8 @@ class _GeometricLoader extends StatelessWidget {
   Widget build(BuildContext context) => const SizedBox(
         width: 28,
         height: 28,
-        child: CircularProgressIndicator(strokeWidth: 2, color: TaaevonColors.languageAccent),
+        child: CircularProgressIndicator(
+            strokeWidth: 2, color: TaaevonColors.languageAccent),
       );
 }
 

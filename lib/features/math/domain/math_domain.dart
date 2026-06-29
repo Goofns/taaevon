@@ -23,17 +23,80 @@ class MathDomain {
 abstract class MathDomainCatalog {
   static const List<MathDomain> domains = [
     // Tier 1 — Foundational
-    MathDomain(id: 'numeracy', name: 'Numeracy', tier: 1, band: 1.0, glyphSides: 3, unlocked: true, completion: 0.8),
-    MathDomain(id: 'arithmetic', name: 'Arithmetic', tier: 1, band: 1.5, glyphSides: 3, unlocked: true, completion: 0.6),
-    MathDomain(id: 'fractions', name: 'Fractions', tier: 1, band: 1.8, glyphSides: 4, unlocked: true, completion: 0.2),
+    MathDomain(
+        id: 'numeracy',
+        name: 'Numeracy',
+        tier: 1,
+        band: 1.0,
+        glyphSides: 3,
+        unlocked: true,
+        completion: 0.8),
+    MathDomain(
+        id: 'arithmetic',
+        name: 'Arithmetic',
+        tier: 1,
+        band: 1.5,
+        glyphSides: 3,
+        unlocked: true,
+        completion: 0.6),
+    MathDomain(
+        id: 'fractions',
+        name: 'Fractions',
+        tier: 1,
+        band: 1.8,
+        glyphSides: 4,
+        unlocked: true,
+        completion: 0.2),
     // Tier 2 — Intermediate
-    MathDomain(id: 'algebra', name: 'Algebra', tier: 2, band: 2.2, glyphSides: 4, unlocked: true, completion: 0.3),
-    MathDomain(id: 'geometry', name: 'Geometry', tier: 2, band: 2.5, glyphSides: 5, unlocked: true, completion: 0.0),
-    MathDomain(id: 'trigonometry', name: 'Trigonometry', tier: 2, band: 2.8, glyphSides: 5, unlocked: false, completion: 0.0),
+    MathDomain(
+        id: 'algebra',
+        name: 'Algebra',
+        tier: 2,
+        band: 2.2,
+        glyphSides: 4,
+        unlocked: true,
+        completion: 0.3),
+    MathDomain(
+        id: 'geometry',
+        name: 'Geometry',
+        tier: 2,
+        band: 2.5,
+        glyphSides: 5,
+        unlocked: true,
+        completion: 0.0),
+    MathDomain(
+        id: 'trigonometry',
+        name: 'Trigonometry',
+        tier: 2,
+        band: 2.8,
+        glyphSides: 5,
+        unlocked: false,
+        completion: 0.0),
     // Tier 3 — Advanced
-    MathDomain(id: 'calculus', name: 'Calculus', tier: 3, band: 3.0, glyphSides: 6, unlocked: true, completion: 0.0),
-    MathDomain(id: 'linear-algebra', name: 'Linear Algebra', tier: 3, band: 3.4, glyphSides: 6, unlocked: false, completion: 0.0),
-    MathDomain(id: 'abstract', name: 'Abstract Algebra', tier: 3, band: 3.7, glyphSides: 7, unlocked: false, completion: 0.0),
+    MathDomain(
+        id: 'calculus',
+        name: 'Calculus',
+        tier: 3,
+        band: 3.0,
+        glyphSides: 6,
+        unlocked: true,
+        completion: 0.0),
+    MathDomain(
+        id: 'linear-algebra',
+        name: 'Linear Algebra',
+        tier: 3,
+        band: 3.4,
+        glyphSides: 6,
+        unlocked: false,
+        completion: 0.0),
+    MathDomain(
+        id: 'abstract',
+        name: 'Abstract Algebra',
+        tier: 3,
+        band: 3.7,
+        glyphSides: 7,
+        unlocked: false,
+        completion: 0.0),
   ];
 
   static List<MathDomain> forTier(int tier) =>

@@ -17,9 +17,11 @@ class _StubRepository implements FactRepository {
     required Set<String> excludeIds,
   }) async {
     return _all
-        .where((f) =>
-            f.complexityRating <= complexityMax &&
-            !excludeIds.contains(f.factId))
+        .where(
+          (f) =>
+              f.complexityRating <= complexityMax &&
+              !excludeIds.contains(f.factId),
+        )
         .toList();
   }
 
@@ -73,7 +75,8 @@ void main() {
     test('respects the complexity ceiling', () async {
       final repo = _StubRepository([_fact('hard', 5), _fact('easy', 1)]);
       final bloc = FactBloc(
-        getRandomFact: GetRandomFactUseCase(repository: repo, random: Random(1)),
+        getRandomFact:
+            GetRandomFactUseCase(repository: repo, random: Random(1)),
       );
 
       bloc.add(const FactRequested(complexityLevel: 2));

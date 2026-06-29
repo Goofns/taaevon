@@ -5,8 +5,11 @@ void main() {
   group('MathDomainCatalog', () {
     test('exposes three domains per tier across three tiers', () {
       for (final tier in [1, 2, 3]) {
-        expect(MathDomainCatalog.forTier(tier), hasLength(3),
-            reason: 'tier $tier');
+        expect(
+          MathDomainCatalog.forTier(tier),
+          hasLength(3),
+          reason: 'tier $tier',
+        );
         expect(MathDomainCatalog.tierLabels.containsKey(tier), isTrue);
       }
     });

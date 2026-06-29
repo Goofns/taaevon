@@ -134,7 +134,7 @@ class _DomainTile extends StatelessWidget {
                       child: CustomPaint(
                         size: const Size(48, 48),
                         painter: locked
-                            ? _LockGlyphPainter()
+                            ? const _LockGlyphPainter()
                             : _PolygonGlyphPainter(sides: domain.glyphSides),
                       ),
                     ),
@@ -226,7 +226,8 @@ class _LockGlyphPainter extends CustomPainter {
     final c = size.center(Offset.zero);
     for (final half in [size.shortestSide / 2, size.shortestSide / 4]) {
       canvas.drawRect(
-        Rect.fromCenter(center: c, width: half * 2 * 0.8, height: half * 2 * 0.8),
+        Rect.fromCenter(
+            center: c, width: half * 2 * 0.8, height: half * 2 * 0.8),
         paint,
       );
     }

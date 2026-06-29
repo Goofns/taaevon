@@ -36,7 +36,7 @@ class IncompletePolygonPainter extends CustomPainter {
 
     // Ghost outline of the full target polygon.
     final ghost = Paint()
-      ..color = accent.withOpacity(0.18)
+      ..color = accent.withValues(alpha: 0.18)
       ..style = PaintingStyle.stroke
       ..strokeWidth = 1.5;
     final ghostPath = Path()..addPolygon(points, true);
@@ -46,7 +46,10 @@ class IncompletePolygonPainter extends CustomPainter {
     if (complete) {
       final fill = Paint()
         ..shader = RadialGradient(
-          colors: [accent.withOpacity(0.35), accent.withOpacity(0.10)],
+          colors: [
+            accent.withValues(alpha: 0.35),
+            accent.withValues(alpha: 0.10)
+          ],
         ).createShader(Rect.fromCircle(center: center, radius: radius));
       canvas.drawPath(Path()..addPolygon(points, true), fill);
     }
@@ -72,7 +75,7 @@ class IncompletePolygonPainter extends CustomPainter {
       final marker = Paint()
         ..style = placed ? PaintingStyle.fill : PaintingStyle.stroke
         ..strokeWidth = 2
-        ..color = placed ? accent : accent.withOpacity(0.30);
+        ..color = placed ? accent : accent.withValues(alpha: 0.30);
       canvas.drawCircle(points[i], placed ? 7 : 5, marker);
     }
   }

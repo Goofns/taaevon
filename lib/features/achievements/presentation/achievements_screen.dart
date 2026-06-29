@@ -85,61 +85,66 @@ class _AchievementTile extends StatelessWidget {
         child: Opacity(
           opacity: unlocked ? 1.0 : 0.6,
           child: Container(
-        margin: const EdgeInsets.only(bottom: TaaevonDimensions.sm),
-        padding: const EdgeInsets.all(TaaevonDimensions.md),
-        decoration: BoxDecoration(
-          color: TaaevonColors.cardBackground,
-          borderRadius: BorderRadius.circular(TaaevonDimensions.radiusLg),
-          border: Border.all(
-            color: unlocked ? TaaevonColors.success : TaaevonColors.cardBorder,
-            width: unlocked ? 1.5 : 1,
-          ),
-        ),
-        child: Row(
-          crossAxisAlignment: CrossAxisAlignment.start,
-          children: [
-            CustomPaint(
-              size: const Size(40, 40),
-              painter: _BadgePainter(unlocked: unlocked),
-            ),
-            const SizedBox(width: TaaevonDimensions.md),
-            Expanded(
-              child: Column(
-                crossAxisAlignment: CrossAxisAlignment.start,
-                children: [
-                  Text(
-                    achievement.title,
-                    style: TaaevonTypography.heading.copyWith(fontSize: 16),
-                  ),
-                  const SizedBox(height: 2),
-                  Text(achievement.description, style: TaaevonTypography.label),
-                  if (!unlocked) ...[
-                    const SizedBox(height: TaaevonDimensions.sm),
-                    ClipRRect(
-                      borderRadius: BorderRadius.circular(3),
-                      child: SizedBox(
-                        height: 5,
-                        child: Stack(
-                          children: [
-                            Container(color: TaaevonColors.backgroundDeep),
-                            FractionallySizedBox(
-                              widthFactor: progress,
-                              child: Container(color: TaaevonColors.mathAccent),
-                            ),
-                          ],
-                        ),
-                      ),
-                    ),
-                    const SizedBox(height: 2),
-                    Text('$value / ${achievement.threshold}',
-                        style: TaaevonTypography.label),
-                  ],
-                ],
+            margin: const EdgeInsets.only(bottom: TaaevonDimensions.sm),
+            padding: const EdgeInsets.all(TaaevonDimensions.md),
+            decoration: BoxDecoration(
+              color: TaaevonColors.cardBackground,
+              borderRadius: BorderRadius.circular(TaaevonDimensions.radiusLg),
+              border: Border.all(
+                color:
+                    unlocked ? TaaevonColors.success : TaaevonColors.cardBorder,
+                width: unlocked ? 1.5 : 1,
               ),
             ),
-          ],
-        ),
-      ),
+            child: Row(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                CustomPaint(
+                  size: const Size(40, 40),
+                  painter: _BadgePainter(unlocked: unlocked),
+                ),
+                const SizedBox(width: TaaevonDimensions.md),
+                Expanded(
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      Text(
+                        achievement.title,
+                        style: TaaevonTypography.heading.copyWith(fontSize: 16),
+                      ),
+                      const SizedBox(height: 2),
+                      Text(achievement.description,
+                          style: TaaevonTypography.label),
+                      if (!unlocked) ...[
+                        const SizedBox(height: TaaevonDimensions.sm),
+                        ClipRRect(
+                          borderRadius: BorderRadius.circular(3),
+                          child: SizedBox(
+                            height: 5,
+                            child: Stack(
+                              children: [
+                                Container(color: TaaevonColors.backgroundDeep),
+                                FractionallySizedBox(
+                                  widthFactor: progress,
+                                  child: Container(
+                                      color: TaaevonColors.mathAccent),
+                                ),
+                              ],
+                            ),
+                          ),
+                        ),
+                        const SizedBox(height: 2),
+                        Text(
+                          '$value / ${achievement.threshold}',
+                          style: TaaevonTypography.label,
+                        ),
+                      ],
+                    ],
+                  ),
+                ),
+              ],
+            ),
+          ),
         ),
       ),
     );
@@ -164,7 +169,7 @@ class _BadgePainter extends CustomPainter {
       path,
       Paint()
         ..color = unlocked
-            ? TaaevonColors.success.withOpacity(0.25)
+            ? TaaevonColors.success.withValues(alpha: 0.25)
             : TaaevonColors.backgroundDeep,
     );
     canvas.drawPath(

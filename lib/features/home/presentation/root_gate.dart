@@ -27,9 +27,7 @@ class RootGate extends StatelessWidget {
             ),
           );
         }
-        return s.onboardingSeen
-            ? const HomeScreen()
-            : const OnboardingScreen();
+        return s.onboardingSeen ? const HomeScreen() : const OnboardingScreen();
       },
     );
   }

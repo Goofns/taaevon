@@ -48,26 +48,31 @@ MathBloc _bloc() => MathBloc(
 
 void main() {
   group('MathBloc', () {
-    test('post-grad band + A1 starts in full interlock with vocabulary', () async {
+    test('post-grad band + A1 starts in full interlock with vocabulary',
+        () async {
       final bloc = _bloc();
-      bloc.add(const MathStarted(
-        band: 3.0,
-        cefr: CefrLevel.a1,
-        targetLanguage: 'ja',
-      ));
+      bloc.add(
+        const MathStarted(
+          band: 3.0,
+          cefr: CefrLevel.a1,
+          targetLanguage: 'ja',
+        ),
+      );
       final s = await bloc.stream.firstWhere((x) => x is MathInProgress)
           as MathInProgress;
 
       expect(s.mode, InjectionMode.fullInterlock);
       expect(s.problem.glossary, isNotEmpty);
       // The injected operand is rendered as a Japanese numeral, not a digit.
-      expect(s.problem.prompt.contains(s.problem.glossary.first.script), isTrue);
+      expect(
+          s.problem.prompt.contains(s.problem.glossary.first.script), isTrue);
       await bloc.close();
     });
 
     test('a correct answer steps the band up (+0.1)', () async {
       final bloc = _bloc();
-      bloc.add(const MathStarted(band: 3.0, cefr: CefrLevel.a1, targetLanguage: 'ja'));
+      bloc.add(const MathStarted(
+          band: 3.0, cefr: CefrLevel.a1, targetLanguage: 'ja'));
       final s = await bloc.stream.firstWhere((x) => x is MathInProgress)
           as MathInProgress;
 
@@ -80,7 +85,8 @@ void main() {
 
     test('a wrong answer steps the band down (−0.15)', () async {
       final bloc = _bloc();
-      bloc.add(const MathStarted(band: 3.0, cefr: CefrLevel.a1, targetLanguage: 'ja'));
+      bloc.add(const MathStarted(
+          band: 3.0, cefr: CefrLevel.a1, targetLanguage: 'ja'));
       final s = await bloc.stream.firstWhere((x) => x is MathInProgress)
           as MathInProgress;
 

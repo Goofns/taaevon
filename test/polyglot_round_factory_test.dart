@@ -18,7 +18,13 @@ LexiconEntry _e(String id, String term) => LexiconEntry(
 
 void main() {
   final factory = PolyglotRoundFactory(random: Random(1));
-  final pool = [_e('0', 'あ'), _e('1', 'い'), _e('2', 'う'), _e('3', 'え'), _e('4', 'お')];
+  final pool = [
+    _e('0', 'あ'),
+    _e('1', 'い'),
+    _e('2', 'う'),
+    _e('3', 'え'),
+    _e('4', 'お')
+  ];
 
   group('PolyglotRoundFactory', () {
     test('builds exactly optionCount tiles with one correct, all unique', () {

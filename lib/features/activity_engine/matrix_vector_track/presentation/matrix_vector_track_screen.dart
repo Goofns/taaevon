@@ -28,8 +28,7 @@ class MatrixVectorTrackScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final repo =
-        repository ?? LexiconRepository.production();
+    final repo = repository ?? LexiconRepository.production();
 
     return BlocProvider<VectorTrackBloc>(
       create: (_) => VectorTrackBloc(lexicon: repo)
@@ -38,7 +37,8 @@ class MatrixVectorTrackScreen extends StatelessWidget {
         appBar: AppBar(
           backgroundColor: Colors.transparent,
           elevation: 0,
-          title: const Text('MATRIX VECTOR TRACK', style: TaaevonTypography.label),
+          title:
+              const Text('MATRIX VECTOR TRACK', style: TaaevonTypography.label),
         ),
         extendBodyBehindAppBar: true,
         body: Directionality(
@@ -121,7 +121,9 @@ class _ActiveView extends StatelessWidget {
             ),
           ),
           const SizedBox(height: TaaevonDimensions.sm),
-          Center(child: Text('Moves: ${state.moves}', style: TaaevonTypography.label)),
+          Center(
+              child: Text('Moves: ${state.moves}',
+                  style: TaaevonTypography.label)),
           const SizedBox(height: TaaevonDimensions.lg),
           _DirectionPad(
             onMove: (d) => context.read<VectorTrackBloc>().add(VectorMoved(d)),
@@ -142,7 +144,7 @@ class _DoneView extends StatelessWidget {
       child: Column(
         mainAxisSize: MainAxisSize.min,
         children: [
-          Text('Target reached', style: TaaevonTypography.heading),
+          const Text('Target reached', style: TaaevonTypography.heading),
           const SizedBox(height: TaaevonDimensions.xs),
           Text('in $moves moves', style: TaaevonTypography.label),
           const SizedBox(height: TaaevonDimensions.lg),
@@ -170,16 +172,24 @@ class _DirectionPad extends StatelessWidget {
   Widget build(BuildContext context) {
     return Column(
       children: [
-        _DirButton(direction: VectorDirection.up, onTap: () => onMove(VectorDirection.up)),
+        _DirButton(
+            direction: VectorDirection.up,
+            onTap: () => onMove(VectorDirection.up)),
         Row(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            _DirButton(direction: VectorDirection.left, onTap: () => onMove(VectorDirection.left)),
+            _DirButton(
+                direction: VectorDirection.left,
+                onTap: () => onMove(VectorDirection.left)),
             const SizedBox(width: 56),
-            _DirButton(direction: VectorDirection.right, onTap: () => onMove(VectorDirection.right)),
+            _DirButton(
+                direction: VectorDirection.right,
+                onTap: () => onMove(VectorDirection.right)),
           ],
         ),
-        _DirButton(direction: VectorDirection.down, onTap: () => onMove(VectorDirection.down)),
+        _DirButton(
+            direction: VectorDirection.down,
+            onTap: () => onMove(VectorDirection.down)),
       ],
     );
   }

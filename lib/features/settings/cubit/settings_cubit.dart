@@ -54,7 +54,8 @@ class SettingsState extends Equatable {
       );
 
   @override
-  List<Object?> get props => [dailyGoal, reduceMotion, onboardingSeen, hydrated];
+  List<Object?> get props =>
+      [dailyGoal, reduceMotion, onboardingSeen, hydrated];
 }
 
 /// Holds settings and persists them through a [SettingsStore]. Provided above
@@ -86,7 +87,8 @@ class SettingsCubit extends Cubit<SettingsState> {
   }
 
   void setDailyGoal(int goal) {
-    final clamped = goal < minGoal ? minGoal : (goal > maxGoal ? maxGoal : goal);
+    final clamped =
+        goal < minGoal ? minGoal : (goal > maxGoal ? maxGoal : goal);
     if (clamped == state.dailyGoal) return;
     final next = state.copyWith(dailyGoal: clamped);
     emit(next);

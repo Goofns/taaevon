@@ -54,21 +54,24 @@ class AboutScreen extends StatelessWidget {
               const SizedBox(height: TaaevonDimensions.xl),
               const _Section(
                 title: 'A distraction-free design',
-                body: 'Taaevon uses Abstract Geometric Minimalism: faded polygons '
+                body:
+                    'Taaevon uses Abstract Geometric Minimalism: faded polygons '
                     'and isometric grids, high-contrast interactive colours, and '
                     'strictly no characters, mascots, or faces — so nothing '
                     'competes with the ideas themselves.',
               ),
               const _Section(
                 title: 'Two curricula, interlocked',
-                body: 'Mathematics from first counting to advanced calculus, and '
+                body:
+                    'Mathematics from first counting to advanced calculus, and '
                     'language from your very first word to fluent conversation. '
                     'A difficulty engine can even pose advanced maths using '
                     'beginner-script number-words.',
               ),
               const _Section(
                 title: 'No dead time',
-                body: 'Every loading moment surfaces a verified, cross-disciplinary '
+                body:
+                    'Every loading moment surfaces a verified, cross-disciplinary '
                     'fact, so even transitions teach you something.',
               ),
               const SizedBox(height: TaaevonDimensions.sm),
@@ -84,7 +87,7 @@ class AboutScreen extends StatelessWidget {
                 },
               ),
               const SizedBox(height: TaaevonDimensions.lg),
-              Center(
+              const Center(
                 child: Text(
                   'Facts cite verified institutional sources.\n'
                   'Built with Flutter.',

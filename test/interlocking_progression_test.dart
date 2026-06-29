@@ -70,7 +70,7 @@ void main() {
   group('InterlockingProgression.seedBindingsFromVocab', () {
     test('derives math variable values from syllable counts', () {
       final vocab = [
-        LexiconEntry(
+        const LexiconEntry(
           wordId: 'w1',
           sourceLanguage: 'en',
           targetLanguage: 'ja',
@@ -80,7 +80,7 @@ void main() {
           syllableCount: 5,
           mathExtractedValue: 5,
         ),
-        LexiconEntry(
+        const LexiconEntry(
           wordId: 'w2',
           sourceLanguage: 'en',
           targetLanguage: 'ja',

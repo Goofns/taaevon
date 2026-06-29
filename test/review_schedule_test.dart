@@ -9,12 +9,27 @@ void main() {
 
     test('isDue compares the due date to today', () {
       final now = DateTime(2026, 6, 27);
-      expect(ReviewScheduler.isDue(
-          const ReviewSchedule(dueDate: '2026-06-20'), now), isTrue);
-      expect(ReviewScheduler.isDue(
-          const ReviewSchedule(dueDate: '2026-06-27'), now), isTrue);
-      expect(ReviewScheduler.isDue(
-          const ReviewSchedule(dueDate: '2026-07-01'), now), isFalse);
+      expect(
+        ReviewScheduler.isDue(
+          const ReviewSchedule(dueDate: '2026-06-20'),
+          now,
+        ),
+        isTrue,
+      );
+      expect(
+        ReviewScheduler.isDue(
+          const ReviewSchedule(dueDate: '2026-06-27'),
+          now,
+        ),
+        isTrue,
+      );
+      expect(
+        ReviewScheduler.isDue(
+          const ReviewSchedule(dueDate: '2026-07-01'),
+          now,
+        ),
+        isFalse,
+      );
     });
 
     test('grading a new word Good schedules it one day out at rep 1', () {

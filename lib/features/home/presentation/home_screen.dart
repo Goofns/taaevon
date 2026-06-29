@@ -39,8 +39,10 @@ class HomeScreen extends StatelessWidget {
                 Align(
                   alignment: Alignment.centerRight,
                   child: IconButton(
-                    icon: const Icon(Icons.settings_outlined,
-                        color: TaaevonColors.secondaryText),
+                    icon: const Icon(
+                      Icons.settings_outlined,
+                      color: TaaevonColors.secondaryText,
+                    ),
                     tooltip: 'Settings',
                     onPressed: () => Navigator.of(context).push(
                       MaterialPageRoute<void>(
@@ -50,7 +52,8 @@ class HomeScreen extends StatelessWidget {
                   ),
                 ),
                 const SizedBox(height: TaaevonDimensions.sm),
-                const Center(child: Text('TAAEVON', style: TaaevonTypography.display)),
+                const Center(
+                    child: Text('TAAEVON', style: TaaevonTypography.display)),
                 const SizedBox(height: TaaevonDimensions.xs),
                 const Center(
                   child: Text(
@@ -131,33 +134,33 @@ class _DailyGoal extends StatelessWidget {
               MaterialPageRoute<void>(builder: (_) => const StatsScreen()),
             ),
             child: Column(
-          crossAxisAlignment: CrossAxisAlignment.stretch,
-          children: [
-            Row(
-              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              crossAxisAlignment: CrossAxisAlignment.stretch,
               children: [
-                Text('Daily goal', style: TaaevonTypography.label),
-                Text('${p.total} / $goal', style: TaaevonTypography.label),
-              ],
-            ),
-            const SizedBox(height: TaaevonDimensions.sm),
-            ClipRRect(
-              borderRadius: BorderRadius.circular(3),
-              child: SizedBox(
-                height: TaaevonDimensions.progressHeight,
-                child: Stack(
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
-                    Container(color: TaaevonColors.backgroundDeep),
-                    FractionallySizedBox(
-                      widthFactor: p.progressToward(goal),
-                      child: Container(color: TaaevonColors.languageAccent),
-                    ),
+                    const Text('Daily goal', style: TaaevonTypography.label),
+                    Text('${p.total} / $goal', style: TaaevonTypography.label),
                   ],
                 ),
-              ),
+                const SizedBox(height: TaaevonDimensions.sm),
+                ClipRRect(
+                  borderRadius: BorderRadius.circular(3),
+                  child: SizedBox(
+                    height: TaaevonDimensions.progressHeight,
+                    child: Stack(
+                      children: [
+                        Container(color: TaaevonColors.backgroundDeep),
+                        FractionallySizedBox(
+                          widthFactor: p.progressToward(goal),
+                          child: Container(color: TaaevonColors.languageAccent),
+                        ),
+                      ],
+                    ),
+                  ),
+                ),
+              ],
             ),
-          ],
-        ),
           ),
         );
       },
@@ -221,8 +224,8 @@ class _TrackCard extends StatelessWidget {
 /// Pure-geometry glyph for the Mathematics track (no characters/faces).
 class _MathGlyph extends StatelessWidget {
   @override
-  Widget build(BuildContext context) => CustomPaint(
-        size: const Size(56, 56),
+  Widget build(BuildContext context) => const CustomPaint(
+        size: Size(56, 56),
         painter: _PolyPainter(sides: 3, color: TaaevonColors.mathAccent),
       );
 }
@@ -230,8 +233,8 @@ class _MathGlyph extends StatelessWidget {
 /// Pure-geometry glyph for the Language track.
 class _LanguageGlyph extends StatelessWidget {
   @override
-  Widget build(BuildContext context) => CustomPaint(
-        size: const Size(56, 56),
+  Widget build(BuildContext context) => const CustomPaint(
+        size: Size(56, 56),
         painter: _PolyPainter(sides: 6, color: TaaevonColors.languageAccent),
       );
 }

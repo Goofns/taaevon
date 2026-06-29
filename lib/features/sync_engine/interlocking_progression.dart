@@ -13,8 +13,9 @@ class GlossaryItem {
   final int value; // numeric meaning, e.g. 3
   final String? romanization; // e.g. "san"
 
-  String get gloss =>
-      romanization == null ? '$script = $value' : '$script ($romanization) = $value';
+  String get gloss => romanization == null
+      ? '$script = $value'
+      : '$script ($romanization) = $value';
 }
 
 /// A math problem after cross-domain injection.
@@ -76,11 +77,13 @@ class InterlockingProgression {
         final w = numerals[value]!;
         replacement = w.translatedTerm;
         if (seenValues.add(value)) {
-          glossary.add(GlossaryItem(
-            script: w.translatedTerm,
-            value: value,
-            romanization: w.romanization,
-          ));
+          glossary.add(
+            GlossaryItem(
+              script: w.translatedTerm,
+              value: value,
+              romanization: w.romanization,
+            ),
+          );
         }
       }
       prompt = prompt.replaceAll('{$name}', replacement);

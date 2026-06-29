@@ -44,8 +44,8 @@ void main() {
     test('starts an A1 session with a clamped 4-vertex polygon', () async {
       final bloc = _makeBloc(_jaEntries(6));
       bloc.add(const PolyglotStarted(targetLanguage: 'ja', cefr: CefrLevel.a1));
-      final state = await bloc.stream
-          .firstWhere((s) => s is PolyglotInProgress) as PolyglotInProgress;
+      final state = await bloc.stream.firstWhere((s) => s is PolyglotInProgress)
+          as PolyglotInProgress;
       expect(state.totalVertices, 4);
       expect(state.placedVertices, 0);
       expect(state.round.options.length, 4);
@@ -55,12 +55,13 @@ void main() {
     test('locking every vertex completes the polygon', () async {
       final bloc = _makeBloc(_jaEntries(6));
       bloc.add(const PolyglotStarted(targetLanguage: 'ja', cefr: CefrLevel.a1));
-      final first = await bloc.stream
-          .firstWhere((s) => s is PolyglotInProgress) as PolyglotInProgress;
+      final first = await bloc.stream.firstWhere((s) => s is PolyglotInProgress)
+          as PolyglotInProgress;
       final total = first.totalVertices;
 
       for (var v = 0; v < total; v++) {
-        final correctIdx = (bloc.state as PolyglotInProgress).round.correctIndex;
+        final correctIdx =
+            (bloc.state as PolyglotInProgress).round.correctIndex;
         bloc.add(PolyglotAnswerSelected(correctIdx));
         final next = await bloc.stream.first;
         if (v < total - 1) {
@@ -76,8 +77,8 @@ void main() {
     test('a wrong answer distorts without locking a vertex', () async {
       final bloc = _makeBloc(_jaEntries(6));
       bloc.add(const PolyglotStarted(targetLanguage: 'ja', cefr: CefrLevel.a1));
-      final state = await bloc.stream
-          .firstWhere((s) => s is PolyglotInProgress) as PolyglotInProgress;
+      final state = await bloc.stream.firstWhere((s) => s is PolyglotInProgress)
+          as PolyglotInProgress;
       final wrongIdx = state.round.options.indexWhere((o) => !o.isCorrect);
 
       bloc.add(PolyglotAnswerSelected(wrongIdx));
@@ -91,8 +92,7 @@ void main() {
     test('fails gracefully when vocabulary is too small', () async {
       final bloc = _makeBloc(_jaEntries(1));
       bloc.add(const PolyglotStarted(targetLanguage: 'ja', cefr: CefrLevel.a1));
-      final next =
-          await bloc.stream.firstWhere((s) => s is! PolyglotLoading);
+      final next = await bloc.stream.firstWhere((s) => s is! PolyglotLoading);
       expect(next, isA<PolyglotFailure>());
       await bloc.close();
     });

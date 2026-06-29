@@ -26,12 +26,13 @@ class GeometricBackgroundPainter extends CustomPainter {
 
   void _drawIsometricGrid(Canvas canvas, Size size) {
     final paint = Paint()
-      ..color = TaaevonColors.gridLine.withOpacity(0.12)
+      ..color = TaaevonColors.gridLine.withValues(alpha: 0.12)
       ..strokeWidth = 0.5
       ..style = PaintingStyle.stroke;
 
     const spacing = TaaevonDimensions.gridSpacing;
-    final dx = size.height / math.tan(math.pi / 3); // horizontal run of a 60° line
+    final dx =
+        size.height / math.tan(math.pi / 3); // horizontal run of a 60° line
 
     // Horizontal rows
     for (double y = 0; y <= size.height + spacing; y += spacing) {
@@ -50,7 +51,7 @@ class GeometricBackgroundPainter extends CustomPainter {
   void _drawPolygonField(Canvas canvas, Size size) {
     final rng = math.Random(seedValue);
     final paint = Paint()
-      ..color = TaaevonColors.polygonFill.withOpacity(0.09)
+      ..color = TaaevonColors.polygonFill.withValues(alpha: 0.09)
       ..style = PaintingStyle.fill;
 
     // Central 60% is a no-draw "safe zone" so foreground content stays clean.
@@ -78,7 +79,9 @@ class GeometricBackgroundPainter extends CustomPainter {
         final jitter = 0.7 + rng.nextDouble() * 0.6;
         final point = center +
             Offset(math.cos(angle), math.sin(angle)) * (radius * jitter);
-        v == 0 ? path.moveTo(point.dx, point.dy) : path.lineTo(point.dx, point.dy);
+        v == 0
+            ? path.moveTo(point.dx, point.dy)
+            : path.lineTo(point.dx, point.dy);
       }
       path.close();
       canvas.drawPath(path, paint);
@@ -102,8 +105,8 @@ class GeometricBackgroundPainter extends CustomPainter {
       final paint = Paint()
         ..shader = RadialGradient(
           colors: [
-            TaaevonColors.polygonFill.withOpacity(0.09),
-            TaaevonColors.polygonFill.withOpacity(0.0),
+            TaaevonColors.polygonFill.withValues(alpha: 0.09),
+            TaaevonColors.polygonFill.withValues(alpha: 0.0),
           ],
         ).createShader(Rect.fromCircle(center: center, radius: radius));
       canvas.drawCircle(center, radius, paint);

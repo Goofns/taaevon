@@ -29,7 +29,7 @@ class VectorTrackPainter extends CustomPainter {
     final cs = size.shortestSide / gridSize;
 
     final cell = Paint()
-      ..color = TaaevonColors.languageAccent.withOpacity(0.16)
+      ..color = TaaevonColors.languageAccent.withValues(alpha: 0.16)
       ..style = PaintingStyle.stroke
       ..strokeWidth = 1;
 
@@ -40,8 +40,11 @@ class VectorTrackPainter extends CustomPainter {
           RRect.fromRectAndRadius(rect, const Radius.circular(8)),
           cell,
         );
-        _label(canvas, columnWords[c] ?? '${c + 1}',
-            Offset(c * cs + cs / 2, r * cs + cs * 0.28));
+        _label(
+          canvas,
+          columnWords[c] ?? '${c + 1}',
+          Offset(c * cs + cs / 2, r * cs + cs * 0.28),
+        );
       }
     }
 
@@ -66,7 +69,10 @@ class VectorTrackPainter extends CustomPainter {
       _arrowHead(canvas, origin, head, vector);
     }
     canvas.drawCircle(
-        head, 7, Paint()..color = TaaevonColors.primaryAction);
+      head,
+      7,
+      Paint()..color = TaaevonColors.primaryAction,
+    );
   }
 
   void _arrowHead(Canvas canvas, Offset from, Offset to, Paint paint) {

@@ -48,8 +48,7 @@ class VectorTrackBloc extends Bloc<VectorTrackEvent, VectorTrackState> {
 
       _gridSize = event.gridSize;
       _columnWords = {
-        for (var c = 0; c < _gridSize; c++)
-          c: valueWord[c + 1] ?? '${c + 1}',
+        for (var c = 0; c < _gridSize; c++) c: valueWord[c + 1] ?? '${c + 1}',
       };
       _current = const VectorPos(0, 0);
       _moves = 0;

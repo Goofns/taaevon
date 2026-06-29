@@ -34,16 +34,17 @@ class MathScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final repo =
-        repository ?? LexiconRepository.production();
+    final repo = repository ?? LexiconRepository.production();
 
     return BlocProvider<MathBloc>(
       create: (_) => MathBloc(lexicon: repo)
-        ..add(MathStarted(
-          band: band,
-          cefr: cefr,
-          targetLanguage: targetLanguage,
-        )),
+        ..add(
+          MathStarted(
+            band: band,
+            cefr: cefr,
+            targetLanguage: targetLanguage,
+          ),
+        ),
       child: Scaffold(
         appBar: AppBar(
           backgroundColor: Colors.transparent,
@@ -92,8 +93,10 @@ class _ProblemView extends StatelessWidget {
           Row(
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
-              Text('Band ${state.band.toStringAsFixed(2)}',
-                  style: TaaevonTypography.label),
+              Text(
+                'Band ${state.band.toStringAsFixed(2)}',
+                style: TaaevonTypography.label,
+              ),
               _ModeBadge(mode: state.mode),
             ],
           ),
@@ -113,7 +116,7 @@ class _ProblemView extends StatelessWidget {
           ),
           if (state.problem.glossary.isNotEmpty) ...[
             const SizedBox(height: TaaevonDimensions.md),
-            Text('New vocabulary', style: TaaevonTypography.label),
+            const Text('New vocabulary', style: TaaevonTypography.label),
             const SizedBox(height: TaaevonDimensions.sm),
             Wrap(
               spacing: TaaevonDimensions.sm,
@@ -199,8 +202,14 @@ class _Feedback extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final (text, color) = switch (outcome) {
-      AnswerOutcome.correct => ('Correct — difficulty rising', TaaevonColors.success),
-      AnswerOutcome.incorrect => ('Not quite — recalibrating', TaaevonColors.warning),
+      AnswerOutcome.correct => (
+          'Correct — difficulty rising',
+          TaaevonColors.success
+        ),
+      AnswerOutcome.incorrect => (
+          'Not quite — recalibrating',
+          TaaevonColors.warning
+        ),
       AnswerOutcome.none => ('', Colors.transparent),
     };
     if (text.isEmpty) return const SizedBox(height: 20);

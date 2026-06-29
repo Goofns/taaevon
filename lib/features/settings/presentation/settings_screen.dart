@@ -61,12 +61,13 @@ class SettingsScreen extends StatelessWidget {
                   const SizedBox(height: TaaevonDimensions.md),
                   _SettingCard(
                     title: 'Reduce motion',
-                    subtitle: 'Skip non-essential animations, like the polygon shake',
+                    subtitle:
+                        'Skip non-essential animations, like the polygon shake',
                     child: Align(
                       alignment: Alignment.centerLeft,
                       child: Switch(
                         value: s.reduceMotion,
-                        activeColor: TaaevonColors.secondaryAction,
+                        activeThumbColor: TaaevonColors.secondaryAction,
                         onChanged: cubit.setReduceMotion,
                       ),
                     ),

@@ -1,7 +1,13 @@
 import 'package:equatable/equatable.dart';
 
 /// Which progress metric an achievement is unlocked by.
-enum AchievementMetric { totalCompletions, streak, polyglot, tessellation, vector }
+enum AchievementMetric {
+  totalCompletions,
+  streak,
+  polyglot,
+  tessellation,
+  vector
+}
 
 class Achievement extends Equatable {
   const Achievement({
@@ -127,8 +133,10 @@ abstract class AchievementCatalog {
   static bool isUnlocked(Achievement a, AchievementSnapshot s) =>
       s.value(a.metric) >= a.threshold;
 
-  static Set<String> unlockedIds(AchievementSnapshot s) =>
-      {for (final a in all) if (isUnlocked(a, s)) a.id};
+  static Set<String> unlockedIds(AchievementSnapshot s) => {
+        for (final a in all)
+          if (isUnlocked(a, s)) a.id
+      };
 
   static int unlockedCount(AchievementSnapshot s) =>
       all.where((a) => isUnlocked(a, s)).length;

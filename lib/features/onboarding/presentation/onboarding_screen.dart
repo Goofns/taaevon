@@ -38,7 +38,7 @@ class OnboardingScreen extends StatelessWidget {
                   ),
                 ),
                 const SizedBox(height: TaaevonDimensions.xl),
-                Text(
+                const Text(
                   'Two minds, one path.\n\n'
                   'Learn mathematics and language together — from first counting to '
                   'advanced calculus, from your first word to fluent conversation. '

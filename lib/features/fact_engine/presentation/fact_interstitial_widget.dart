@@ -19,8 +19,10 @@ class FactInterstitial extends StatelessWidget {
         final card = switch (state) {
           FactReady(:final fact) => _FactCard(fact: fact),
           FactDepleted() => const _MessageCard(
-              'You have seen every fact in this session.'),
-          FactFailure(:final message) => _MessageCard('Could not load a fact.\n$message'),
+              'You have seen every fact in this session.',
+            ),
+          FactFailure(:final message) =>
+            _MessageCard('Could not load a fact.\n$message'),
           _ => const SizedBox.shrink(),
         };
         return AnimatedSwitcher(
@@ -53,7 +55,7 @@ class _FactCard extends StatelessWidget {
           borderRadius: BorderRadius.circular(TaaevonDimensions.radiusXl),
           boxShadow: [
             BoxShadow(
-              color: TaaevonColors.primaryAction.withOpacity(0.25),
+              color: TaaevonColors.primaryAction.withValues(alpha: 0.25),
               blurRadius: 24,
               offset: const Offset(0, 8),
             ),

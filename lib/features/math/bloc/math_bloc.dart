@@ -76,7 +76,8 @@ class MathBloc extends Bloc<MathEvent, MathState> {
     );
     _band = ddc.calibratedLevel;
 
-    emit(_nextProblem(correct ? AnswerOutcome.correct : AnswerOutcome.incorrect));
+    emit(_nextProblem(
+        correct ? AnswerOutcome.correct : AnswerOutcome.incorrect));
   }
 
   void _onNext(MathNextRequested event, Emitter<MathState> emit) {

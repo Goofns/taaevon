@@ -45,9 +45,11 @@ class FactLocalDataSource {
   }) async {
     await ensureLoaded();
     return _facts
-        .where((f) =>
-            f.complexityRating <= complexityMax &&
-            !excludeIds.contains(f.factId))
+        .where(
+          (f) =>
+              f.complexityRating <= complexityMax &&
+              !excludeIds.contains(f.factId),
+        )
         .toList(growable: false);
   }
 

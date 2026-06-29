@@ -22,8 +22,7 @@ class ReviewScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final repo =
-        repository ?? LexiconRepository.production();
+    final repo = repository ?? LexiconRepository.production();
     return BlocProvider<ReviewCubit>(
       create: (_) => ReviewCubit(
         lexicon: repo,
@@ -33,7 +32,8 @@ class ReviewScreen extends StatelessWidget {
         appBar: AppBar(
           backgroundColor: Colors.transparent,
           elevation: 0,
-          title: const Text('VOCABULARY REVIEW', style: TaaevonTypography.label),
+          title:
+              const Text('VOCABULARY REVIEW', style: TaaevonTypography.label),
         ),
         extendBodyBehindAppBar: true,
         body: GeometricBackground(
@@ -75,15 +75,17 @@ class _SessionView extends StatelessWidget {
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.stretch,
         children: [
-          Text('${state.done + 1} / ${state.total}',
-              style: TaaevonTypography.label),
+          Text(
+            '${state.done + 1} / ${state.total}',
+            style: TaaevonTypography.label,
+          ),
           const Spacer(),
           Center(
             child: Text(
               w.baseTerm,
               textAlign: TextAlign.center,
-              style:
-                  TaaevonTypography.display.copyWith(fontSize: 30, letterSpacing: 0),
+              style: TaaevonTypography.display
+                  .copyWith(fontSize: 30, letterSpacing: 0),
             ),
           ),
           const SizedBox(height: TaaevonDimensions.lg),
@@ -92,16 +94,18 @@ class _SessionView extends StatelessWidget {
               child: Text(
                 w.translatedTerm,
                 textAlign: TextAlign.center,
-                style: TaaevonTypography.heading
-                    .copyWith(fontSize: 26, color: TaaevonColors.languageAccent),
+                style: TaaevonTypography.heading.copyWith(
+                    fontSize: 26, color: TaaevonColors.languageAccent),
               ),
             ),
             if (w.romanization != null) ...[
               const SizedBox(height: 4),
-              Center(child: Text(w.romanization!, style: TaaevonTypography.label)),
+              Center(
+                  child: Text(w.romanization!, style: TaaevonTypography.label)),
             ],
           ] else
-            const Center(child: Text('• • •', style: TaaevonTypography.heading)),
+            const Center(
+                child: Text('• • •', style: TaaevonTypography.heading)),
           const Spacer(),
           if (!state.revealed)
             ElevatedButton(onPressed: cubit.reveal, child: const Text('Reveal'))
@@ -195,7 +199,7 @@ class _DoneView extends StatelessWidget {
       child: Column(
         mainAxisSize: MainAxisSize.min,
         children: [
-          Text('Review complete', style: TaaevonTypography.heading),
+          const Text('Review complete', style: TaaevonTypography.heading),
           const SizedBox(height: TaaevonDimensions.xs),
           Text('$reviewed words reviewed', style: TaaevonTypography.label),
           const SizedBox(height: TaaevonDimensions.lg),
@@ -221,7 +225,8 @@ class _MessageView extends StatelessWidget {
         child: Column(
           mainAxisSize: MainAxisSize.min,
           children: [
-            Text(text, textAlign: TextAlign.center, style: TaaevonTypography.body),
+            Text(text,
+                textAlign: TextAlign.center, style: TaaevonTypography.body),
             const SizedBox(height: TaaevonDimensions.lg),
             TextButton(
               onPressed: () => Navigator.of(context).maybePop(),

@@ -18,7 +18,8 @@ void main() {
 
   group('SharedPrefs stores survive corrupt values without throwing', () {
     test('SettingsStore.load returns null on truncated JSON', () async {
-      SharedPreferences.setMockInitialValues({'taaevon.settings': '{"dailyGoal":5'});
+      SharedPreferences.setMockInitialValues(
+          {'taaevon.settings': '{"dailyGoal":5'});
       expect(await SharedPrefsSettingsStore().load(), isNull);
     });
 

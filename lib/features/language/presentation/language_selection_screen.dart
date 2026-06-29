@@ -22,8 +22,7 @@ class LanguageSelectionScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final repo =
-        repository ?? LexiconRepository.production();
+    final repo = repository ?? LexiconRepository.production();
 
     return Scaffold(
       appBar: AppBar(
@@ -52,8 +51,10 @@ class LanguageSelectionScreen extends StatelessWidget {
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
-                    Text('Tap a language to play or review.',
-                        style: TaaevonTypography.label),
+                    const Text(
+                      'Tap a language to play or review.',
+                      style: TaaevonTypography.label,
+                    ),
                     const SizedBox(height: TaaevonDimensions.md),
                     Wrap(
                       spacing: TaaevonDimensions.md,
@@ -151,11 +152,11 @@ class _LanguageTile extends StatelessWidget {
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                Expanded(
+                const Expanded(
                   child: Center(
                     child: CustomPaint(
-                      size: const Size(44, 44),
-                      painter: const _HexPainter(),
+                      size: Size(44, 44),
+                      painter: _HexPainter(),
                     ),
                   ),
                 ),
@@ -191,7 +192,8 @@ class _HexPainter extends CustomPainter {
       ..strokeJoin = StrokeJoin.round;
     final points = <Offset>[
       for (var i = 0; i < 6; i++)
-        center + Offset.fromDirection((2 * math.pi * i / 6) - math.pi / 2, radius),
+        center +
+            Offset.fromDirection((2 * math.pi * i / 6) - math.pi / 2, radius),
     ];
     canvas.drawPath(Path()..addPolygon(points, true), paint);
   }

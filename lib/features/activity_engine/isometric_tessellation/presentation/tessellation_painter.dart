@@ -24,13 +24,13 @@ class TessellationPainter extends CustomPainter {
     final s = cellSize(size);
 
     final outline = Paint()
-      ..color = TaaevonColors.mathAccent.withOpacity(0.18)
+      ..color = TaaevonColors.mathAccent.withValues(alpha: 0.18)
       ..style = PaintingStyle.stroke
       ..strokeWidth = 1;
     final facetA = Paint()..color = TaaevonColors.accentC;
     final facetB = Paint()..color = TaaevonColors.accentA;
     final edge = Paint()
-      ..color = Colors.white.withOpacity(0.9)
+      ..color = Colors.white.withValues(alpha: 0.9)
       ..style = PaintingStyle.stroke
       ..strokeWidth = 1.5;
 

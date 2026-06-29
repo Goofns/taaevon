@@ -29,8 +29,7 @@ abstract class TaaevonTheme {
           foregroundColor: Colors.white,
           minimumSize: const Size.fromHeight(TaaevonDimensions.buttonHeight),
           shape: RoundedRectangleBorder(
-            borderRadius:
-                BorderRadius.circular(TaaevonDimensions.radiusMd),
+            borderRadius: BorderRadius.circular(TaaevonDimensions.radiusMd),
           ),
           textStyle: const TextStyle(
             fontFamily: TaaevonTypography.fontFamilyBody,

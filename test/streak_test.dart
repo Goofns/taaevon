@@ -9,8 +9,8 @@ void main() {
     });
 
     test('first activity starts a streak of 1', () {
-      final s =
-          StreakCalculator.recordActivity(const Streak(), DateTime(2026, 6, 27));
+      final s = StreakCalculator.recordActivity(
+          const Streak(), DateTime(2026, 6, 27));
       expect(s.count, 1);
       expect(s.lastActiveDate, '2026-06-27');
     });
@@ -18,22 +18,22 @@ void main() {
     test('same day leaves the streak unchanged', () {
       const current = Streak(count: 3, lastActiveDate: '2026-06-27');
       final s = StreakCalculator.recordActivity(
-          current, DateTime(2026, 6, 27, 23, 59));
+        current,
+        DateTime(2026, 6, 27, 23, 59),
+      );
       expect(s, current);
     });
 
     test('the next day increments the streak', () {
       const current = Streak(count: 3, lastActiveDate: '2026-06-27');
-      final s =
-          StreakCalculator.recordActivity(current, DateTime(2026, 6, 28));
+      final s = StreakCalculator.recordActivity(current, DateTime(2026, 6, 28));
       expect(s.count, 4);
       expect(s.lastActiveDate, '2026-06-28');
     });
 
     test('a missed day resets the streak to 1', () {
       const current = Streak(count: 9, lastActiveDate: '2026-06-25');
-      final s =
-          StreakCalculator.recordActivity(current, DateTime(2026, 6, 27));
+      final s = StreakCalculator.recordActivity(current, DateTime(2026, 6, 27));
       expect(s.count, 1);
     });
 
