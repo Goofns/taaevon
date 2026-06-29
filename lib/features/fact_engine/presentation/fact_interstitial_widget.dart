@@ -26,7 +26,10 @@ class FactInterstitial extends StatelessWidget {
           _ => const SizedBox.shrink(),
         };
         return AnimatedSwitcher(
+          // Asymmetric: ease in over 120ms, fade out faster at 80ms so a new
+          // fact replaces the old one crisply (PRD §6.3).
           duration: const Duration(milliseconds: 120),
+          reverseDuration: const Duration(milliseconds: 80),
           child: card,
         );
       },

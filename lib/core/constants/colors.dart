@@ -17,6 +17,7 @@ abstract class TaaevonColors {
 
   // Foreground interactive
   static const Color primaryAction = Color(0xFF1A3C5E);
+  static const Color primaryActionPressed = Color(0xFF0D3050); // pressed (PRD §3.5)
   static const Color secondaryAction = Color(0xFF0D6EFD);
   static const Color success = Color(0xFF0B6E4F);
   static const Color warning = Color(0xFF8B4000);

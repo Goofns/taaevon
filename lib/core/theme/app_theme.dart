@@ -24,17 +24,33 @@ abstract class TaaevonTheme {
         labelMedium: TaaevonTypography.label,
       ),
       elevatedButtonTheme: ElevatedButtonThemeData(
-        style: ElevatedButton.styleFrom(
-          backgroundColor: TaaevonColors.primaryAction,
-          foregroundColor: Colors.white,
-          minimumSize: const Size.fromHeight(TaaevonDimensions.buttonHeight),
-          shape: RoundedRectangleBorder(
-            borderRadius: BorderRadius.circular(TaaevonDimensions.radiusMd),
+        // Per-state background (PRD §3.5): pressed darkens, disabled greys out.
+        style: ButtonStyle(
+          backgroundColor: WidgetStateProperty.resolveWith((states) {
+            if (states.contains(WidgetState.disabled)) {
+              return TaaevonColors.disabled;
+            }
+            if (states.contains(WidgetState.pressed)) {
+              return TaaevonColors.primaryActionPressed;
+            }
+            return TaaevonColors.primaryAction;
+          }),
+          foregroundColor: const WidgetStatePropertyAll(Colors.white),
+          elevation: const WidgetStatePropertyAll(0),
+          minimumSize: const WidgetStatePropertyAll(
+            Size.fromHeight(TaaevonDimensions.buttonHeight),
           ),
-          textStyle: const TextStyle(
-            fontFamily: TaaevonTypography.fontFamilyBody,
-            fontSize: 16,
-            fontWeight: FontWeight.w600,
+          shape: WidgetStatePropertyAll(
+            RoundedRectangleBorder(
+              borderRadius: BorderRadius.circular(TaaevonDimensions.radiusMd),
+            ),
+          ),
+          textStyle: const WidgetStatePropertyAll(
+            TextStyle(
+              fontFamily: TaaevonTypography.fontFamilyBody,
+              fontSize: 16,
+              fontWeight: FontWeight.w600,
+            ),
           ),
         ),
       ),
