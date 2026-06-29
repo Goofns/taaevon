@@ -121,12 +121,16 @@ class _DailyGoal extends StatelessWidget {
     final goal = context.watch<SettingsCubit>().state.dailyGoal;
     return BlocBuilder<ProgressCubit, ProgressState>(
       builder: (context, p) {
-        return GestureDetector(
-          behavior: HitTestBehavior.opaque,
-          onTap: () => Navigator.of(context).push(
-            MaterialPageRoute<void>(builder: (_) => const StatsScreen()),
-          ),
-          child: Column(
+        return Semantics(
+          button: true,
+          label:
+              'Daily goal, ${p.total} of $goal complete. Open progress details',
+          child: GestureDetector(
+            behavior: HitTestBehavior.opaque,
+            onTap: () => Navigator.of(context).push(
+              MaterialPageRoute<void>(builder: (_) => const StatsScreen()),
+            ),
+            child: Column(
           crossAxisAlignment: CrossAxisAlignment.stretch,
           children: [
             Row(
@@ -154,6 +158,7 @@ class _DailyGoal extends StatelessWidget {
             ),
           ],
         ),
+          ),
         );
       },
     );

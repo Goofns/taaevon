@@ -85,17 +85,25 @@ class _ActiveView extends StatelessWidget {
           ),
           const SizedBox(height: TaaevonDimensions.md),
           Center(
-            child: GestureDetector(
-              behavior: HitTestBehavior.opaque,
-              onTapUp: (d) => _handleTap(context, d.localPosition),
-              child: SizedBox(
-                width: _gridSide,
-                height: _gridSide,
-                child: CustomPaint(
-                  painter: TessellationPainter(
-                    filled: state.filled,
-                    rows: state.rows,
-                    cols: state.cols,
+            // Give the tap surface a button role + state so screen-reader users
+            // can discover and place tiles (WCAG 4.1.2 / 1.1.1).
+            child: Semantics(
+              button: true,
+              label: 'Tessellation board, ${state.placed} of ${state.total} '
+                  'cells filled. Tap an empty cell next to your pattern to '
+                  'place a tile.',
+              child: GestureDetector(
+                behavior: HitTestBehavior.opaque,
+                onTapUp: (d) => _handleTap(context, d.localPosition),
+                child: SizedBox(
+                  width: _gridSide,
+                  height: _gridSide,
+                  child: CustomPaint(
+                    painter: TessellationPainter(
+                      filled: state.filled,
+                      rows: state.rows,
+                      cols: state.cols,
+                    ),
                   ),
                 ),
               ),
@@ -148,7 +156,13 @@ class _ProblemCard extends StatelessWidget {
           Text(prompt, style: TaaevonTypography.mono.copyWith(fontSize: 22)),
           if (note.isNotEmpty) ...[
             const SizedBox(height: TaaevonDimensions.sm),
-            Text(note, style: TaaevonTypography.label.copyWith(color: color)),
+            Semantics(
+              liveRegion: true,
+              child: Text(
+                note,
+                style: TaaevonTypography.label.copyWith(color: color),
+              ),
+            ),
           ],
         ],
       ),

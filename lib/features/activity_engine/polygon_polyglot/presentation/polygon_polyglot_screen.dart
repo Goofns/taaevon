@@ -121,9 +121,22 @@ class _ActiveView extends StatelessWidget {
           ),
           const SizedBox(height: TaaevonDimensions.sm),
           Center(
-            child: Text(
-              '${state.placedVertices} / ${state.totalVertices} vertices',
-              style: TaaevonTypography.label,
+            // liveRegion so the right/wrong outcome and progress are announced
+            // after each answer — otherwise the result is conveyed only by the
+            // shake/polygon repaint, silent to screen readers (WCAG 4.1.3).
+            child: Semantics(
+              liveRegion: true,
+              label: state.lastAnswerWrong
+                  ? 'Incorrect, try again. ${state.placedVertices} of '
+                      '${state.totalVertices} vertices placed.'
+                  : '${state.placedVertices} of ${state.totalVertices} '
+                      'vertices placed.',
+              child: ExcludeSemantics(
+                child: Text(
+                  '${state.placedVertices} / ${state.totalVertices} vertices',
+                  style: TaaevonTypography.label,
+                ),
+              ),
             ),
           ),
           const SizedBox(height: TaaevonDimensions.md),

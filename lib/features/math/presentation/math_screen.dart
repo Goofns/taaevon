@@ -203,9 +203,14 @@ class _Feedback extends StatelessWidget {
       AnswerOutcome.none => ('', Colors.transparent),
     };
     if (text.isEmpty) return const SizedBox(height: 20);
-    return Text(
-      text,
-      style: TaaevonTypography.label.copyWith(color: color, fontSize: 14),
+    // liveRegion so a screen reader announces the correct/incorrect outcome —
+    // the core feedback of the activity — without a focus change (WCAG 4.1.3).
+    return Semantics(
+      liveRegion: true,
+      child: Text(
+        text,
+        style: TaaevonTypography.label.copyWith(color: color, fontSize: 14),
+      ),
     );
   }
 }

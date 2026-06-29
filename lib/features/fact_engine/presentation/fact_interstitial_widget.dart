@@ -39,6 +39,9 @@ class _FactCard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Semantics(
+      // liveRegion so the fact is announced when it fades in (it appears in
+      // place with no focus change), incl. the 'Show a fact' path (WCAG 4.1.3).
+      liveRegion: true,
       label: 'Did you know: ${fact.content}. Category ${fact.category}, '
           'complexity ${fact.complexityRating} of 5.',
       child: Container(
@@ -126,14 +129,18 @@ class _MessageCard extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container(
-      margin: const EdgeInsets.all(TaaevonDimensions.md),
-      padding: const EdgeInsets.all(TaaevonDimensions.lg),
-      decoration: BoxDecoration(
-        color: TaaevonColors.factBackground,
-        borderRadius: BorderRadius.circular(TaaevonDimensions.radiusXl),
+    return Semantics(
+      liveRegion: true,
+      label: message,
+      child: Container(
+        margin: const EdgeInsets.all(TaaevonDimensions.md),
+        padding: const EdgeInsets.all(TaaevonDimensions.lg),
+        decoration: BoxDecoration(
+          color: TaaevonColors.factBackground,
+          borderRadius: BorderRadius.circular(TaaevonDimensions.radiusXl),
+        ),
+        child: Text(message, style: TaaevonTypography.factCard),
       ),
-      child: Text(message, style: TaaevonTypography.factCard),
     );
   }
 }

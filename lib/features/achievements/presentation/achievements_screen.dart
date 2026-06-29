@@ -76,9 +76,15 @@ class _AchievementTile extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final progress = (value / achievement.threshold).clamp(0.0, 1.0);
-    return Opacity(
-      opacity: unlocked ? 1.0 : 0.6,
-      child: Container(
+    return Semantics(
+      // Speak earned/locked status (otherwise signalled only by color, opacity,
+      // and the badge graphic) as one merged node (WCAG 1.4.1 / 4.1.2).
+      label: '${achievement.title}. ${achievement.description}. '
+          "${unlocked ? 'Unlocked' : 'Locked, $value of ${achievement.threshold}'}",
+      child: ExcludeSemantics(
+        child: Opacity(
+          opacity: unlocked ? 1.0 : 0.6,
+          child: Container(
         margin: const EdgeInsets.only(bottom: TaaevonDimensions.sm),
         padding: const EdgeInsets.all(TaaevonDimensions.md),
         decoration: BoxDecoration(
@@ -132,6 +138,8 @@ class _AchievementTile extends StatelessWidget {
               ),
             ),
           ],
+        ),
+      ),
         ),
       ),
     );

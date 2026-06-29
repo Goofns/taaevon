@@ -101,15 +101,25 @@ class _ActiveView extends StatelessWidget {
           ),
           const SizedBox(height: TaaevonDimensions.md),
           Center(
-            child: SizedBox(
-              width: _gridSide,
-              height: _gridSide,
-              child: CustomPaint(
-                painter: VectorTrackPainter(
-                  gridSize: state.gridSize,
-                  current: state.current,
-                  target: state.target,
-                  columnWords: state.columnWords,
+            // The vector position is otherwise drawn only as canvas geometry;
+            // expose it as a live region so screen-reader users can tell where
+            // the vector is and steer to the target (WCAG 1.1.1 / 4.1.3).
+            child: Semantics(
+              liveRegion: true,
+              label: 'Vector at row ${state.current.row + 1}, column '
+                  "${state.columnWords[state.current.col] ?? '${state.current.col + 1}'}. "
+                  'Target row ${state.target.row + 1}, column '
+                  '${state.targetColumnWord}.',
+              child: SizedBox(
+                width: _gridSide,
+                height: _gridSide,
+                child: CustomPaint(
+                  painter: VectorTrackPainter(
+                    gridSize: state.gridSize,
+                    current: state.current,
+                    target: state.target,
+                    columnWords: state.columnWords,
+                  ),
                 ),
               ),
             ),
