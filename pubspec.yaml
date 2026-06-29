@@ -44,12 +44,17 @@ flutter:
     # only facts_seed.json previously left lexicon_seed.json out of the bundle,
     # which crashed the language track at runtime ("Unable to load asset").
     - assets/data/
-  # Fonts are referenced by name in TaaevonTypography but not bundled in the
-  # scaffold (they fall back to the system font). Drop the .ttf files under
-  # assets/fonts/ and uncomment to enable Inter / JetBrains Mono / Noto Sans.
-  # fonts:
-  #   - family: Inter
-  #     fonts:
-  #       - asset: assets/fonts/Inter-Regular.ttf
-  #       - asset: assets/fonts/Inter-Bold.ttf
-  #         weight: 700
+  # Bundled OFL variable fonts (one file per family covers all weights). Family
+  # names match TaaevonTypography. Noto Sans covers Latin/Cyrillic/Greek; CJK and
+  # Arabic still use the platform's system Noto fallback (the full CJK font is
+  # ~16MB and intentionally not bundled). Licenses: assets/fonts/*-OFL.txt.
+  fonts:
+    - family: Inter
+      fonts:
+        - asset: assets/fonts/Inter-Variable.ttf
+    - family: JetBrainsMono
+      fonts:
+        - asset: assets/fonts/JetBrainsMono-Variable.ttf
+    - family: NotoSans
+      fonts:
+        - asset: assets/fonts/NotoSans-Variable.ttf
