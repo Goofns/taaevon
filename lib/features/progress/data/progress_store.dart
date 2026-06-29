@@ -33,8 +33,16 @@ class SharedPrefsProgressStore implements ProgressStore {
     final prefs = await SharedPreferences.getInstance();
     final raw = prefs.getString(_key);
     if (raw == null || raw.isEmpty) return <String, int>{};
-    final decoded = json.decode(raw) as Map<String, dynamic>;
-    return decoded.map((k, v) => MapEntry(k, (v as num).toInt()));
+    try {
+      final decoded = json.decode(raw);
+      if (decoded is Map<String, dynamic>) {
+        return decoded.map((k, v) => MapEntry(k, (v as num).toInt()));
+      }
+    } catch (_) {
+      // Corrupt value or non-numeric counts — fall through, clear, start clean.
+    }
+    await prefs.remove(_key);
+    return <String, int>{};
   }
 
   @override

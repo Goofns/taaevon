@@ -84,5 +84,21 @@ void main() {
       await cubit.start('es');
       expect(cubit.state, isA<ReviewEmpty>());
     });
+
+    test('start() after close does not emit (no emit-after-close crash)',
+        () async {
+      final cubit = ReviewCubit(
+        lexicon: _StubLexiconRepo([_word('1')]),
+        store: InMemoryReviewStore(),
+        clock: () => DateTime(2026, 6, 27),
+      );
+      // start() suspends at `await _store.load()`; closing the cubit mid-load
+      // simulates popping the Review screen before it finishes loading.
+      final started = cubit.start('es');
+      await cubit.close();
+      // The isClosed guards must let start() complete without emitting on a
+      // closed cubit (which would throw StateError).
+      await expectLater(started, completes);
+    });
   });
 }

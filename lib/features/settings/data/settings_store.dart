@@ -29,7 +29,14 @@ class SharedPrefsSettingsStore implements SettingsStore {
     final prefs = await SharedPreferences.getInstance();
     final raw = prefs.getString(_key);
     if (raw == null || raw.isEmpty) return null;
-    return json.decode(raw) as Map<String, dynamic>;
+    try {
+      final decoded = json.decode(raw);
+      if (decoded is Map<String, dynamic>) return decoded;
+    } catch (_) {
+      // Corrupt / partially-written value — fall through, clear it, start clean.
+    }
+    await prefs.remove(_key);
+    return null;
   }
 
   @override

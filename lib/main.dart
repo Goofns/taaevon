@@ -1,3 +1,5 @@
+import 'dart:async';
+
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
@@ -15,10 +17,23 @@ import 'features/streak/cubit/streak_cubit.dart';
 import 'features/streak/data/streak_store.dart';
 
 void main() {
-  WidgetsFlutterBinding.ensureInitialized();
-  // NOTE: on devices with ProMotion / high-refresh displays, request 120 Hz
-  // here via flutter_display_mode once that dependency is enabled (PRD §11.1).
-  runApp(const TaaevonApp());
+  // Top-level guard: a stray uncaught async error (e.g. a fire-and-forget cubit
+  // hydrate that fails) is logged rather than silently killing the app.
+  runZonedGuarded<void>(
+    () {
+      WidgetsFlutterBinding.ensureInitialized();
+      FlutterError.onError = (details) {
+        FlutterError.presentError(details);
+        debugPrint(
+          'Taaevon: uncaught Flutter error: ${details.exceptionAsString()}',
+        );
+      };
+      // NOTE: on devices with ProMotion / high-refresh displays, request 120 Hz
+      // here via flutter_display_mode once that dependency is enabled (PRD §11.1).
+      runApp(const TaaevonApp());
+    },
+    (error, stack) => debugPrint('Taaevon: uncaught async error: $error'),
+  );
 }
 
 class TaaevonApp extends StatelessWidget {

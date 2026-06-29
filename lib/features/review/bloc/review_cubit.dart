@@ -81,6 +81,7 @@ class ReviewCubit extends Cubit<ReviewState> {
   Future<void> start(String targetLanguage) async {
     emit(const ReviewLoading());
     final raw = await _store.load();
+    if (isClosed) return; // screen popped mid-load — never emit after close
     _schedules = raw.map(
       (k, v) => MapEntry(k, ReviewSchedule.fromMap(v as Map<String, dynamic>)),
     );
@@ -90,6 +91,7 @@ class ReviewCubit extends Cubit<ReviewState> {
         .where((e) => ReviewScheduler.isDue(_schedules[e.wordId], now))
         .toList()
       ..shuffle(_rng);
+    if (isClosed) return; // screen popped mid-load — never emit after close
 
     _queue = due.take(sessionSize).toList();
     _index = 0;

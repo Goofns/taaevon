@@ -72,8 +72,15 @@ class SettingsCubit extends Cubit<SettingsState> {
   /// Always emits with `hydrated: true` (even when nothing is saved) so the
   /// root gate can stop showing its loader and decide home vs. onboarding.
   Future<void> hydrate() async {
-    final m = await _store.load();
-    final loaded = m == null ? const SettingsState() : SettingsState.fromMap(m);
+    SettingsState loaded;
+    try {
+      final m = await _store.load();
+      loaded = m == null ? const SettingsState() : SettingsState.fromMap(m);
+    } catch (_) {
+      // Never let an unreadable store wedge RootGate on its loader: fall back
+      // to defaults but still mark hydrated so the app always advances.
+      loaded = const SettingsState();
+    }
     emit(loaded.copyWith(hydrated: true));
   }
 
