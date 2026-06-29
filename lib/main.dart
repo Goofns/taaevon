@@ -72,6 +72,18 @@ class TaaevonApp extends StatelessWidget {
         title: 'Taaevon',
         debugShowCheckedModeBanner: false,
         theme: TaaevonTheme.light(),
+        // Clamp OS text scaling to <=1.5x. The geometric tile/card layouts are
+        // built for a bounded range; beyond ~1.5x they would clip. (Full 200%
+        // support would need intrinsic-height layouts — a follow-up.)
+        builder: (context, child) {
+          final mq = MediaQuery.of(context);
+          return MediaQuery(
+            data: mq.copyWith(
+              textScaler: mq.textScaler.clamp(maxScaleFactor: 1.5),
+            ),
+            child: child!,
+          );
+        },
         home: const RootGate(),
       ),
     );
