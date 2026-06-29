@@ -3,9 +3,10 @@ import 'package:flutter_test/flutter_test.dart';
 import 'package:taaevon/features/activity_engine/isometric_tessellation/presentation/isometric_tessellation_screen.dart';
 import 'package:taaevon/features/activity_engine/matrix_vector_track/presentation/matrix_vector_track_screen.dart';
 import 'package:taaevon/features/activity_engine/polygon_polyglot/presentation/polygon_polyglot_screen.dart';
-import 'package:taaevon/features/language/data/lexicon_repository.dart';
 import 'package:taaevon/features/language/domain/lexicon_entry.dart';
 import 'package:taaevon/features/math/presentation/math_screen.dart';
+
+import 'support/stub_lexicon_repo.dart';
 
 /// Render-smoke tests for the four gameplay screens. They pump each screen with
 /// a stub lexicon (no real rootBundle I/O) on a generous surface, then assert the
@@ -15,18 +16,6 @@ import 'package:taaevon/features/math/presentation/math_screen.dart';
 /// VectorTrackPainter, TessellationPainter, GeometricBackground), which the
 /// bloc-unit tests never touch. Explicit pumps (not pumpAndSettle) avoid hanging
 /// on any transient loading spinner.
-class _StubLexiconRepo implements LexiconRepository {
-  _StubLexiconRepo(this._entries);
-  final List<LexiconEntry> _entries;
-
-  @override
-  Future<List<LexiconEntry>> all() async => _entries;
-
-  @override
-  Future<List<LexiconEntry>> entriesForTarget(String targetLanguage) async =>
-      _entries.where((e) => e.targetLanguage == targetLanguage).toList();
-}
-
 LexiconEntry _num(int n) => LexiconEntry(
       wordId: 'es-num-$n',
       sourceLanguage: 'en',
@@ -40,7 +29,7 @@ LexiconEntry _num(int n) => LexiconEntry(
 
 // Numerals 1..10 in one target language: enough for Polyglot's option pool,
 // Vector's column number-words, and Math's operand injection.
-final _stub = _StubLexiconRepo([for (var n = 1; n <= 10; n++) _num(n)]);
+final _stub = StubLexiconRepo([for (var n = 1; n <= 10; n++) _num(n)]);
 
 Future<void> _pumpSettleFrames(WidgetTester tester) async {
   for (var i = 0; i < 4; i++) {

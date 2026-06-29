@@ -3,20 +3,9 @@ import 'dart:math';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:taaevon/features/activity_engine/matrix_vector_track/bloc/vector_track_bloc.dart';
 import 'package:taaevon/features/activity_engine/matrix_vector_track/domain/vector_track.dart';
-import 'package:taaevon/features/language/data/lexicon_repository.dart';
 import 'package:taaevon/features/language/domain/lexicon_entry.dart';
 
-class _StubLexiconRepo implements LexiconRepository {
-  _StubLexiconRepo(this._entries);
-  final List<LexiconEntry> _entries;
-
-  @override
-  Future<List<LexiconEntry>> all() async => _entries;
-
-  @override
-  Future<List<LexiconEntry>> entriesForTarget(String targetLanguage) async =>
-      _entries.where((e) => e.targetLanguage == targetLanguage).toList();
-}
+import 'support/stub_lexicon_repo.dart';
 
 LexiconEntry _numeral(String script, int value) => LexiconEntry(
       wordId: 'ja-$value',
@@ -31,7 +20,7 @@ LexiconEntry _numeral(String script, int value) => LexiconEntry(
     );
 
 VectorTrackBloc _bloc() => VectorTrackBloc(
-      lexicon: _StubLexiconRepo([
+      lexicon: StubLexiconRepo([
         _numeral('いち', 1),
         _numeral('に', 2),
         _numeral('さん', 3),

@@ -1,22 +1,11 @@
 import 'dart:math';
 
 import 'package:flutter_test/flutter_test.dart';
-import 'package:taaevon/features/language/data/lexicon_repository.dart';
 import 'package:taaevon/features/language/domain/lexicon_entry.dart';
 import 'package:taaevon/features/review/bloc/review_cubit.dart';
 import 'package:taaevon/features/review/data/review_store.dart';
 
-class _StubLexiconRepo implements LexiconRepository {
-  _StubLexiconRepo(this._entries);
-  final List<LexiconEntry> _entries;
-
-  @override
-  Future<List<LexiconEntry>> all() async => _entries;
-
-  @override
-  Future<List<LexiconEntry>> entriesForTarget(String targetLanguage) async =>
-      _entries.where((e) => e.targetLanguage == targetLanguage).toList();
-}
+import 'support/stub_lexicon_repo.dart';
 
 LexiconEntry _word(String id) => LexiconEntry(
       wordId: id,
@@ -33,7 +22,7 @@ void main() {
   group('ReviewCubit', () {
     test('starts a session over due (new) words', () async {
       final cubit = ReviewCubit(
-        lexicon: _StubLexiconRepo([_word('1'), _word('2')]),
+        lexicon: StubLexiconRepo([_word('1'), _word('2')]),
         store: InMemoryReviewStore(),
         random: Random(1),
         clock: () => DateTime(2026, 6, 27),
@@ -46,7 +35,7 @@ void main() {
     test('grading every word completes the session and persists', () async {
       final store = InMemoryReviewStore();
       final cubit = ReviewCubit(
-        lexicon: _StubLexiconRepo([_word('1'), _word('2')]),
+        lexicon: StubLexiconRepo([_word('1'), _word('2')]),
         store: store,
         random: Random(1),
         clock: () => DateTime(2026, 6, 27),
@@ -77,7 +66,7 @@ void main() {
         },
       });
       final cubit = ReviewCubit(
-        lexicon: _StubLexiconRepo([_word('1')]),
+        lexicon: StubLexiconRepo([_word('1')]),
         store: store,
         clock: () => DateTime(2026, 6, 27),
       );
@@ -88,7 +77,7 @@ void main() {
     test('start() after close does not emit (no emit-after-close crash)',
         () async {
       final cubit = ReviewCubit(
-        lexicon: _StubLexiconRepo([_word('1')]),
+        lexicon: StubLexiconRepo([_word('1')]),
         store: InMemoryReviewStore(),
         clock: () => DateTime(2026, 6, 27),
       );

@@ -1,8 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
-import 'package:taaevon/features/language/data/lexicon_repository.dart';
 import 'package:taaevon/features/language/domain/lexicon_entry.dart';
 import 'package:taaevon/features/language/presentation/language_selection_screen.dart';
+
+import 'support/stub_lexicon_repo.dart';
 
 /// Renders the language picker from injected data (no real asset I/O — that's
 /// covered deterministically by tools/check_assets_declared.py). Verifies the
@@ -11,18 +12,6 @@ import 'package:taaevon/features/language/presentation/language_selection_screen
 /// NOTE: we pump explicit frames rather than pumpAndSettle, because the
 /// loading-state CircularProgressIndicator animates forever and would make
 /// pumpAndSettle hang if the future ever stalled.
-class _StubLexiconRepo implements LexiconRepository {
-  _StubLexiconRepo(this._entries);
-  final List<LexiconEntry> _entries;
-
-  @override
-  Future<List<LexiconEntry>> all() async => _entries;
-
-  @override
-  Future<List<LexiconEntry>> entriesForTarget(String targetLanguage) async =>
-      _entries.where((e) => e.targetLanguage == targetLanguage).toList();
-}
-
 LexiconEntry _word(String id, String target) => LexiconEntry(
       wordId: id,
       sourceLanguage: 'en',
@@ -36,7 +25,7 @@ LexiconEntry _word(String id, String target) => LexiconEntry(
 
 void main() {
   testWidgets('renders a tile per distinct target language', (tester) async {
-    final repo = _StubLexiconRepo([_word('1', 'es'), _word('2', 'ja')]);
+    final repo = StubLexiconRepo([_word('1', 'es'), _word('2', 'ja')]);
     await tester.pumpWidget(
       MaterialApp(home: LanguageSelectionScreen(repository: repo)),
     );

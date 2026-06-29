@@ -3,21 +3,10 @@ import 'dart:math';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:taaevon/features/activity_engine/polygon_polyglot/bloc/polyglot_bloc.dart';
 import 'package:taaevon/features/activity_engine/polygon_polyglot/domain/polyglot_round_factory.dart';
-import 'package:taaevon/features/language/data/lexicon_repository.dart';
 import 'package:taaevon/features/language/domain/lexicon_entry.dart';
 import 'package:taaevon/features/sync_engine/dynamic_difficulty_calibrator.dart';
 
-class _StubLexiconRepo implements LexiconRepository {
-  _StubLexiconRepo(this._entries);
-  final List<LexiconEntry> _entries;
-
-  @override
-  Future<List<LexiconEntry>> all() async => _entries;
-
-  @override
-  Future<List<LexiconEntry>> entriesForTarget(String targetLanguage) async =>
-      _entries.where((e) => e.targetLanguage == targetLanguage).toList();
-}
+import 'support/stub_lexicon_repo.dart';
 
 List<LexiconEntry> _jaEntries(int n) => [
       for (var i = 0; i < n; i++)
@@ -35,7 +24,7 @@ List<LexiconEntry> _jaEntries(int n) => [
     ];
 
 PolyglotBloc _makeBloc(List<LexiconEntry> entries) => PolyglotBloc(
-      repository: _StubLexiconRepo(entries),
+      repository: StubLexiconRepo(entries),
       roundFactory: PolyglotRoundFactory(random: Random(3)),
     );
 
