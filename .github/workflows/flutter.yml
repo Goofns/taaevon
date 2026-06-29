@@ -18,15 +18,13 @@ jobs:
       - name: Install dependencies
         run: flutter pub get
 
-      - name: Verify formatting (informational)
+      - name: Verify formatting
         run: dart format --output=none --set-exit-if-changed .
-        continue-on-error: true
 
-      # Errors and warnings fail the build; info-level lints (const hints,
-      # trailing commas, deprecations) are reported but non-blocking. Run a
-      # local `dart fix --apply` / `dart format .` to clear the infos.
+      # Strict: errors, warnings, AND info-level lints all fail the build (the
+      # tree is kept clean via `dart fix`/`dart format`; see the autofix workflow).
       - name: Analyze
-        run: flutter analyze --no-fatal-infos
+        run: flutter analyze
 
       - name: Run tests
         run: flutter test

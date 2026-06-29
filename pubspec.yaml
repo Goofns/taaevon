@@ -5,7 +5,9 @@ version: 0.1.0+1
 
 environment:
   sdk: ">=3.4.0 <4.0.0"
-  flutter: ">=3.22.0"
+  # >=3.31 for Color.withValues / Switch.activeThumbColor (migrated off the
+  # deprecated withOpacity / activeColor by `dart fix`).
+  flutter: ">=3.32.0"
 
 dependencies:
   flutter:
