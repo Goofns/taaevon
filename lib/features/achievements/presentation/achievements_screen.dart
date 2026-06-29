@@ -162,7 +162,9 @@ class _BadgePainter extends CustomPainter {
     canvas.drawPath(
       path,
       Paint()
-        ..color = unlocked ? TaaevonColors.success : TaaevonColors.disabled
+        // secondaryText for the locked stroke: disabled (#8FA6B5) over the
+        // backgroundDeep fill is only 1.98:1, failing the 3:1 UI threshold.
+        ..color = unlocked ? TaaevonColors.success : TaaevonColors.secondaryText
         ..style = PaintingStyle.stroke
         ..strokeWidth = 2,
     );

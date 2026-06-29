@@ -78,7 +78,10 @@ class HomeScreen extends StatelessWidget {
                       child: _TrackCard(
                         title: 'LANGUAGE',
                         subtitle: 'Choose a language',
-                        accent: TaaevonColors.languageAccent,
+                        // accentB (#1B5299, 7.44:1 on the card) instead of the
+                        // brighter languageAccent (#0D6EFD, 4.33:1 — fails AA for
+                        // this 16px title). Only the title text uses `accent`.
+                        accent: TaaevonColors.accentB,
                         glyph: _LanguageGlyph(),
                         onTap: () => pushWithFact<void>(
                           context,

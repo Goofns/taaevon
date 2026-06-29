@@ -52,6 +52,9 @@ jobs:
       - name: Asset declaration contract (rootBundle paths are bundled)
         run: python tools/check_assets_declared.py .
 
+      - name: WCAG contrast contract (ADA color compliance)
+        run: python tools/check_contrast.py
+
   build-apk:
     # Generates the Android project (the repo ships lib/ but not android/),
     # builds an installable APK, and uploads it as a downloadable artifact.

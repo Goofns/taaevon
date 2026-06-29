@@ -180,8 +180,11 @@ class _StreakCard extends StatelessWidget {
               fontSize: 36,
               letterSpacing: 0,
               fontFamily: TaaevonTypography.fontFamilyMono,
-              color:
-                  count > 0 ? TaaevonColors.success : TaaevonColors.disabled,
+              // secondaryText (not disabled #8FA6B5, which is 2.44:1) so the
+              // zero-state streak numeral meets WCAG large-text contrast.
+              color: count > 0
+                  ? TaaevonColors.success
+                  : TaaevonColors.secondaryText,
             ),
           ),
         ],

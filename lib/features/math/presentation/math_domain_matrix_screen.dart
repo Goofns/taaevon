@@ -218,7 +218,9 @@ class _LockGlyphPainter extends CustomPainter {
   @override
   void paint(Canvas canvas, Size size) {
     final paint = Paint()
-      ..color = TaaevonColors.disabled
+      // secondaryText (not disabled #8FA6B5 = 2.44:1) so the lock glyph meets
+      // the 3:1 UI-component contrast threshold on the card tile.
+      ..color = TaaevonColors.secondaryText
       ..style = PaintingStyle.stroke
       ..strokeWidth = 2;
     final c = size.center(Offset.zero);
