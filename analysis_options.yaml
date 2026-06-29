@@ -5,7 +5,10 @@ linter:
     prefer_const_constructors: true
     prefer_const_declarations: true
     avoid_print: true
-    require_trailing_commas: true
+    # require_trailing_commas removed: the Dart 3.7+ "tall" formatter owns
+    # line-wrapping and comma placement, and this lint disagrees with its output
+    # (with no `dart fix`), so the two fight on every `dart format`. `dart format`
+    # is the source of truth for commas now.
 
 analyzer:
   language:
