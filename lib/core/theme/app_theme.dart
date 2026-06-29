@@ -36,7 +36,7 @@ abstract class TaaevonTheme {
             return TaaevonColors.primaryAction;
           }),
           foregroundColor: const WidgetStatePropertyAll(Colors.white),
-          elevation: const WidgetStatePropertyAll(0),
+          elevation: const WidgetStatePropertyAll(0.0),
           minimumSize: const WidgetStatePropertyAll(
             Size.fromHeight(TaaevonDimensions.buttonHeight),
           ),
