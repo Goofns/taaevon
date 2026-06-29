@@ -1,0 +1,43 @@
+name: Auto-fix (dart fix + format)
+
+# Manually triggered: applies `dart fix --apply` and `dart format .` using the
+# real Flutter SDK (which isn't available in the authoring environment) and
+# commits the result back. Use it to clear info-level analyzer lints in bulk.
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  autofix:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: subosito/flutter-action@v2
+        with:
+          channel: stable
+          cache: true
+
+      - name: Install dependencies
+        run: flutter pub get
+
+      - name: Apply dart fix + format
+        run: |
+          dart fix --apply
+          dart format .
+
+      - name: Commit and push if changed
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          if [ -n "$(git status --porcelain)" ]; then
+            git add -A
+            git commit -m "Apply dart fix --apply + dart format (clear info-level lints)
+
+Co-Authored-By: Claude Opus 4.8 <noreply@anthropic.com>"
+            git push
+          else
+            echo "Nothing to fix."
+          fi
