@@ -49,6 +49,9 @@ jobs:
       - name: Parser shape contract (data matches Dart fromJson)
         run: python tools/check_data_shape.py .
 
+      - name: Asset declaration contract (rootBundle paths are bundled)
+        run: python tools/check_assets_declared.py .
+
   build-apk:
     # Generates the Android project (the repo ships lib/ but not android/),
     # builds an installable APK, and uploads it as a downloadable artifact.

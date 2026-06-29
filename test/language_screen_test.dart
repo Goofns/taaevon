@@ -1,24 +1,50 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
+import 'package:taaevon/features/language/data/lexicon_repository.dart';
+import 'package:taaevon/features/language/domain/lexicon_entry.dart';
 import 'package:taaevon/features/language/presentation/language_selection_screen.dart';
 
-/// Pumps the language picker with its REAL repository, which loads
-/// lexicon_seed.json from the asset bundle via rootBundle — the exact path that
-/// crashed on a device when the asset wasn't declared in pubspec. If the asset
-/// is undeclared, missing, or malformed, the FutureBuilder resolves to an error
-/// and this test fails (takeException or a failed find), catching the regression
-/// in CI rather than on a phone.
-void main() {
-  testWidgets('loads the real lexicon asset and renders the picker',
-      (tester) async {
-    await tester.pumpWidget(
-      const MaterialApp(home: LanguageSelectionScreen()),
+/// Renders the language picker from injected data (no real asset I/O — that's
+/// covered deterministically by tools/check_assets_declared.py). Verifies the
+/// FutureBuilder -> tiles path builds without throwing once data arrives.
+///
+/// NOTE: we pump explicit frames rather than pumpAndSettle, because the
+/// loading-state CircularProgressIndicator animates forever and would make
+/// pumpAndSettle hang if the future ever stalled.
+class _StubLexiconRepo implements LexiconRepository {
+  _StubLexiconRepo(this._entries);
+  final List<LexiconEntry> _entries;
+
+  @override
+  Future<List<LexiconEntry>> all() async => _entries;
+
+  @override
+  Future<List<LexiconEntry>> entriesForTarget(String targetLanguage) async =>
+      _entries.where((e) => e.targetLanguage == targetLanguage).toList();
+}
+
+LexiconEntry _word(String id, String target) => LexiconEntry(
+      wordId: id,
+      sourceLanguage: 'en',
+      targetLanguage: target,
+      baseTerm: 'b-$id',
+      translatedTerm: 't-$id',
+      lexicalCategory: 'everyday',
+      syllableCount: 2,
+      mathExtractedValue: 2,
     );
-    await tester.pumpAndSettle();
+
+void main() {
+  testWidgets('renders a tile per distinct target language', (tester) async {
+    final repo = _StubLexiconRepo([_word('1', 'es'), _word('2', 'ja')]);
+    await tester.pumpWidget(
+      MaterialApp(home: LanguageSelectionScreen(repository: repo)),
+    );
+    // Let the async repo future (+ its .then) resolve, then rebuild with data.
+    await tester.pump(const Duration(milliseconds: 10));
+    await tester.pump(const Duration(milliseconds: 10));
 
     expect(tester.takeException(), isNull);
-    // This header only renders after the lexicon future resolves with data, so
-    // finding it proves the asset loaded and parsed (no error branch).
     expect(find.text('Tap a language to play or review.'), findsOneWidget);
   });
 }
