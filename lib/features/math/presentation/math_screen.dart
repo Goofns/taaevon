@@ -7,7 +7,6 @@ import '../../../core/constants/typography.dart';
 import '../../../core/widgets/numeric_answer_field.dart';
 import '../../background/background_seed_generator.dart';
 import '../../background/geometric_background_painter.dart';
-import '../../language/data/lexicon_local_datasource.dart';
 import '../../language/data/lexicon_repository.dart';
 import '../../sync_engine/dynamic_difficulty_calibrator.dart';
 import '../bloc/math_bloc.dart';
@@ -36,7 +35,7 @@ class MathScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final repo =
-        repository ?? LexiconRepository(local: LexiconLocalDataSource());
+        repository ?? LexiconRepository.production();
 
     return BlocProvider<MathBloc>(
       create: (_) => MathBloc(lexicon: repo)

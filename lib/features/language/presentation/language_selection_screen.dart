@@ -9,7 +9,6 @@ import '../../activity_engine/polygon_polyglot/presentation/polygon_polyglot_scr
 import '../../background/background_seed_generator.dart';
 import '../../background/geometric_background_painter.dart';
 import '../../review/presentation/review_screen.dart';
-import '../data/lexicon_local_datasource.dart';
 import '../data/lexicon_repository.dart';
 import '../domain/language_catalog.dart';
 
@@ -24,7 +23,7 @@ class LanguageSelectionScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final repo =
-        repository ?? LexiconRepository(local: LexiconLocalDataSource());
+        repository ?? LexiconRepository.production();
 
     return Scaffold(
       appBar: AppBar(

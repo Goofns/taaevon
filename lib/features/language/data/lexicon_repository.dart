@@ -5,6 +5,11 @@ import 'lexicon_local_datasource.dart';
 class LexiconRepository {
   LexiconRepository({required LexiconLocalDataSource local}) : _local = local;
 
+  /// The default production repository (bundled-asset datasource). Screens use
+  /// this as the fallback when no repository is injected for testing.
+  factory LexiconRepository.production() =>
+      LexiconRepository(local: LexiconLocalDataSource());
+
   final LexiconLocalDataSource _local;
 
   Future<List<LexiconEntry>> all() => _local.all();

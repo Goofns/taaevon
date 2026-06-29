@@ -8,7 +8,6 @@ import '../../../../core/constants/dimensions.dart';
 import '../../../../core/constants/typography.dart';
 import '../../../background/background_seed_generator.dart';
 import '../../../background/geometric_background_painter.dart';
-import '../../../language/data/lexicon_local_datasource.dart';
 import '../../../language/data/lexicon_repository.dart';
 import '../../../language/domain/language_catalog.dart';
 import '../../../progress/cubit/progress_cubit.dart';
@@ -40,7 +39,7 @@ class PolygonPolyglotScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final repo =
-        repository ?? LexiconRepository(local: LexiconLocalDataSource());
+        repository ?? LexiconRepository.production();
 
     return BlocProvider<PolyglotBloc>(
       create: (_) => PolyglotBloc(repository: repo)

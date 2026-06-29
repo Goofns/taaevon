@@ -6,7 +6,6 @@ import '../../../core/constants/dimensions.dart';
 import '../../../core/constants/typography.dart';
 import '../../background/background_seed_generator.dart';
 import '../../background/geometric_background_painter.dart';
-import '../../language/data/lexicon_local_datasource.dart';
 import '../../language/data/lexicon_repository.dart';
 import '../bloc/review_cubit.dart';
 import '../data/review_store.dart';
@@ -24,7 +23,7 @@ class ReviewScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final repo =
-        repository ?? LexiconRepository(local: LexiconLocalDataSource());
+        repository ?? LexiconRepository.production();
     return BlocProvider<ReviewCubit>(
       create: (_) => ReviewCubit(
         lexicon: repo,
