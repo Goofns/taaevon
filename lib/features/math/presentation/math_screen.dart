@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/services.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
 import '../../../core/constants/colors.dart';
 import '../../../core/constants/dimensions.dart';
 import '../../../core/constants/typography.dart';
+import '../../../core/widgets/numeric_answer_field.dart';
 import '../../background/background_seed_generator.dart';
 import '../../background/geometric_background_painter.dart';
 import '../../language/data/lexicon_local_datasource.dart';
@@ -128,7 +128,9 @@ class _ProblemView extends StatelessWidget {
           const SizedBox(height: TaaevonDimensions.lg),
           _Feedback(outcome: state.lastOutcome),
           const Spacer(),
-          _AnswerInput(
+          NumericAnswerField(
+            hintText: 'Your answer',
+            submitLabel: 'Submit',
             onSubmit: (value) =>
                 context.read<MathBloc>().add(MathAnswerSubmitted(value)),
           ),
@@ -211,61 +213,6 @@ class _Feedback extends StatelessWidget {
         text,
         style: TaaevonTypography.label.copyWith(color: color, fontSize: 14),
       ),
-    );
-  }
-}
-
-class _AnswerInput extends StatefulWidget {
-  const _AnswerInput({required this.onSubmit});
-  final void Function(int value) onSubmit;
-
-  @override
-  State<_AnswerInput> createState() => _AnswerInputState();
-}
-
-class _AnswerInputState extends State<_AnswerInput> {
-  final _controller = TextEditingController();
-
-  void _submit() {
-    final value = int.tryParse(_controller.text.trim());
-    if (value == null) return;
-    widget.onSubmit(value);
-    _controller.clear();
-  }
-
-  @override
-  void dispose() {
-    _controller.dispose();
-    super.dispose();
-  }
-
-  @override
-  Widget build(BuildContext context) {
-    return Row(
-      children: [
-        Expanded(
-          child: TextField(
-            controller: _controller,
-            keyboardType: TextInputType.number,
-            inputFormatters: [FilteringTextInputFormatter.allow(RegExp(r'[0-9-]'))],
-            style: TaaevonTypography.mono.copyWith(fontSize: 18),
-            decoration: InputDecoration(
-              hintText: 'Your answer',
-              filled: true,
-              fillColor: TaaevonColors.inputBackground,
-              border: OutlineInputBorder(
-                borderRadius: BorderRadius.circular(TaaevonDimensions.radiusSm),
-              ),
-            ),
-            onSubmitted: (_) => _submit(),
-          ),
-        ),
-        const SizedBox(width: TaaevonDimensions.sm),
-        SizedBox(
-          height: TaaevonDimensions.buttonHeight,
-          child: ElevatedButton(onPressed: _submit, child: const Text('Submit')),
-        ),
-      ],
     );
   }
 }

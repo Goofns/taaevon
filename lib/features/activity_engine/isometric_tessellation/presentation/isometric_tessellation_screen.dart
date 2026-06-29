@@ -1,12 +1,12 @@
 import 'dart:math' as math;
 
 import 'package:flutter/material.dart';
-import 'package:flutter/services.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
 import '../../../../core/constants/colors.dart';
 import '../../../../core/constants/dimensions.dart';
 import '../../../../core/constants/typography.dart';
+import '../../../../core/widgets/numeric_answer_field.dart';
 import '../../../background/background_seed_generator.dart';
 import '../../../background/geometric_background_painter.dart';
 import '../../../progress/cubit/progress_cubit.dart';
@@ -121,7 +121,7 @@ class _ActiveView extends StatelessWidget {
           const SizedBox(height: TaaevonDimensions.lg),
           _ProblemCard(prompt: state.prompt, outcome: state.lastOutcome),
           const SizedBox(height: TaaevonDimensions.md),
-          _IntInput(
+          NumericAnswerField(
             onSubmit: (v) =>
                 context.read<TessellationBloc>().add(TessellationAnswerSubmitted(v)),
           ),
@@ -212,61 +212,6 @@ class _DoneView extends StatelessWidget {
           ),
         ],
       ),
-    );
-  }
-}
-
-class _IntInput extends StatefulWidget {
-  const _IntInput({required this.onSubmit});
-  final void Function(int value) onSubmit;
-
-  @override
-  State<_IntInput> createState() => _IntInputState();
-}
-
-class _IntInputState extends State<_IntInput> {
-  final _controller = TextEditingController();
-
-  void _submit() {
-    final v = int.tryParse(_controller.text.trim());
-    if (v == null) return;
-    widget.onSubmit(v);
-    _controller.clear();
-  }
-
-  @override
-  void dispose() {
-    _controller.dispose();
-    super.dispose();
-  }
-
-  @override
-  Widget build(BuildContext context) {
-    return Row(
-      children: [
-        Expanded(
-          child: TextField(
-            controller: _controller,
-            keyboardType: TextInputType.number,
-            inputFormatters: [FilteringTextInputFormatter.allow(RegExp(r'[0-9-]'))],
-            style: TaaevonTypography.mono.copyWith(fontSize: 18),
-            decoration: InputDecoration(
-              hintText: 'Answer',
-              filled: true,
-              fillColor: TaaevonColors.inputBackground,
-              border: OutlineInputBorder(
-                borderRadius: BorderRadius.circular(TaaevonDimensions.radiusSm),
-              ),
-            ),
-            onSubmitted: (_) => _submit(),
-          ),
-        ),
-        const SizedBox(width: TaaevonDimensions.sm),
-        SizedBox(
-          height: TaaevonDimensions.buttonHeight,
-          child: ElevatedButton(onPressed: _submit, child: const Text('Solve')),
-        ),
-      ],
     );
   }
 }
