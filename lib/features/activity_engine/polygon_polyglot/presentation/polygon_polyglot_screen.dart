@@ -149,7 +149,7 @@ class _ActiveView extends StatelessWidget {
                 crossAxisSpacing: TaaevonDimensions.sm,
                 // Fixed pixel height (not a width-ratio) sized to fit both
                 // option lines up to the 1.5x text clamp without clipping.
-                mainAxisExtent: 96,
+                mainAxisExtent: 112,
               ),
               itemCount: state.round.options.length,
               itemBuilder: (context, i) => OptionTile(
