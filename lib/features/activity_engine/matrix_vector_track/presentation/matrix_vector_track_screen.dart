@@ -9,7 +9,7 @@ import '../../../background/geometric_background_painter.dart';
 import '../../../language/data/lexicon_repository.dart';
 import '../../../language/domain/language_catalog.dart';
 import '../../../progress/cubit/progress_cubit.dart';
-import '../../../streak/cubit/streak_cubit.dart';
+import '../../record_activity_completion.dart';
 import '../bloc/vector_track_bloc.dart';
 import '../domain/vector_track.dart';
 import 'vector_track_painter.dart';
@@ -51,10 +51,7 @@ class MatrixVectorTrackScreen extends StatelessWidget {
               child: BlocConsumer<VectorTrackBloc, VectorTrackState>(
                 listener: (context, state) {
                   if (state is VectorComplete) {
-                    context
-                        .read<ProgressCubit>()
-                        .recordCompletion(ActivityIds.vector);
-                    context.read<StreakCubit>().recordActivity();
+                    recordActivityCompletion(context, ActivityIds.vector);
                   }
                 },
                 builder: (context, state) => switch (state) {

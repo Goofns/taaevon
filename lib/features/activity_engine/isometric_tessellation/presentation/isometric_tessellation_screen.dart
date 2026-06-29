@@ -10,7 +10,7 @@ import '../../../../core/widgets/numeric_answer_field.dart';
 import '../../../background/background_seed_generator.dart';
 import '../../../background/geometric_background_painter.dart';
 import '../../../progress/cubit/progress_cubit.dart';
-import '../../../streak/cubit/streak_cubit.dart';
+import '../../record_activity_completion.dart';
 import '../bloc/tessellation_bloc.dart';
 import '../domain/tessellation_board.dart';
 import 'tessellation_painter.dart';
@@ -37,10 +37,7 @@ class IsometricTessellationScreen extends StatelessWidget {
             child: BlocConsumer<TessellationBloc, TessellationState>(
               listener: (context, state) {
                 if (state is TessellationComplete) {
-                  context
-                      .read<ProgressCubit>()
-                      .recordCompletion(ActivityIds.tessellation);
-                  context.read<StreakCubit>().recordActivity();
+                  recordActivityCompletion(context, ActivityIds.tessellation);
                 }
               },
               builder: (context, state) => switch (state) {

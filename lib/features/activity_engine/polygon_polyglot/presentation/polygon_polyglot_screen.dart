@@ -12,8 +12,8 @@ import '../../../language/data/lexicon_repository.dart';
 import '../../../language/domain/language_catalog.dart';
 import '../../../progress/cubit/progress_cubit.dart';
 import '../../../settings/cubit/settings_cubit.dart';
-import '../../../streak/cubit/streak_cubit.dart';
 import '../../../sync_engine/dynamic_difficulty_calibrator.dart';
+import '../../record_activity_completion.dart';
 import '../bloc/polyglot_bloc.dart';
 import 'incomplete_polygon_painter.dart';
 import 'option_tile.dart';
@@ -61,10 +61,7 @@ class PolygonPolyglotScreen extends StatelessWidget {
               child: BlocConsumer<PolyglotBloc, PolyglotState>(
                 listener: (context, state) {
                   if (state is PolyglotComplete) {
-                    context
-                        .read<ProgressCubit>()
-                        .recordCompletion(ActivityIds.polyglot);
-                    context.read<StreakCubit>().recordActivity();
+                    recordActivityCompletion(context, ActivityIds.polyglot);
                   }
                 },
                 builder: (context, state) => switch (state) {
