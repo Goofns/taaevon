@@ -121,7 +121,8 @@ class _DailyGoal extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final goal = context.watch<SettingsCubit>().state.dailyGoal;
+    final settings = context.watch<SettingsCubit>().state;
+    final goal = settings.dailyGoal;
     return BlocBuilder<ProgressCubit, ProgressState>(
       builder: (context, p) {
         return Semantics(
@@ -151,9 +152,18 @@ class _DailyGoal extends StatelessWidget {
                     child: Stack(
                       children: [
                         Container(color: TaaevonColors.backgroundDeep),
-                        FractionallySizedBox(
-                          widthFactor: p.progressToward(goal),
-                          child: Container(color: TaaevonColors.languageAccent),
+                        TweenAnimationBuilder<double>(
+                          tween: Tween(begin: 0.0, end: p.progressToward(goal)),
+                          duration: settings.reduceMotion
+                              ? Duration.zero
+                              : const Duration(milliseconds: 350),
+                          curve: Curves.easeOutCubic,
+                          builder: (context, value, _) => FractionallySizedBox(
+                            widthFactor: value,
+                            child: Container(
+                              color: TaaevonColors.languageAccent,
+                            ),
+                          ),
                         ),
                       ],
                     ),
