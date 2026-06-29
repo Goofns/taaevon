@@ -1,5 +1,7 @@
 import 'package:equatable/equatable.dart';
 
+import '../../../core/utils/date_key.dart';
+
 /// A consecutive-day practice streak.
 class Streak extends Equatable {
   const Streak({
@@ -39,10 +41,7 @@ class Streak extends Equatable {
 /// unit-testable.
 abstract class StreakCalculator {
   /// Local calendar day as 'YYYY-MM-DD'.
-  static String dateKey(DateTime d) =>
-      '${d.year.toString().padLeft(4, '0')}-'
-      '${d.month.toString().padLeft(2, '0')}-'
-      '${d.day.toString().padLeft(2, '0')}';
+  static String dateKey(DateTime d) => isoDateKey(d);
 
   /// The streak after recording activity at [now]:
   ///  * same day as last  → unchanged

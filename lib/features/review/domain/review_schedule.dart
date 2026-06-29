@@ -1,5 +1,6 @@
 import 'package:equatable/equatable.dart';
 
+import '../../../core/utils/date_key.dart';
 import '../../language/domain/spaced_repetition.dart';
 
 /// The persisted SM-2 schedule for a single vocabulary word.
@@ -39,10 +40,7 @@ class ReviewSchedule extends Equatable {
 /// Pure scheduling logic for the review queue, built on the SM-2 [SpacedRepetition]
 /// scheduler. Free of Flutter and the clock so it is fully unit-testable.
 abstract class ReviewScheduler {
-  static String dateKey(DateTime d) =>
-      '${d.year.toString().padLeft(4, '0')}-'
-      '${d.month.toString().padLeft(2, '0')}-'
-      '${d.day.toString().padLeft(2, '0')}';
+  static String dateKey(DateTime d) => isoDateKey(d);
 
   /// A never-reviewed word (null schedule) is always due; otherwise it is due
   /// once its due date is on or before [now].

@@ -1,6 +1,6 @@
-import 'dart:convert';
-
 import 'package:shared_preferences/shared_preferences.dart';
+
+import '../../../core/data/json_prefs.dart';
 
 /// Persistence boundary for progress data (activityId -> completion count).
 /// Abstract so the cubit can be tested with an in-memory fake and swapped to a
@@ -30,24 +30,18 @@ class SharedPrefsProgressStore implements ProgressStore {
 
   @override
   Future<Map<String, int>> load() async {
-    final prefs = await SharedPreferences.getInstance();
-    final raw = prefs.getString(_key);
-    if (raw == null || raw.isEmpty) return <String, int>{};
+    final decoded = await loadJsonMap(_key);
+    if (decoded == null) return <String, int>{};
     try {
-      final decoded = json.decode(raw);
-      if (decoded is Map<String, dynamic>) {
-        return decoded.map((k, v) => MapEntry(k, (v as num).toInt()));
-      }
+      return decoded.map((k, v) => MapEntry(k, (v as num).toInt()));
     } catch (_) {
-      // Corrupt value or non-numeric counts — fall through, clear, start clean.
+      // Non-numeric persisted counts — clear and start clean.
+      await (await SharedPreferences.getInstance()).remove(_key);
+      return <String, int>{};
     }
-    await prefs.remove(_key);
-    return <String, int>{};
   }
 
   @override
-  Future<void> save(Map<String, int> completions) async {
-    final prefs = await SharedPreferences.getInstance();
-    await prefs.setString(_key, json.encode(completions));
-  }
+  Future<void> save(Map<String, int> completions) =>
+      saveJsonMap(_key, completions);
 }
