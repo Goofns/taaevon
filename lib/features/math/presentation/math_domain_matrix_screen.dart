@@ -11,9 +11,8 @@ import '../../activity_engine/matrix_vector_track/presentation/matrix_vector_tra
 import '../../background/background_seed_generator.dart';
 import '../../background/geometric_background_painter.dart';
 import '../../difficulty/cubit/difficulty_cubit.dart';
-import '../../sync_engine/dynamic_difficulty_calibrator.dart';
 import '../domain/math_domain.dart';
-import 'math_screen.dart';
+import 'math_activity_menu_screen.dart';
 
 /// Category-based math domain selection matrix (PRD §7.2). Each domain is a
 /// geometric tile; tapping an unlocked one opens the live problem screen at that
@@ -62,9 +61,8 @@ class MathDomainMatrixScreen extends StatelessWidget {
                                       .setBand(domain.band);
                                   Navigator.of(context).push(
                                     MaterialPageRoute<void>(
-                                      builder: (_) => MathScreen(
-                                        band: domain.band,
-                                        cefr: CefrLevel.a1,
+                                      builder: (_) => MathActivityMenuScreen(
+                                        domain: domain,
                                         targetLanguage: targetLanguage,
                                       ),
                                     ),
