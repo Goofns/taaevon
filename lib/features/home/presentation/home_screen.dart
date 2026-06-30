@@ -6,6 +6,8 @@ import '../../../core/constants/dimensions.dart';
 import '../../../core/constants/typography.dart';
 import '../../background/background_seed_generator.dart';
 import '../../background/geometric_background_painter.dart';
+import '../../difficulty/cubit/difficulty_cubit.dart';
+import '../../difficulty/domain/difficulty_profile.dart';
 import '../../fact_engine/bloc/fact_bloc.dart';
 import '../../fact_engine/presentation/fact_interstitial_widget.dart';
 import '../../fact_engine/presentation/fact_route.dart';
@@ -101,9 +103,13 @@ class HomeScreen extends StatelessWidget {
                 const FactInterstitial(),
                 const SizedBox(height: TaaevonDimensions.md),
                 ElevatedButton(
-                  onPressed: () => context
-                      .read<FactBloc>()
-                      .add(const FactRequested(complexityLevel: 5)),
+                  onPressed: () => context.read<FactBloc>().add(
+                        FactRequested(
+                          complexityLevel: factComplexityCeiling(
+                            context.read<DifficultyCubit>().state.band,
+                          ),
+                        ),
+                      ),
                   child: const Text('Show a fact'),
                 ),
                 const SizedBox(height: TaaevonDimensions.sm),

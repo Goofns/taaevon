@@ -4,6 +4,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
 import 'core/theme/app_theme.dart';
+import 'features/difficulty/cubit/difficulty_cubit.dart';
+import 'features/difficulty/data/difficulty_store.dart';
 import 'features/fact_engine/bloc/fact_bloc.dart';
 import 'features/fact_engine/data/fact_local_datasource.dart';
 import 'features/fact_engine/data/fact_repository.dart';
@@ -57,6 +59,11 @@ class TaaevonApp extends StatelessWidget {
         BlocProvider<StreakCubit>(
           create: (_) =>
               StreakCubit(store: SharedPrefsStreakStore())..hydrate(),
+        ),
+        // Persisted DDC band → drives the fact-complexity ceiling (PRD §6.2).
+        BlocProvider<DifficultyCubit>(
+          create: (_) =>
+              DifficultyCubit(store: SharedPrefsDifficultyStore())..hydrate(),
         ),
         // FactBloc lives at the root so the micro-learning interstitial can be
         // shown during navigation transitions, not just on the home screen.

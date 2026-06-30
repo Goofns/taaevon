@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
 import '../../../core/constants/colors.dart';
+import '../../difficulty/cubit/difficulty_cubit.dart';
+import '../../difficulty/domain/difficulty_profile.dart';
 import '../bloc/fact_bloc.dart';
 import 'fact_interstitial_widget.dart';
 
@@ -12,9 +14,13 @@ import 'fact_interstitial_widget.dart';
 Future<T?> pushWithFact<T>(
   BuildContext context,
   Widget child, {
-  int complexityLevel = 3,
+  int? complexityLevel,
 }) {
-  context.read<FactBloc>().add(FactRequested(complexityLevel: complexityLevel));
+  // Default the ceiling to the learner's current DDC band so facts scale to
+  // their level (PRD §6.2); an explicit value still overrides.
+  final level = complexityLevel ??
+      factComplexityCeiling(context.read<DifficultyCubit>().state.band);
+  context.read<FactBloc>().add(FactRequested(complexityLevel: level));
   return Navigator.of(context).push<T>(FactRoute<T>(child));
 }
 

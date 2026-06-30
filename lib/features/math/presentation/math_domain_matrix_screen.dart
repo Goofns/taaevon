@@ -1,6 +1,7 @@
 import 'dart:math' as math;
 
 import 'package:flutter/material.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
 
 import '../../../core/constants/colors.dart';
 import '../../../core/constants/dimensions.dart';
@@ -9,6 +10,7 @@ import '../../activity_engine/isometric_tessellation/presentation/isometric_tess
 import '../../activity_engine/matrix_vector_track/presentation/matrix_vector_track_screen.dart';
 import '../../background/background_seed_generator.dart';
 import '../../background/geometric_background_painter.dart';
+import '../../difficulty/cubit/difficulty_cubit.dart';
 import '../../sync_engine/dynamic_difficulty_calibrator.dart';
 import '../domain/math_domain.dart';
 import 'math_screen.dart';
@@ -52,7 +54,13 @@ class MathDomainMatrixScreen extends StatelessWidget {
                         _DomainTile(
                           domain: domain,
                           onTap: domain.unlocked
-                              ? () => Navigator.of(context).push(
+                              ? () {
+                                  // Record the chosen level so the fact engine
+                                  // scales fact complexity to it (PRD §6.2).
+                                  context
+                                      .read<DifficultyCubit>()
+                                      .setBand(domain.band);
+                                  Navigator.of(context).push(
                                     MaterialPageRoute<void>(
                                       builder: (_) => MathScreen(
                                         band: domain.band,
@@ -60,7 +68,8 @@ class MathDomainMatrixScreen extends StatelessWidget {
                                         targetLanguage: targetLanguage,
                                       ),
                                     ),
-                                  )
+                                  );
+                                }
                               : null,
                         ),
                     ],
