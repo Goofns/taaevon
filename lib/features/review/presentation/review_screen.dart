@@ -94,6 +94,7 @@ class _SessionView extends StatelessWidget {
               child: Text(
                 w.translatedTerm,
                 textAlign: TextAlign.center,
+                locale: Locale(w.targetLanguage), // WCAG 3.1.2 Language of Parts
                 style: TaaevonTypography.heading.copyWith(
                     fontSize: 26, color: TaaevonColors.languageAccent),
               ),

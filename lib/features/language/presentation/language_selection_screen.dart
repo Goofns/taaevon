@@ -162,9 +162,14 @@ class _LanguageTile extends StatelessWidget {
                 ),
                 Text(
                   option.nativeName,
+                  // Tag the native script with its language (WCAG 3.1.2) for
+                  // glyph selection + screen-reader pronunciation.
+                  locale: Locale(option.code),
                   style: TaaevonTypography.heading.copyWith(
                     fontSize: 18,
-                    color: TaaevonColors.languageAccent,
+                    // accentB (AA) not languageAccent (4.33:1) — same contrast
+                    // fix as the home LANGUAGE title.
+                    color: TaaevonColors.accentB,
                   ),
                 ),
                 const SizedBox(height: 2),

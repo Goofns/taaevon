@@ -11,10 +11,16 @@ class OptionTile extends StatelessWidget {
   const OptionTile({
     super.key,
     required this.option,
+    required this.targetLanguage,
     required this.onTap,
   });
 
   final PolyglotOption option;
+
+  /// Language code of [option].text (e.g. 'ja') — tags the foreign script with
+  /// its language for correct glyph selection and screen-reader pronunciation
+  /// (WCAG 3.1.2 Language of Parts).
+  final String targetLanguage;
   final VoidCallback onTap;
 
   @override
@@ -46,6 +52,7 @@ class OptionTile extends StatelessWidget {
                 Text(
                   option.text,
                   textAlign: TextAlign.center,
+                  locale: Locale(targetLanguage),
                   style: TaaevonTypography.heading.copyWith(fontSize: 20),
                 ),
                 if (option.romanization != null) ...[

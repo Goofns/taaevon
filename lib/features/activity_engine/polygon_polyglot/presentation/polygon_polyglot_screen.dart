@@ -152,6 +152,7 @@ class _ActiveView extends StatelessWidget {
               itemCount: state.round.options.length,
               itemBuilder: (context, i) => OptionTile(
                 option: state.round.options[i],
+                targetLanguage: language,
                 onTap: () =>
                     context.read<PolyglotBloc>().add(PolyglotAnswerSelected(i)),
               ),
