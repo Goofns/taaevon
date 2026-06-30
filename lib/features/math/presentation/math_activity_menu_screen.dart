@@ -53,7 +53,7 @@ class MathActivityMenuScreen extends StatelessWidget {
           child: ListView(
             padding: const EdgeInsets.all(TaaevonDimensions.lg),
             children: [
-              Text('Choose an activity', style: TaaevonTypography.label),
+              const Text('Choose an activity', style: TaaevonTypography.label),
               const SizedBox(height: TaaevonDimensions.md),
               _ActivityCard(
                 title: 'Solve problems',
